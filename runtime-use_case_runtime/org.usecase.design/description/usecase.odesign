@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" xmlns:validation="http://www.eclipse.org/sirius/description/validation/1.1.0" name="usecase" version="12.0.0.2017041100">
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="usecase" version="12.0.0.2017041100">
   <ownedViewpoints name="diagram" modelFileExtension="usecase">
-    <validationSet>
-      <ownedRules xsi:type="validation:SemanticValidationRule"/>
-    </validationSet>
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Use case diagram" domainClass="usecase::Model">
       <metamodel href="http://www.example.org/usecase#/"/>
       <defaultLayer name="Default">
         <nodeMappings name="ActorNode" labelDirectEdit="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editName']" semanticCandidatesExpression="aql:self.elements->filter(usecase::Actor)" domainClass="usecase::Actor">
-          <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql:self.name.toUpper()" labelPosition="node" resizeKind="NSEW" width="10" height="5">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" sizeComputationExpression="4" resizeKind="NSEW" arcHeight="13" workspacePath="/org.usecase.design/icons/actor.svg">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
           </style>
         </nodeMappings>
         <nodeMappings name="UseCaseNode" labelDirectEdit="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editName']" semanticCandidatesExpression="aql:self.elements->filter(usecase::UseCase)" domainClass="usecase::UseCase">
-          <style xsi:type="style:EllipseNodeDescription" labelSize="12" labelPosition="node" resizeKind="NSEW">
+          <style xsi:type="style:EllipseNodeDescription" labelSize="12" sizeComputationExpression="10" labelPosition="node" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>

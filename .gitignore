@@ -2,3 +2,5 @@
 /material
 *.docx
 *.pdf
+.metadata/
+/runtime-use_case_runtime/.metadata
