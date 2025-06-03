@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:usecase="http://www.example.org/usecase" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_9ugxECqzEfCKtbXYHGbcyA" selectedViews="_zaIP0Cq2EfCKtbXYHGbcyA" version="15.2.0.202303281325">
+    <semanticResources>My.usecase</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_zaIP0Cq2EfCKtbXYHGbcyA">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_274fUCq2EfCKtbXYHGbcyA" name="new Use case diagram" repPath="#_27rD8Cq2EfCKtbXYHGbcyA" changeId="1746640194804">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']"/>
+        <target xmi:type="usecase:Model" href="My.usecase#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_27rD8Cq2EfCKtbXYHGbcyA">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_28GhwCq2EfCKtbXYHGbcyA" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_28GhwSq2EfCKtbXYHGbcyA" type="Sirius" element="_27rD8Cq2EfCKtbXYHGbcyA" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_ymzOECq5EfCKtbXYHGbcyA" type="2001" element="_ymOmUiq5EfCKtbXYHGbcyA">
+          <children xmi:type="notation:Node" xmi:id="_ymzOEyq5EfCKtbXYHGbcyA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_ymzOFCq5EfCKtbXYHGbcyA" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ymz1ICq5EfCKtbXYHGbcyA" type="3016" element="_ymwx0Cq5EfCKtbXYHGbcyA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_ymz1ISq5EfCKtbXYHGbcyA" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ymz1Iiq5EfCKtbXYHGbcyA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_ymzOESq5EfCKtbXYHGbcyA" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ymzOEiq5EfCKtbXYHGbcyA" x="460" y="220" width="106" height="90"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_VnPSACq6EfCKtbXYHGbcyA" type="2001" element="_Vm4ssCq6EfCKtbXYHGbcyA">
+          <children xmi:type="notation:Node" xmi:id="_VnP5ECq6EfCKtbXYHGbcyA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_VnP5ESq6EfCKtbXYHGbcyA" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_VnP5Eiq6EfCKtbXYHGbcyA" type="3003" element="_Vm4ssSq6EfCKtbXYHGbcyA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_VnP5Eyq6EfCKtbXYHGbcyA" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VnP5FCq6EfCKtbXYHGbcyA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_VnPSASq6EfCKtbXYHGbcyA" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VnPSAiq6EfCKtbXYHGbcyA" x="95" y="245" width="100" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_WByakitrEfCKtbXYHGbcyA" type="2001" element="_WBv-UCtrEfCKtbXYHGbcyA">
+          <children xmi:type="notation:Node" xmi:id="_WBzBoCtrEfCKtbXYHGbcyA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_WBzBoStrEfCKtbXYHGbcyA" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_WBzBoitrEfCKtbXYHGbcyA" type="3003" element="_WBv-UStrEfCKtbXYHGbcyA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_WBzBoytrEfCKtbXYHGbcyA" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WBzBpCtrEfCKtbXYHGbcyA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_WByakytrEfCKtbXYHGbcyA" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WByalCtrEfCKtbXYHGbcyA" x="95" y="165" width="100" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_YOSHVCtrEfCKtbXYHGbcyA" type="2001" element="_YOPrECtrEfCKtbXYHGbcyA">
+          <children xmi:type="notation:Node" xmi:id="_YOSHVytrEfCKtbXYHGbcyA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_YOSHWCtrEfCKtbXYHGbcyA" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_YOSuYCtrEfCKtbXYHGbcyA" type="3003" element="_YOPrEStrEfCKtbXYHGbcyA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_YOSuYStrEfCKtbXYHGbcyA" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YOSuYitrEfCKtbXYHGbcyA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_YOSHVStrEfCKtbXYHGbcyA" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YOSHVitrEfCKtbXYHGbcyA" x="95" y="100" width="100" height="50"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_28Ghwiq2EfCKtbXYHGbcyA"/>
+        <edges xmi:type="notation:Edge" xmi:id="_PETXMCq_EfCKtbXYHGbcyA" type="4001" element="_PD35YCq_EfCKtbXYHGbcyA" source="_VnPSACq6EfCKtbXYHGbcyA" target="_ymzOECq5EfCKtbXYHGbcyA">
+          <children xmi:type="notation:Node" xmi:id="_PET-QCq_EfCKtbXYHGbcyA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PET-QSq_EfCKtbXYHGbcyA" x="-3" y="-11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_PEVzcCq_EfCKtbXYHGbcyA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PEVzcSq_EfCKtbXYHGbcyA" x="-2" y="6"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_PEVzciq_EfCKtbXYHGbcyA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PEVzcyq_EfCKtbXYHGbcyA" x="-3" y="5"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_PETXMSq_EfCKtbXYHGbcyA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_PETXMiq_EfCKtbXYHGbcyA" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_PETXMyq_EfCKtbXYHGbcyA" points="[50, -1, -318, 4]$[315, -5, -53, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PEZd0Cq_EfCKtbXYHGbcyA" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PEZd0Sq_EfCKtbXYHGbcyA" id="(0.5,0.5)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_28N2gCq2EfCKtbXYHGbcyA" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_28OdkCq2EfCKtbXYHGbcyA"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_ymOmUiq5EfCKtbXYHGbcyA" name="Iniciar sesión" incomingEdges="_PD35YCq_EfCKtbXYHGbcyA" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="usecase:UseCase" href="My.usecase#//@elements.1"/>
+      <semanticElements xmi:type="usecase:UseCase" href="My.usecase#//@elements.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Ellipse" uid="_ymwx0Cq5EfCKtbXYHGbcyA" labelSize="12" labelPosition="node">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_Vm4ssCq6EfCKtbXYHGbcyA" name="DWDW" outgoingEdges="_PD35YCq_EfCKtbXYHGbcyA" width="10" height="5" resizeKind="NSEW">
+      <target xmi:type="usecase:Actor" href="My.usecase#//@elements.0"/>
+      <semanticElements xmi:type="usecase:Actor" href="My.usecase#//@elements.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_Vm4ssSq6EfCKtbXYHGbcyA" labelSize="12" labelPosition="node" width="10" height="5" color="194,239,255">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_WBv-UCtrEfCKtbXYHGbcyA" name="MANOLO" width="10" height="5" resizeKind="NSEW">
+      <target xmi:type="usecase:Actor" href="My.usecase#//@elements.2"/>
+      <semanticElements xmi:type="usecase:Actor" href="My.usecase#//@elements.2"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_WBv-UStrEfCKtbXYHGbcyA" labelSize="12" labelPosition="node" width="10" height="5" color="194,239,255">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_YOPrECtrEfCKtbXYHGbcyA" name="ACTOR" width="10" height="5" resizeKind="NSEW">
+      <target xmi:type="usecase:Actor" href="My.usecase#//@elements.3"/>
+      <semanticElements xmi:type="usecase:Actor" href="My.usecase#//@elements.3"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_YOPrEStrEfCKtbXYHGbcyA" labelSize="12" labelPosition="node" width="10" height="5" color="194,239,255">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_PD35YCq_EfCKtbXYHGbcyA" name="&lt;&lt;association>>" sourceNode="_Vm4ssCq6EfCKtbXYHGbcyA" targetNode="_ymOmUiq5EfCKtbXYHGbcyA">
+      <target xmi:type="usecase:Association" href="My.usecase#//@relations.0"/>
+      <semanticElements xmi:type="usecase:Association" href="My.usecase#//@relations.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_PD7jwCq_EfCKtbXYHGbcyA" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_PD7jwSq_EfCKtbXYHGbcyA" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_27yYsCq2EfCKtbXYHGbcyA"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer"/>
+    <target xmi:type="usecase:Model" href="My.usecase#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

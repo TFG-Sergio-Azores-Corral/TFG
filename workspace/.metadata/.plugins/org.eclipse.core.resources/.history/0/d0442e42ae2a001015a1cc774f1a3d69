@@ -1,0 +1,16 @@
+/**
+ */
+package org.eclipse.sirius.sample.useCaseDiagram;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Generalization</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ *
+ * @see org.eclipse.sirius.sample.useCaseDiagram.UseCaseDiagramPackage#getGeneralization()
+ * @model
+ * @generated
+ */
+public interface Generalization extends Relation {
+} // Generalization

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/org.usecase/src-gen" creationIcons="false" editDirectory="/org.usecase.edit/src-gen"
+    editorDirectory="/org.usecase.editor/src-gen" modelPluginID="org.usecase" modelName="Usecase"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="17.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>usecase.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Usecase" basePackage="org.usecase" disposableProviderFactory="true"
+      ecorePackage="usecase.ecore#/">
+    <genClasses ecoreClass="usecase.ecore#//Model">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference usecase.ecore#//Model/elements"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference usecase.ecore#//Model/relations"/>
+    </genClasses>
+    <genClasses ecoreClass="usecase.ecore#//UMLElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute usecase.ecore#//UMLElement/name"/>
+    </genClasses>
+    <genClasses ecoreClass="usecase.ecore#//Relation">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference usecase.ecore#//Relation/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference usecase.ecore#//Relation/target"/>
+    </genClasses>
+    <genClasses ecoreClass="usecase.ecore#//Actor"/>
+    <genClasses ecoreClass="usecase.ecore#//UseCase">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute usecase.ecore#//UseCase/description"/>
+    </genClasses>
+    <genClasses ecoreClass="usecase.ecore#//Association"/>
+    <genClasses ecoreClass="usecase.ecore#//Generalization"/>
+    <genClasses ecoreClass="usecase.ecore#//Extend"/>
+    <genClasses ecoreClass="usecase.ecore#//Include"/>
+  </genPackages>
+</genmodel:GenModel>

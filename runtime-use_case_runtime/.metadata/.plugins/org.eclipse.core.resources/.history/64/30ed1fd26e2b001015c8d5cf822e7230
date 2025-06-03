@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<usecase:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:usecase="http://www.example.org/usecase">
+  <elements xsi:type="usecase:Actor" name="Usuario"/>
+  <elements xsi:type="usecase:UseCase" name="Iniciar sesión"/>
+  <elements xsi:type="usecase:Actor" name="Actor4"/>
+  <elements xsi:type="usecase:Actor" name="Actor3"/>
+  <relations xsi:type="usecase:Association" source="//@elements.0" target="//@elements.1"/>
+</usecase:Model>
