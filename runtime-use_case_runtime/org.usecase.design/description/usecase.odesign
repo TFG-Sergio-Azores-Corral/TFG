@@ -5,7 +5,7 @@
       <metamodel href="http://www.example.org/usecase#/"/>
       <defaultLayer name="Default">
         <nodeMappings name="ActorNode" labelDirectEdit="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editName']" semanticCandidatesExpression="aql:self.elements->filter(usecase::Actor)" domainClass="usecase::Actor">
-          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" sizeComputationExpression="4" resizeKind="NSEW" arcHeight="13" workspacePath="/org.usecase.design/icons/actor.svg">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" sizeComputationExpression="6" resizeKind="NSEW" arcHeight="13" workspacePath="/org.usecase.design/icons/actor.svg">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           </style>
