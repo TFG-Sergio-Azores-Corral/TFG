@@ -1,0 +1,28 @@
+casoUso "View items"
+
+actorPrimario: "TODO"
+
+interesadosObjetivos:
+- "TODO"
+
+precondiciones:
+- "TODO"
+
+postcondiciones:
+- "TODO"
+
+escenarioPrincipal:
+1. "TODO"
+
+extensiones:
+
+requisitosEspeciales:
+- "TODO"
+
+variacionesTecnologiaDatos:
+- "TODO"
+
+frecuenciaOcurrencia: "TODO"
+
+temasAbiertos:
+- "TODO"

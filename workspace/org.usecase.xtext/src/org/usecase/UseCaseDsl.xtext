@@ -1,0 +1,52 @@
+grammar org.usecase.UseCaseDsl with org.eclipse.xtext.common.Terminals
+
+generate usecasedsl "http://www.usecase.org/UseCaseDsl"
+
+UseCaseDescription:
+    'casoUso' name=STRING
+
+    'actorPrimario:' primaryActor=STRING
+
+    'interesadosObjetivos:'
+        stakeholders+=BulletItem*
+
+    'precondiciones:'
+        preconditions+=BulletItem*
+
+    'postcondiciones:'
+        postconditions+=BulletItem*
+
+    'escenarioPrincipal:'
+        mainSteps+=NumberedStep*
+
+    'extensiones:'
+        extensions+=ExtensionStep*
+
+    'requisitosEspeciales:'
+        specialRequirements+=BulletItem*
+
+    'variacionesTecnologiaDatos:'
+        technologyVariations+=BulletItem*
+
+    'frecuenciaOcurrencia:' frequency=STRING
+
+    'temasAbiertos:'
+        openIssues+=BulletItem*
+;
+
+BulletItem:
+    '-' text=STRING
+;
+
+NumberedStep:
+    number=INT '.' text=STRING
+;
+
+ExtensionStep:
+    number=INT letter=ID '.' text=STRING
+    substeps+=ExtensionSubStep*
+;
+
+ExtensionSubStep:
+    number=INT letter=ID '.' subnumber=INT '.' text=STRING
+;
