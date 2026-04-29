@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:usecase="http://www.example.org/usecase" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:usecase="http://www.example.org/usecase" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style http://www.example.org/usecase platform:/resource/org.usecase/model/usecase.ecore">
   <viewpoint:DAnalysis uid="_9ugxECqzEfCKtbXYHGbcyA" selectedViews="_zaIP0Cq2EfCKtbXYHGbcyA" version="15.2.0.202303281325">
     <semanticResources>My.usecase</semanticResources>
+    <semanticResources>platform:/resource/org.usecase.design/description/usecase.odesign</semanticResources>
+    <semanticResources>environment:/viewpoint</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_zaIP0Cq2EfCKtbXYHGbcyA">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_274fUCq2EfCKtbXYHGbcyA" name="new Use case diagram" repPath="#_27rD8Cq2EfCKtbXYHGbcyA" changeId="1748970817849">
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']"/>
-        <target xmi:type="usecase:Model" href="My.usecase#/"/>
+        <target xmi:type="usecase:Model" href="My.usecase#/1"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
   </viewpoint:DAnalysis>
@@ -381,16 +383,16 @@
       <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_28OdkCq2EfCKtbXYHGbcyA"/>
     </ownedAnnotationEntries>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_TSTc8ECdEfCkQ_HGWCveJw" name="Web Customer" incomingEdges="_ZTlC4ECdEfCkQ_HGWCveJw _ZyArUECdEfCkQ_HGWCveJw" width="6" height="6" resizeKind="NSEW">
-      <target xmi:type="usecase:Actor" href="My.usecase#//@elements.0"/>
-      <semanticElements xmi:type="usecase:Actor" href="My.usecase#//@elements.0"/>
+      <target xmi:type="usecase:Actor" href="My.usecase#/1/@elements.0"/>
+      <semanticElements xmi:type="usecase:Actor" href="My.usecase#/1/@elements.0"/>
       <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_TSTc8UCdEfCkQ_HGWCveJw" labelSize="12" workspacePath="/org.usecase.design/icons/actor.svg">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_UrrDoECdEfCkQ_HGWCveJw" name="Registered Customer" outgoingEdges="_ZyArUECdEfCkQ_HGWCveJw _nfYaQECdEfCkQ_HGWCveJw _oRFkBECdEfCkQ_HGWCveJw" width="6" height="6" resizeKind="NSEW">
-      <target xmi:type="usecase:Actor" href="My.usecase#//@elements.1"/>
-      <semanticElements xmi:type="usecase:Actor" href="My.usecase#//@elements.1"/>
+      <target xmi:type="usecase:Actor" href="My.usecase#/1/@elements.1"/>
+      <semanticElements xmi:type="usecase:Actor" href="My.usecase#/1/@elements.1"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -400,8 +402,8 @@
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_VGXbkECdEfCkQ_HGWCveJw" name="New Customer" outgoingEdges="_ZTlC4ECdEfCkQ_HGWCveJw _pbAZdECdEfCkQ_HGWCveJw _qS31mECdEfCkQ_HGWCveJw" width="6" height="6" resizeKind="NSEW">
-      <target xmi:type="usecase:Actor" href="My.usecase#//@elements.2"/>
-      <semanticElements xmi:type="usecase:Actor" href="My.usecase#//@elements.2"/>
+      <target xmi:type="usecase:Actor" href="My.usecase#/1/@elements.2"/>
+      <semanticElements xmi:type="usecase:Actor" href="My.usecase#/1/@elements.2"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -411,8 +413,8 @@
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_sdNmMECdEfCkQ_HGWCveJw" name="&lt;&lt;Service>> Authentication" outgoingEdges="_yd2TAECdEfCkQ_HGWCveJw _0hPuJECdEfCkQ_HGWCveJw _1CNGFECdEfCkQ_HGWCveJw" width="6" height="6" resizeKind="NSEW">
-      <target xmi:type="usecase:Actor" href="My.usecase#//@elements.7"/>
-      <semanticElements xmi:type="usecase:Actor" href="My.usecase#//@elements.7"/>
+      <target xmi:type="usecase:Actor" href="My.usecase#/1/@elements.7"/>
+      <semanticElements xmi:type="usecase:Actor" href="My.usecase#/1/@elements.7"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -422,8 +424,8 @@
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_szBeIECdEfCkQ_HGWCveJw" name="Identity provider" outgoingEdges="_5S8iiECdEfCkQ_HGWCveJw _7BXzSECdEfCkQ_HGWCveJw" width="6" height="6" resizeKind="NSEW">
-      <target xmi:type="usecase:Actor" href="My.usecase#//@elements.8"/>
-      <semanticElements xmi:type="usecase:Actor" href="My.usecase#//@elements.8"/>
+      <target xmi:type="usecase:Actor" href="My.usecase#/1/@elements.8"/>
+      <semanticElements xmi:type="usecase:Actor" href="My.usecase#/1/@elements.8"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -433,8 +435,8 @@
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_tMlNoECdEfCkQ_HGWCveJw" name="Credit Payment Service" outgoingEdges="_8tL05ECdEfCkQ_HGWCveJw" width="6" height="6" resizeKind="NSEW">
-      <target xmi:type="usecase:Actor" href="My.usecase#//@elements.9"/>
-      <semanticElements xmi:type="usecase:Actor" href="My.usecase#//@elements.9"/>
+      <target xmi:type="usecase:Actor" href="My.usecase#/1/@elements.9"/>
+      <semanticElements xmi:type="usecase:Actor" href="My.usecase#/1/@elements.9"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -444,8 +446,8 @@
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_tj7WoECdEfCkQ_HGWCveJw" name="PayPal" outgoingEdges="_920WckCdEfCkQ_HGWCveJw" width="6" height="6" resizeKind="NSEW">
-      <target xmi:type="usecase:Actor" href="My.usecase#//@elements.10"/>
-      <semanticElements xmi:type="usecase:Actor" href="My.usecase#//@elements.10"/>
+      <target xmi:type="usecase:Actor" href="My.usecase#/1/@elements.10"/>
+      <semanticElements xmi:type="usecase:Actor" href="My.usecase#/1/@elements.10"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -455,8 +457,8 @@
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_ZTlC4ECdEfCkQ_HGWCveJw" name="&lt;&lt;generalization>>" sourceNode="_VGXbkECdEfCkQ_HGWCveJw" targetNode="_TSTc8ECdEfCkQ_HGWCveJw">
-      <target xmi:type="usecase:Generalization" href="My.usecase#//@relations.6"/>
-      <semanticElements xmi:type="usecase:Generalization" href="My.usecase#//@relations.6"/>
+      <target xmi:type="usecase:Generalization" href="My.usecase#/1/@relations.6"/>
+      <semanticElements xmi:type="usecase:Generalization" href="My.usecase#/1/@relations.6"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_ZTlC4UCdEfCkQ_HGWCveJw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='GeneralizationEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_ZTlC4kCdEfCkQ_HGWCveJw" labelSize="12" showIcon="false"/>
@@ -464,8 +466,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='GeneralizationEdge']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_ZyArUECdEfCkQ_HGWCveJw" name="&lt;&lt;generalization>>" sourceNode="_UrrDoECdEfCkQ_HGWCveJw" targetNode="_TSTc8ECdEfCkQ_HGWCveJw">
-      <target xmi:type="usecase:Generalization" href="My.usecase#//@relations.7"/>
-      <semanticElements xmi:type="usecase:Generalization" href="My.usecase#//@relations.7"/>
+      <target xmi:type="usecase:Generalization" href="My.usecase#/1/@relations.7"/>
+      <semanticElements xmi:type="usecase:Generalization" href="My.usecase#/1/@relations.7"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_ZyArUUCdEfCkQ_HGWCveJw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='GeneralizationEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_ZyArUkCdEfCkQ_HGWCveJw" labelSize="12" showIcon="false"/>
@@ -473,8 +475,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='GeneralizationEdge']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_baH4oECdEfCkQ_HGWCveJw" name="View items" incomingEdges="_lmV1AECdEfCkQ_HGWCveJw _nfYaQECdEfCkQ_HGWCveJw _pbAZdECdEfCkQ_HGWCveJw _yd2TAECdEfCkQ_HGWCveJw _5S8iiECdEfCkQ_HGWCveJw" width="10" height="10" resizeKind="NSEW">
-      <target xmi:type="usecase:UseCase" href="My.usecase#//@elements.3"/>
-      <semanticElements xmi:type="usecase:UseCase" href="My.usecase#//@elements.3"/>
+      <target xmi:type="usecase:UseCase" href="My.usecase#/1/@elements.3"/>
+      <semanticElements xmi:type="usecase:UseCase" href="My.usecase#/1/@elements.3"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -484,8 +486,8 @@
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_eVNJsECdEfCkQ_HGWCveJw" name="Make purchase" outgoingEdges="_lmV1AECdEfCkQ_HGWCveJw _msvcYECdEfCkQ_HGWCveJw" incomingEdges="_oRFkBECdEfCkQ_HGWCveJw" width="10" height="10" resizeKind="NSEW">
-      <target xmi:type="usecase:UseCase" href="My.usecase#//@elements.4"/>
-      <semanticElements xmi:type="usecase:UseCase" href="My.usecase#//@elements.4"/>
+      <target xmi:type="usecase:UseCase" href="My.usecase#/1/@elements.4"/>
+      <semanticElements xmi:type="usecase:UseCase" href="My.usecase#/1/@elements.4"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -495,8 +497,8 @@
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_e9AwkECdEfCkQ_HGWCveJw" name="Checkout" incomingEdges="_msvcYECdEfCkQ_HGWCveJw _0hPuJECdEfCkQ_HGWCveJw _7BXzSECdEfCkQ_HGWCveJw _8tL05ECdEfCkQ_HGWCveJw _920WckCdEfCkQ_HGWCveJw" width="10" height="10" resizeKind="NSEW">
-      <target xmi:type="usecase:UseCase" href="My.usecase#//@elements.5"/>
-      <semanticElements xmi:type="usecase:UseCase" href="My.usecase#//@elements.5"/>
+      <target xmi:type="usecase:UseCase" href="My.usecase#/1/@elements.5"/>
+      <semanticElements xmi:type="usecase:UseCase" href="My.usecase#/1/@elements.5"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -506,8 +508,8 @@
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_iL2EEECdEfCkQ_HGWCveJw" name="Register Client" incomingEdges="_qS31mECdEfCkQ_HGWCveJw _1CNGFECdEfCkQ_HGWCveJw" width="10" height="10" resizeKind="NSEW">
-      <target xmi:type="usecase:UseCase" href="My.usecase#//@elements.6"/>
-      <semanticElements xmi:type="usecase:UseCase" href="My.usecase#//@elements.6"/>
+      <target xmi:type="usecase:UseCase" href="My.usecase#/1/@elements.6"/>
+      <semanticElements xmi:type="usecase:UseCase" href="My.usecase#/1/@elements.6"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -517,8 +519,8 @@
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_lmV1AECdEfCkQ_HGWCveJw" name="&lt;&lt;include>>" sourceNode="_eVNJsECdEfCkQ_HGWCveJw" targetNode="_baH4oECdEfCkQ_HGWCveJw">
-      <target xmi:type="usecase:Include" href="My.usecase#//@relations.8"/>
-      <semanticElements xmi:type="usecase:Include" href="My.usecase#//@relations.8"/>
+      <target xmi:type="usecase:Include" href="My.usecase#/1/@relations.8"/>
+      <semanticElements xmi:type="usecase:Include" href="My.usecase#/1/@relations.8"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_lmV1AUCdEfCkQ_HGWCveJw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='IncluseEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_lmV1AkCdEfCkQ_HGWCveJw" labelSize="12" showIcon="false"/>
@@ -526,8 +528,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='IncluseEdge']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_msvcYECdEfCkQ_HGWCveJw" name="&lt;&lt;include>>" sourceNode="_eVNJsECdEfCkQ_HGWCveJw" targetNode="_e9AwkECdEfCkQ_HGWCveJw">
-      <target xmi:type="usecase:Include" href="My.usecase#//@relations.9"/>
-      <semanticElements xmi:type="usecase:Include" href="My.usecase#//@relations.9"/>
+      <target xmi:type="usecase:Include" href="My.usecase#/1/@relations.9"/>
+      <semanticElements xmi:type="usecase:Include" href="My.usecase#/1/@relations.9"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_msvcYUCdEfCkQ_HGWCveJw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='IncluseEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_msvcYkCdEfCkQ_HGWCveJw" labelSize="12" showIcon="false"/>
@@ -535,8 +537,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='IncluseEdge']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_nfYaQECdEfCkQ_HGWCveJw" name="&lt;&lt;association>>" sourceNode="_UrrDoECdEfCkQ_HGWCveJw" targetNode="_baH4oECdEfCkQ_HGWCveJw">
-      <target xmi:type="usecase:Association" href="My.usecase#//@relations.10"/>
-      <semanticElements xmi:type="usecase:Association" href="My.usecase#//@relations.10"/>
+      <target xmi:type="usecase:Association" href="My.usecase#/1/@relations.10"/>
+      <semanticElements xmi:type="usecase:Association" href="My.usecase#/1/@relations.10"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_nfYaQUCdEfCkQ_HGWCveJw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_nfYaQkCdEfCkQ_HGWCveJw" labelSize="12" showIcon="false"/>
@@ -544,8 +546,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_oRFkBECdEfCkQ_HGWCveJw" name="&lt;&lt;association>>" sourceNode="_UrrDoECdEfCkQ_HGWCveJw" targetNode="_eVNJsECdEfCkQ_HGWCveJw">
-      <target xmi:type="usecase:Association" href="My.usecase#//@relations.11"/>
-      <semanticElements xmi:type="usecase:Association" href="My.usecase#//@relations.11"/>
+      <target xmi:type="usecase:Association" href="My.usecase#/1/@relations.11"/>
+      <semanticElements xmi:type="usecase:Association" href="My.usecase#/1/@relations.11"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_oRGLEECdEfCkQ_HGWCveJw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_oRGLEUCdEfCkQ_HGWCveJw" labelSize="12" showIcon="false"/>
@@ -553,8 +555,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_pbAZdECdEfCkQ_HGWCveJw" name="&lt;&lt;association>>" sourceNode="_VGXbkECdEfCkQ_HGWCveJw" targetNode="_baH4oECdEfCkQ_HGWCveJw">
-      <target xmi:type="usecase:Association" href="My.usecase#//@relations.12"/>
-      <semanticElements xmi:type="usecase:Association" href="My.usecase#//@relations.12"/>
+      <target xmi:type="usecase:Association" href="My.usecase#/1/@relations.12"/>
+      <semanticElements xmi:type="usecase:Association" href="My.usecase#/1/@relations.12"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_pbAZdUCdEfCkQ_HGWCveJw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_pbAZdkCdEfCkQ_HGWCveJw" labelSize="12" showIcon="false"/>
@@ -562,8 +564,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_qS31mECdEfCkQ_HGWCveJw" name="&lt;&lt;association>>" sourceNode="_VGXbkECdEfCkQ_HGWCveJw" targetNode="_iL2EEECdEfCkQ_HGWCveJw">
-      <target xmi:type="usecase:Association" href="My.usecase#//@relations.13"/>
-      <semanticElements xmi:type="usecase:Association" href="My.usecase#//@relations.13"/>
+      <target xmi:type="usecase:Association" href="My.usecase#/1/@relations.13"/>
+      <semanticElements xmi:type="usecase:Association" href="My.usecase#/1/@relations.13"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_qS31mUCdEfCkQ_HGWCveJw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_qS31mkCdEfCkQ_HGWCveJw" labelSize="12" showIcon="false"/>
@@ -571,8 +573,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_yd2TAECdEfCkQ_HGWCveJw" name="&lt;&lt;association>>" sourceNode="_sdNmMECdEfCkQ_HGWCveJw" targetNode="_baH4oECdEfCkQ_HGWCveJw">
-      <target xmi:type="usecase:Association" href="My.usecase#//@relations.14"/>
-      <semanticElements xmi:type="usecase:Association" href="My.usecase#//@relations.14"/>
+      <target xmi:type="usecase:Association" href="My.usecase#/1/@relations.14"/>
+      <semanticElements xmi:type="usecase:Association" href="My.usecase#/1/@relations.14"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_yd2TAUCdEfCkQ_HGWCveJw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_yd2TAkCdEfCkQ_HGWCveJw" labelSize="12" showIcon="false"/>
@@ -580,8 +582,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_0hPuJECdEfCkQ_HGWCveJw" name="&lt;&lt;association>>" sourceNode="_sdNmMECdEfCkQ_HGWCveJw" targetNode="_e9AwkECdEfCkQ_HGWCveJw">
-      <target xmi:type="usecase:Association" href="My.usecase#//@relations.15"/>
-      <semanticElements xmi:type="usecase:Association" href="My.usecase#//@relations.15"/>
+      <target xmi:type="usecase:Association" href="My.usecase#/1/@relations.15"/>
+      <semanticElements xmi:type="usecase:Association" href="My.usecase#/1/@relations.15"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_0hPuJUCdEfCkQ_HGWCveJw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_0hPuJkCdEfCkQ_HGWCveJw" labelSize="12" showIcon="false"/>
@@ -589,8 +591,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_1CNGFECdEfCkQ_HGWCveJw" name="&lt;&lt;association>>" sourceNode="_sdNmMECdEfCkQ_HGWCveJw" targetNode="_iL2EEECdEfCkQ_HGWCveJw">
-      <target xmi:type="usecase:Association" href="My.usecase#//@relations.16"/>
-      <semanticElements xmi:type="usecase:Association" href="My.usecase#//@relations.16"/>
+      <target xmi:type="usecase:Association" href="My.usecase#/1/@relations.16"/>
+      <semanticElements xmi:type="usecase:Association" href="My.usecase#/1/@relations.16"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_1CNGFUCdEfCkQ_HGWCveJw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_1CNGFkCdEfCkQ_HGWCveJw" labelSize="12" showIcon="false"/>
@@ -598,8 +600,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_5S8iiECdEfCkQ_HGWCveJw" name="&lt;&lt;association>>" sourceNode="_szBeIECdEfCkQ_HGWCveJw" targetNode="_baH4oECdEfCkQ_HGWCveJw">
-      <target xmi:type="usecase:Association" href="My.usecase#//@relations.17"/>
-      <semanticElements xmi:type="usecase:Association" href="My.usecase#//@relations.17"/>
+      <target xmi:type="usecase:Association" href="My.usecase#/1/@relations.17"/>
+      <semanticElements xmi:type="usecase:Association" href="My.usecase#/1/@relations.17"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_5S8iiUCdEfCkQ_HGWCveJw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_5S8iikCdEfCkQ_HGWCveJw" labelSize="12" showIcon="false"/>
@@ -607,8 +609,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_7BXzSECdEfCkQ_HGWCveJw" name="&lt;&lt;association>>" sourceNode="_szBeIECdEfCkQ_HGWCveJw" targetNode="_e9AwkECdEfCkQ_HGWCveJw">
-      <target xmi:type="usecase:Association" href="My.usecase#//@relations.18"/>
-      <semanticElements xmi:type="usecase:Association" href="My.usecase#//@relations.18"/>
+      <target xmi:type="usecase:Association" href="My.usecase#/1/@relations.18"/>
+      <semanticElements xmi:type="usecase:Association" href="My.usecase#/1/@relations.18"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_7BXzSUCdEfCkQ_HGWCveJw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_7BXzSkCdEfCkQ_HGWCveJw" labelSize="12" showIcon="false"/>
@@ -616,8 +618,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_8tL05ECdEfCkQ_HGWCveJw" name="&lt;&lt;association>>" sourceNode="_tMlNoECdEfCkQ_HGWCveJw" targetNode="_e9AwkECdEfCkQ_HGWCveJw">
-      <target xmi:type="usecase:Association" href="My.usecase#//@relations.19"/>
-      <semanticElements xmi:type="usecase:Association" href="My.usecase#//@relations.19"/>
+      <target xmi:type="usecase:Association" href="My.usecase#/1/@relations.19"/>
+      <semanticElements xmi:type="usecase:Association" href="My.usecase#/1/@relations.19"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_8tL05UCdEfCkQ_HGWCveJw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_8tL05kCdEfCkQ_HGWCveJw" labelSize="12" showIcon="false"/>
@@ -625,8 +627,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_920WckCdEfCkQ_HGWCveJw" name="&lt;&lt;association>>" sourceNode="_tj7WoECdEfCkQ_HGWCveJw" targetNode="_e9AwkECdEfCkQ_HGWCveJw">
-      <target xmi:type="usecase:Association" href="My.usecase#//@relations.20"/>
-      <semanticElements xmi:type="usecase:Association" href="My.usecase#//@relations.20"/>
+      <target xmi:type="usecase:Association" href="My.usecase#/1/@relations.20"/>
+      <semanticElements xmi:type="usecase:Association" href="My.usecase#/1/@relations.20"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_920Wc0CdEfCkQ_HGWCveJw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_920WdECdEfCkQ_HGWCveJw" labelSize="12" showIcon="false"/>
@@ -636,6 +638,6 @@
     <description xmi:type="description_1:DiagramDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']"/>
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_27yYsCq2EfCKtbXYHGbcyA"/>
     <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer"/>
-    <target xmi:type="usecase:Model" href="My.usecase#/"/>
+    <target xmi:type="usecase:Model" href="My.usecase#/1"/>
   </diagram:DSemanticDiagram>
 </xmi:XMI>

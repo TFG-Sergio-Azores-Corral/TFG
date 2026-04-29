@@ -4,6 +4,7 @@ package org.usecase.usecase.impl;
 
 import java.util.Collection;
 
+import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.common.util.EList;
@@ -11,6 +12,7 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
@@ -31,6 +33,7 @@ import org.usecase.usecase.UsecasePackage;
  * <ul>
  *   <li>{@link org.usecase.usecase.impl.ModelImpl#getElements <em>Elements</em>}</li>
  *   <li>{@link org.usecase.usecase.impl.ModelImpl#getRelations <em>Relations</em>}</li>
+ *   <li>{@link org.usecase.usecase.impl.ModelImpl#getName <em>Name</em>}</li>
  * </ul>
  *
  * @generated
@@ -55,6 +58,26 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model {
 	 * @ordered
 	 */
 	protected EList<Relation> relations;
+
+	/**
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String NAME_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected String name = NAME_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -107,6 +130,29 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model {
 	 * @generated
 	 */
 	@Override
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setName(String newName) {
+		String oldName = name;
+		name = newName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, UsecasePackage.MODEL__NAME, oldName, name));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case UsecasePackage.MODEL__ELEMENTS:
@@ -129,6 +175,8 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model {
 			return getElements();
 		case UsecasePackage.MODEL__RELATIONS:
 			return getRelations();
+		case UsecasePackage.MODEL__NAME:
+			return getName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -150,6 +198,9 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model {
 			getRelations().clear();
 			getRelations().addAll((Collection<? extends Relation>) newValue);
 			return;
+		case UsecasePackage.MODEL__NAME:
+			setName((String) newValue);
+			return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -168,6 +219,9 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model {
 		case UsecasePackage.MODEL__RELATIONS:
 			getRelations().clear();
 			return;
+		case UsecasePackage.MODEL__NAME:
+			setName(NAME_EDEFAULT);
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -184,8 +238,27 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model {
 			return elements != null && !elements.isEmpty();
 		case UsecasePackage.MODEL__RELATIONS:
 			return relations != null && !relations.isEmpty();
+		case UsecasePackage.MODEL__NAME:
+			return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy())
+			return super.toString();
+
+		StringBuilder result = new StringBuilder(super.toString());
+		result.append(" (name: ");
+		result.append(name);
+		result.append(')');
+		return result.toString();
 	}
 
 } //ModelImpl

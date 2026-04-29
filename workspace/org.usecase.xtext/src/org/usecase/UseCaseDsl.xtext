@@ -1,0 +1,13 @@
+grammar org.usecase.UseCaseDsl with org.eclipse.xtext.common.Terminals
+
+generate usecasedesc "http://www.example.org/usecasedesc"
+
+Model:
+    usecases+=UseCaseDesc*
+;
+
+UseCaseDesc:
+    'usecase' name=ID
+    'actorPrimario:' actor=ID
+    'descripcion:' descripcion=STRING
+;

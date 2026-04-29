@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.usecase.xtext
+Bundle-ManifestVersion: 2
+Bundle-Name: org.usecase.xtext
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: org.usecase.xtext; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.16.0",
+ org.usecase;bundle-version="0.1.0",
+ org.eclipse.xtext.xbase.lib;bundle-version="2.34.0",
+ org.antlr.runtime;bundle-version="[3.2.0,3.2.1)",
+ org.eclipse.emf.ecore,
+ org.eclipse.emf.common
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Export-Package: org.usecase.parser.antlr.internal,
+ org.usecase.generator,
+ org.usecase.serializer,
+ org.usecase.parser.antlr,
+ org.usecase.validation,
+ org.usecase.scoping,
+ org.usecase,
+ org.usecase.services,
+ org.usecase.usecasedesc.impl,
+ org.usecase.usecasedesc,
+ org.usecase.usecasedesc.util
+Import-Package: org.apache.log4j

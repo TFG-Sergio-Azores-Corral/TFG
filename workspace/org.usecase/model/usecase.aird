@@ -5,7 +5,7 @@
     <semanticResources>usecase.genmodel</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_HLYGYCqvEfCnAdeIUZsU2g">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_HLmI0CqvEfCnAdeIUZsU2g" name="usecase" repPath="#_HLkToCqvEfCnAdeIUZsU2g" changeId="1746559689600">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_HLmI0CqvEfCnAdeIUZsU2g" name="usecase" repPath="#_HLkToCqvEfCnAdeIUZsU2g" changeId="1764618273981">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
         <target xmi:type="ecore:EPackage" href="usecase.ecore#/"/>
       </ownedRepresentationDescriptors>
@@ -17,6 +17,10 @@
         <children xmi:type="notation:Node" xmi:id="_JuKzQCqvEfCnAdeIUZsU2g" type="2003" element="_JuHv8CqvEfCnAdeIUZsU2g">
           <children xmi:type="notation:Node" xmi:id="_JuKzQyqvEfCnAdeIUZsU2g" type="5007"/>
           <children xmi:type="notation:Node" xmi:id="_JuKzRCqvEfCnAdeIUZsU2g" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_G_KjMM7uEfCv-50_v4gCsQ" type="3010" element="_G-5dcM7uEfCv-50_v4gCsQ">
+              <styles xmi:type="notation:FontStyle" xmi:id="_G_KjMc7uEfCv-50_v4gCsQ" fontColor="2697711" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_G_KjMs7uEfCv-50_v4gCsQ"/>
+            </children>
             <styles xmi:type="notation:SortingStyle" xmi:id="_JuKzRSqvEfCnAdeIUZsU2g"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_JuKzRiqvEfCnAdeIUZsU2g"/>
           </children>
@@ -300,10 +304,18 @@
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_JuIXACqvEfCnAdeIUZsU2g" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="Liquid" foregroundColor="255,252,216">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_IFZLcc7uEfCv-50_v4gCsQ" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="Liquid" foregroundColor="255,252,216">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_G-5dcM7uEfCv-50_v4gCsQ" name="name : EString" tooltipText="">
+        <target xmi:type="ecore:EAttribute" href="usecase.ecore#//Model/name"/>
+        <semanticElements xmi:type="ecore:EAttribute" href="usecase.ecore#//Model/name"/>
+        <ownedStyle xmi:type="diagram:BundledImage" uid="_KVkeXM7uEfCv-50_v4gCsQ" labelAlignment="LEFT" description="_qKRSQyqvEfCnAdeIUZsU2g">
+          <labelFormat>bold</labelFormat>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
+      </ownedElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_NsDlICqvEfCnAdeIUZsU2g" name="UMLElement" tooltipText="" incomingEdges="_cvV-ICqvEfCnAdeIUZsU2g _c_tVZiqvEfCnAdeIUZsU2g _tTyn4CqvEfCnAdeIUZsU2g _Go_8rCqwEfCnAdeIUZsU2g _HkUVciqwEfCnAdeIUZsU2g" width="12" height="10">
       <target xmi:type="ecore:EClass" href="usecase.ecore#//UMLElement"/>

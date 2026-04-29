@@ -85,13 +85,22 @@ public interface UsecasePackage extends EPackage {
 	int MODEL__RELATIONS = 1;
 
 	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODEL__NAME = 2;
+
+	/**
 	 * The number of structural features of the '<em>Model</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MODEL_FEATURE_COUNT = 2;
+	int MODEL_FEATURE_COUNT = 3;
 
 	/**
 	 * The number of operations of the '<em>Model</em>' class.
@@ -485,6 +494,17 @@ public interface UsecasePackage extends EPackage {
 	EReference getModel_Relations();
 
 	/**
+	 * Returns the meta object for the attribute '{@link org.usecase.usecase.Model#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see org.usecase.usecase.Model#getName()
+	 * @see #getModel()
+	 * @generated
+	 */
+	EAttribute getModel_Name();
+
+	/**
 	 * Returns the meta object for class '{@link org.usecase.usecase.UMLElement <em>UML Element</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -656,6 +676,14 @@ public interface UsecasePackage extends EPackage {
 		 * @generated
 		 */
 		EReference MODEL__RELATIONS = eINSTANCE.getModel_Relations();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MODEL__NAME = eINSTANCE.getModel_Name();
 
 		/**
 		 * The meta object literal for the '{@link org.usecase.usecase.impl.UMLElementImpl <em>UML Element</em>}' class.

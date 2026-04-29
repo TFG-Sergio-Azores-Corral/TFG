@@ -13,6 +13,7 @@
     <genClasses ecoreClass="usecase.ecore#//Model">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference usecase.ecore#//Model/elements"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference usecase.ecore#//Model/relations"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute usecase.ecore#//Model/name"/>
     </genClasses>
     <genClasses ecoreClass="usecase.ecore#//UMLElement">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute usecase.ecore#//UMLElement/name"/>

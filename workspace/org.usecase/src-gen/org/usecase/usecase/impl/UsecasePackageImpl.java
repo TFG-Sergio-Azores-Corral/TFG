@@ -191,6 +191,16 @@ public class UsecasePackageImpl extends EPackageImpl implements UsecasePackage {
 	 * @generated
 	 */
 	@Override
+	public EAttribute getModel_Name() {
+		return (EAttribute) modelEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getUMLElement() {
 		return umlElementEClass;
 	}
@@ -338,6 +348,7 @@ public class UsecasePackageImpl extends EPackageImpl implements UsecasePackage {
 		modelEClass = createEClass(MODEL);
 		createEReference(modelEClass, MODEL__ELEMENTS);
 		createEReference(modelEClass, MODEL__RELATIONS);
+		createEAttribute(modelEClass, MODEL__NAME);
 
 		umlElementEClass = createEClass(UML_ELEMENT);
 		createEAttribute(umlElementEClass, UML_ELEMENT__NAME);
@@ -404,6 +415,8 @@ public class UsecasePackageImpl extends EPackageImpl implements UsecasePackage {
 		initEReference(getModel_Relations(), this.getRelation(), null, "relations", null, 0, -1, Model.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getModel_Name(), ecorePackage.getEString(), "name", null, 1, 1, Model.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(umlElementEClass, UMLElement.class, "UMLElement", IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
