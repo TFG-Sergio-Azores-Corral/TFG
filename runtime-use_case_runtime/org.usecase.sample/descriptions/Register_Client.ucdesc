@@ -1,0 +1,28 @@
+useCase "Register Client"
+
+primaryActor: "New Customer"
+
+stakeholdersAndGoals:
+- "TODO"
+
+preconditions:
+- "TODO"
+
+postconditions:
+- "TODO"
+
+mainFlow:
+1. "TODO"
+
+extensions:
+
+specialRequirements:
+- "TODO"
+
+technologyAndDataVariations:
+- "TODO"
+
+frequencyOfOccurrence: "TODO"
+
+openIssues:
+- "TODO"

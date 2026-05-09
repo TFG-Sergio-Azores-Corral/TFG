@@ -76,9 +76,9 @@ ruleUseCaseDescription returns [EObject current=null]
 	leaveRule();
 }:
 	(
-		otherlv_0='casoUso'
+		otherlv_0='useCase'
 		{
-			newLeafNode(otherlv_0, grammarAccess.getUseCaseDescriptionAccess().getCasoUsoKeyword_0());
+			newLeafNode(otherlv_0, grammarAccess.getUseCaseDescriptionAccess().getUseCaseKeyword_0());
 		}
 		(
 			(
@@ -98,9 +98,9 @@ ruleUseCaseDescription returns [EObject current=null]
 				}
 			)
 		)
-		otherlv_2='actorPrimario:'
+		otherlv_2='primaryActor:'
 		{
-			newLeafNode(otherlv_2, grammarAccess.getUseCaseDescriptionAccess().getActorPrimarioKeyword_2());
+			newLeafNode(otherlv_2, grammarAccess.getUseCaseDescriptionAccess().getPrimaryActorKeyword_2());
 		}
 		(
 			(
@@ -120,9 +120,9 @@ ruleUseCaseDescription returns [EObject current=null]
 				}
 			)
 		)
-		otherlv_4='interesadosObjetivos:'
+		otherlv_4='stakeholdersAndGoals:'
 		{
-			newLeafNode(otherlv_4, grammarAccess.getUseCaseDescriptionAccess().getInteresadosObjetivosKeyword_4());
+			newLeafNode(otherlv_4, grammarAccess.getUseCaseDescriptionAccess().getStakeholdersAndGoalsKeyword_4());
 		}
 		(
 			(
@@ -143,9 +143,9 @@ ruleUseCaseDescription returns [EObject current=null]
 				}
 			)
 		)*
-		otherlv_6='precondiciones:'
+		otherlv_6='preconditions:'
 		{
-			newLeafNode(otherlv_6, grammarAccess.getUseCaseDescriptionAccess().getPrecondicionesKeyword_6());
+			newLeafNode(otherlv_6, grammarAccess.getUseCaseDescriptionAccess().getPreconditionsKeyword_6());
 		}
 		(
 			(
@@ -166,9 +166,9 @@ ruleUseCaseDescription returns [EObject current=null]
 				}
 			)
 		)*
-		otherlv_8='postcondiciones:'
+		otherlv_8='postconditions:'
 		{
-			newLeafNode(otherlv_8, grammarAccess.getUseCaseDescriptionAccess().getPostcondicionesKeyword_8());
+			newLeafNode(otherlv_8, grammarAccess.getUseCaseDescriptionAccess().getPostconditionsKeyword_8());
 		}
 		(
 			(
@@ -189,9 +189,9 @@ ruleUseCaseDescription returns [EObject current=null]
 				}
 			)
 		)*
-		otherlv_10='escenarioPrincipal:'
+		otherlv_10='mainFlow:'
 		{
-			newLeafNode(otherlv_10, grammarAccess.getUseCaseDescriptionAccess().getEscenarioPrincipalKeyword_10());
+			newLeafNode(otherlv_10, grammarAccess.getUseCaseDescriptionAccess().getMainFlowKeyword_10());
 		}
 		(
 			(
@@ -212,9 +212,9 @@ ruleUseCaseDescription returns [EObject current=null]
 				}
 			)
 		)*
-		otherlv_12='extensiones:'
+		otherlv_12='extensions:'
 		{
-			newLeafNode(otherlv_12, grammarAccess.getUseCaseDescriptionAccess().getExtensionesKeyword_12());
+			newLeafNode(otherlv_12, grammarAccess.getUseCaseDescriptionAccess().getExtensionsKeyword_12());
 		}
 		(
 			(
@@ -235,9 +235,9 @@ ruleUseCaseDescription returns [EObject current=null]
 				}
 			)
 		)*
-		otherlv_14='requisitosEspeciales:'
+		otherlv_14='specialRequirements:'
 		{
-			newLeafNode(otherlv_14, grammarAccess.getUseCaseDescriptionAccess().getRequisitosEspecialesKeyword_14());
+			newLeafNode(otherlv_14, grammarAccess.getUseCaseDescriptionAccess().getSpecialRequirementsKeyword_14());
 		}
 		(
 			(
@@ -258,9 +258,9 @@ ruleUseCaseDescription returns [EObject current=null]
 				}
 			)
 		)*
-		otherlv_16='variacionesTecnologiaDatos:'
+		otherlv_16='technologyAndDataVariations:'
 		{
-			newLeafNode(otherlv_16, grammarAccess.getUseCaseDescriptionAccess().getVariacionesTecnologiaDatosKeyword_16());
+			newLeafNode(otherlv_16, grammarAccess.getUseCaseDescriptionAccess().getTechnologyAndDataVariationsKeyword_16());
 		}
 		(
 			(
@@ -281,9 +281,9 @@ ruleUseCaseDescription returns [EObject current=null]
 				}
 			)
 		)*
-		otherlv_18='frecuenciaOcurrencia:'
+		otherlv_18='frequencyOfOccurrence:'
 		{
-			newLeafNode(otherlv_18, grammarAccess.getUseCaseDescriptionAccess().getFrecuenciaOcurrenciaKeyword_18());
+			newLeafNode(otherlv_18, grammarAccess.getUseCaseDescriptionAccess().getFrequencyOfOccurrenceKeyword_18());
 		}
 		(
 			(
@@ -303,9 +303,9 @@ ruleUseCaseDescription returns [EObject current=null]
 				}
 			)
 		)
-		otherlv_20='temasAbiertos:'
+		otherlv_20='openIssues:'
 		{
-			newLeafNode(otherlv_20, grammarAccess.getUseCaseDescriptionAccess().getTemasAbiertosKeyword_20());
+			newLeafNode(otherlv_20, grammarAccess.getUseCaseDescriptionAccess().getOpenIssuesKeyword_20());
 		}
 		(
 			(

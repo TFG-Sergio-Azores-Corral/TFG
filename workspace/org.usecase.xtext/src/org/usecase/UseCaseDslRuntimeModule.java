@@ -3,6 +3,9 @@
  */
 package org.usecase;
 
+import org.eclipse.xtext.validation.IResourceValidator;
+import org.usecase.validation.UseCaseDslValidator;
+
 
 /**
  * Use this class to register components to be used at runtime / without the Equinox extension registry.

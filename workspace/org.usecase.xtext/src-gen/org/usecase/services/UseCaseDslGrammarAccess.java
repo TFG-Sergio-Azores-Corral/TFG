@@ -24,86 +24,86 @@ public class UseCaseDslGrammarAccess extends AbstractElementFinder.AbstractGramm
 	public class UseCaseDescriptionElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "org.usecase.UseCaseDsl.UseCaseDescription");
 		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Keyword cCasoUsoKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Keyword cUseCaseKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final RuleCall cNameSTRINGTerminalRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
-		private final Keyword cActorPrimarioKeyword_2 = (Keyword)cGroup.eContents().get(2);
+		private final Keyword cPrimaryActorKeyword_2 = (Keyword)cGroup.eContents().get(2);
 		private final Assignment cPrimaryActorAssignment_3 = (Assignment)cGroup.eContents().get(3);
 		private final RuleCall cPrimaryActorSTRINGTerminalRuleCall_3_0 = (RuleCall)cPrimaryActorAssignment_3.eContents().get(0);
-		private final Keyword cInteresadosObjetivosKeyword_4 = (Keyword)cGroup.eContents().get(4);
+		private final Keyword cStakeholdersAndGoalsKeyword_4 = (Keyword)cGroup.eContents().get(4);
 		private final Assignment cStakeholdersAssignment_5 = (Assignment)cGroup.eContents().get(5);
 		private final RuleCall cStakeholdersBulletItemParserRuleCall_5_0 = (RuleCall)cStakeholdersAssignment_5.eContents().get(0);
-		private final Keyword cPrecondicionesKeyword_6 = (Keyword)cGroup.eContents().get(6);
+		private final Keyword cPreconditionsKeyword_6 = (Keyword)cGroup.eContents().get(6);
 		private final Assignment cPreconditionsAssignment_7 = (Assignment)cGroup.eContents().get(7);
 		private final RuleCall cPreconditionsBulletItemParserRuleCall_7_0 = (RuleCall)cPreconditionsAssignment_7.eContents().get(0);
-		private final Keyword cPostcondicionesKeyword_8 = (Keyword)cGroup.eContents().get(8);
+		private final Keyword cPostconditionsKeyword_8 = (Keyword)cGroup.eContents().get(8);
 		private final Assignment cPostconditionsAssignment_9 = (Assignment)cGroup.eContents().get(9);
 		private final RuleCall cPostconditionsBulletItemParserRuleCall_9_0 = (RuleCall)cPostconditionsAssignment_9.eContents().get(0);
-		private final Keyword cEscenarioPrincipalKeyword_10 = (Keyword)cGroup.eContents().get(10);
+		private final Keyword cMainFlowKeyword_10 = (Keyword)cGroup.eContents().get(10);
 		private final Assignment cMainStepsAssignment_11 = (Assignment)cGroup.eContents().get(11);
 		private final RuleCall cMainStepsNumberedStepParserRuleCall_11_0 = (RuleCall)cMainStepsAssignment_11.eContents().get(0);
-		private final Keyword cExtensionesKeyword_12 = (Keyword)cGroup.eContents().get(12);
+		private final Keyword cExtensionsKeyword_12 = (Keyword)cGroup.eContents().get(12);
 		private final Assignment cExtensionsAssignment_13 = (Assignment)cGroup.eContents().get(13);
 		private final RuleCall cExtensionsExtensionStepParserRuleCall_13_0 = (RuleCall)cExtensionsAssignment_13.eContents().get(0);
-		private final Keyword cRequisitosEspecialesKeyword_14 = (Keyword)cGroup.eContents().get(14);
+		private final Keyword cSpecialRequirementsKeyword_14 = (Keyword)cGroup.eContents().get(14);
 		private final Assignment cSpecialRequirementsAssignment_15 = (Assignment)cGroup.eContents().get(15);
 		private final RuleCall cSpecialRequirementsBulletItemParserRuleCall_15_0 = (RuleCall)cSpecialRequirementsAssignment_15.eContents().get(0);
-		private final Keyword cVariacionesTecnologiaDatosKeyword_16 = (Keyword)cGroup.eContents().get(16);
+		private final Keyword cTechnologyAndDataVariationsKeyword_16 = (Keyword)cGroup.eContents().get(16);
 		private final Assignment cTechnologyVariationsAssignment_17 = (Assignment)cGroup.eContents().get(17);
 		private final RuleCall cTechnologyVariationsBulletItemParserRuleCall_17_0 = (RuleCall)cTechnologyVariationsAssignment_17.eContents().get(0);
-		private final Keyword cFrecuenciaOcurrenciaKeyword_18 = (Keyword)cGroup.eContents().get(18);
+		private final Keyword cFrequencyOfOccurrenceKeyword_18 = (Keyword)cGroup.eContents().get(18);
 		private final Assignment cFrequencyAssignment_19 = (Assignment)cGroup.eContents().get(19);
 		private final RuleCall cFrequencySTRINGTerminalRuleCall_19_0 = (RuleCall)cFrequencyAssignment_19.eContents().get(0);
-		private final Keyword cTemasAbiertosKeyword_20 = (Keyword)cGroup.eContents().get(20);
+		private final Keyword cOpenIssuesKeyword_20 = (Keyword)cGroup.eContents().get(20);
 		private final Assignment cOpenIssuesAssignment_21 = (Assignment)cGroup.eContents().get(21);
 		private final RuleCall cOpenIssuesBulletItemParserRuleCall_21_0 = (RuleCall)cOpenIssuesAssignment_21.eContents().get(0);
 		
 		//UseCaseDescription:
-		//    'casoUso' name=STRING
-		//    'actorPrimario:' primaryActor=STRING
-		//    'interesadosObjetivos:'
+		//    'useCase' name=STRING
+		//    'primaryActor:' primaryActor=STRING
+		//    'stakeholdersAndGoals:'
 		//        stakeholders+=BulletItem*
-		//    'precondiciones:'
+		//    'preconditions:'
 		//        preconditions+=BulletItem*
-		//    'postcondiciones:'
+		//    'postconditions:'
 		//        postconditions+=BulletItem*
-		//    'escenarioPrincipal:'
+		//    'mainFlow:'
 		//        mainSteps+=NumberedStep*
-		//    'extensiones:'
+		//    'extensions:'
 		//        extensions+=ExtensionStep*
-		//    'requisitosEspeciales:'
+		//    'specialRequirements:'
 		//        specialRequirements+=BulletItem*
-		//    'variacionesTecnologiaDatos:'
+		//    'technologyAndDataVariations:'
 		//        technologyVariations+=BulletItem*
-		//    'frecuenciaOcurrencia:' frequency=STRING
-		//    'temasAbiertos:'
+		//    'frequencyOfOccurrence:' frequency=STRING
+		//    'openIssues:'
 		//        openIssues+=BulletItem*
 		//;
 		@Override public ParserRule getRule() { return rule; }
 		
-		//'casoUso' name=STRING
-		//'actorPrimario:' primaryActor=STRING
-		//'interesadosObjetivos:'
+		//'useCase' name=STRING
+		//'primaryActor:' primaryActor=STRING
+		//'stakeholdersAndGoals:'
 		//    stakeholders+=BulletItem*
-		//'precondiciones:'
+		//'preconditions:'
 		//    preconditions+=BulletItem*
-		//'postcondiciones:'
+		//'postconditions:'
 		//    postconditions+=BulletItem*
-		//'escenarioPrincipal:'
+		//'mainFlow:'
 		//    mainSteps+=NumberedStep*
-		//'extensiones:'
+		//'extensions:'
 		//    extensions+=ExtensionStep*
-		//'requisitosEspeciales:'
+		//'specialRequirements:'
 		//    specialRequirements+=BulletItem*
-		//'variacionesTecnologiaDatos:'
+		//'technologyAndDataVariations:'
 		//    technologyVariations+=BulletItem*
-		//'frecuenciaOcurrencia:' frequency=STRING
-		//'temasAbiertos:'
+		//'frequencyOfOccurrence:' frequency=STRING
+		//'openIssues:'
 		//    openIssues+=BulletItem*
 		public Group getGroup() { return cGroup; }
 		
-		//'casoUso'
-		public Keyword getCasoUsoKeyword_0() { return cCasoUsoKeyword_0; }
+		//'useCase'
+		public Keyword getUseCaseKeyword_0() { return cUseCaseKeyword_0; }
 		
 		//name=STRING
 		public Assignment getNameAssignment_1() { return cNameAssignment_1; }
@@ -111,8 +111,8 @@ public class UseCaseDslGrammarAccess extends AbstractElementFinder.AbstractGramm
 		//STRING
 		public RuleCall getNameSTRINGTerminalRuleCall_1_0() { return cNameSTRINGTerminalRuleCall_1_0; }
 		
-		//'actorPrimario:'
-		public Keyword getActorPrimarioKeyword_2() { return cActorPrimarioKeyword_2; }
+		//'primaryActor:'
+		public Keyword getPrimaryActorKeyword_2() { return cPrimaryActorKeyword_2; }
 		
 		//primaryActor=STRING
 		public Assignment getPrimaryActorAssignment_3() { return cPrimaryActorAssignment_3; }
@@ -120,8 +120,8 @@ public class UseCaseDslGrammarAccess extends AbstractElementFinder.AbstractGramm
 		//STRING
 		public RuleCall getPrimaryActorSTRINGTerminalRuleCall_3_0() { return cPrimaryActorSTRINGTerminalRuleCall_3_0; }
 		
-		//'interesadosObjetivos:'
-		public Keyword getInteresadosObjetivosKeyword_4() { return cInteresadosObjetivosKeyword_4; }
+		//'stakeholdersAndGoals:'
+		public Keyword getStakeholdersAndGoalsKeyword_4() { return cStakeholdersAndGoalsKeyword_4; }
 		
 		//stakeholders+=BulletItem*
 		public Assignment getStakeholdersAssignment_5() { return cStakeholdersAssignment_5; }
@@ -129,8 +129,8 @@ public class UseCaseDslGrammarAccess extends AbstractElementFinder.AbstractGramm
 		//BulletItem
 		public RuleCall getStakeholdersBulletItemParserRuleCall_5_0() { return cStakeholdersBulletItemParserRuleCall_5_0; }
 		
-		//'precondiciones:'
-		public Keyword getPrecondicionesKeyword_6() { return cPrecondicionesKeyword_6; }
+		//'preconditions:'
+		public Keyword getPreconditionsKeyword_6() { return cPreconditionsKeyword_6; }
 		
 		//preconditions+=BulletItem*
 		public Assignment getPreconditionsAssignment_7() { return cPreconditionsAssignment_7; }
@@ -138,8 +138,8 @@ public class UseCaseDslGrammarAccess extends AbstractElementFinder.AbstractGramm
 		//BulletItem
 		public RuleCall getPreconditionsBulletItemParserRuleCall_7_0() { return cPreconditionsBulletItemParserRuleCall_7_0; }
 		
-		//'postcondiciones:'
-		public Keyword getPostcondicionesKeyword_8() { return cPostcondicionesKeyword_8; }
+		//'postconditions:'
+		public Keyword getPostconditionsKeyword_8() { return cPostconditionsKeyword_8; }
 		
 		//postconditions+=BulletItem*
 		public Assignment getPostconditionsAssignment_9() { return cPostconditionsAssignment_9; }
@@ -147,8 +147,8 @@ public class UseCaseDslGrammarAccess extends AbstractElementFinder.AbstractGramm
 		//BulletItem
 		public RuleCall getPostconditionsBulletItemParserRuleCall_9_0() { return cPostconditionsBulletItemParserRuleCall_9_0; }
 		
-		//'escenarioPrincipal:'
-		public Keyword getEscenarioPrincipalKeyword_10() { return cEscenarioPrincipalKeyword_10; }
+		//'mainFlow:'
+		public Keyword getMainFlowKeyword_10() { return cMainFlowKeyword_10; }
 		
 		//mainSteps+=NumberedStep*
 		public Assignment getMainStepsAssignment_11() { return cMainStepsAssignment_11; }
@@ -156,8 +156,8 @@ public class UseCaseDslGrammarAccess extends AbstractElementFinder.AbstractGramm
 		//NumberedStep
 		public RuleCall getMainStepsNumberedStepParserRuleCall_11_0() { return cMainStepsNumberedStepParserRuleCall_11_0; }
 		
-		//'extensiones:'
-		public Keyword getExtensionesKeyword_12() { return cExtensionesKeyword_12; }
+		//'extensions:'
+		public Keyword getExtensionsKeyword_12() { return cExtensionsKeyword_12; }
 		
 		//extensions+=ExtensionStep*
 		public Assignment getExtensionsAssignment_13() { return cExtensionsAssignment_13; }
@@ -165,8 +165,8 @@ public class UseCaseDslGrammarAccess extends AbstractElementFinder.AbstractGramm
 		//ExtensionStep
 		public RuleCall getExtensionsExtensionStepParserRuleCall_13_0() { return cExtensionsExtensionStepParserRuleCall_13_0; }
 		
-		//'requisitosEspeciales:'
-		public Keyword getRequisitosEspecialesKeyword_14() { return cRequisitosEspecialesKeyword_14; }
+		//'specialRequirements:'
+		public Keyword getSpecialRequirementsKeyword_14() { return cSpecialRequirementsKeyword_14; }
 		
 		//specialRequirements+=BulletItem*
 		public Assignment getSpecialRequirementsAssignment_15() { return cSpecialRequirementsAssignment_15; }
@@ -174,8 +174,8 @@ public class UseCaseDslGrammarAccess extends AbstractElementFinder.AbstractGramm
 		//BulletItem
 		public RuleCall getSpecialRequirementsBulletItemParserRuleCall_15_0() { return cSpecialRequirementsBulletItemParserRuleCall_15_0; }
 		
-		//'variacionesTecnologiaDatos:'
-		public Keyword getVariacionesTecnologiaDatosKeyword_16() { return cVariacionesTecnologiaDatosKeyword_16; }
+		//'technologyAndDataVariations:'
+		public Keyword getTechnologyAndDataVariationsKeyword_16() { return cTechnologyAndDataVariationsKeyword_16; }
 		
 		//technologyVariations+=BulletItem*
 		public Assignment getTechnologyVariationsAssignment_17() { return cTechnologyVariationsAssignment_17; }
@@ -183,8 +183,8 @@ public class UseCaseDslGrammarAccess extends AbstractElementFinder.AbstractGramm
 		//BulletItem
 		public RuleCall getTechnologyVariationsBulletItemParserRuleCall_17_0() { return cTechnologyVariationsBulletItemParserRuleCall_17_0; }
 		
-		//'frecuenciaOcurrencia:'
-		public Keyword getFrecuenciaOcurrenciaKeyword_18() { return cFrecuenciaOcurrenciaKeyword_18; }
+		//'frequencyOfOccurrence:'
+		public Keyword getFrequencyOfOccurrenceKeyword_18() { return cFrequencyOfOccurrenceKeyword_18; }
 		
 		//frequency=STRING
 		public Assignment getFrequencyAssignment_19() { return cFrequencyAssignment_19; }
@@ -192,8 +192,8 @@ public class UseCaseDslGrammarAccess extends AbstractElementFinder.AbstractGramm
 		//STRING
 		public RuleCall getFrequencySTRINGTerminalRuleCall_19_0() { return cFrequencySTRINGTerminalRuleCall_19_0; }
 		
-		//'temasAbiertos:'
-		public Keyword getTemasAbiertosKeyword_20() { return cTemasAbiertosKeyword_20; }
+		//'openIssues:'
+		public Keyword getOpenIssuesKeyword_20() { return cOpenIssuesKeyword_20; }
 		
 		//openIssues+=BulletItem*
 		public Assignment getOpenIssuesAssignment_21() { return cOpenIssuesAssignment_21; }
@@ -411,24 +411,24 @@ public class UseCaseDslGrammarAccess extends AbstractElementFinder.AbstractGramm
 
 	
 	//UseCaseDescription:
-	//    'casoUso' name=STRING
-	//    'actorPrimario:' primaryActor=STRING
-	//    'interesadosObjetivos:'
+	//    'useCase' name=STRING
+	//    'primaryActor:' primaryActor=STRING
+	//    'stakeholdersAndGoals:'
 	//        stakeholders+=BulletItem*
-	//    'precondiciones:'
+	//    'preconditions:'
 	//        preconditions+=BulletItem*
-	//    'postcondiciones:'
+	//    'postconditions:'
 	//        postconditions+=BulletItem*
-	//    'escenarioPrincipal:'
+	//    'mainFlow:'
 	//        mainSteps+=NumberedStep*
-	//    'extensiones:'
+	//    'extensions:'
 	//        extensions+=ExtensionStep*
-	//    'requisitosEspeciales:'
+	//    'specialRequirements:'
 	//        specialRequirements+=BulletItem*
-	//    'variacionesTecnologiaDatos:'
+	//    'technologyAndDataVariations:'
 	//        technologyVariations+=BulletItem*
-	//    'frecuenciaOcurrencia:' frequency=STRING
-	//    'temasAbiertos:'
+	//    'frequencyOfOccurrence:' frequency=STRING
+	//    'openIssues:'
 	//        openIssues+=BulletItem*
 	//;
 	public UseCaseDescriptionElements getUseCaseDescriptionAccess() {

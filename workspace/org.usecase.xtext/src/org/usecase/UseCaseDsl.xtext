@@ -3,34 +3,34 @@ grammar org.usecase.UseCaseDsl with org.eclipse.xtext.common.Terminals
 generate usecasedsl "http://www.usecase.org/UseCaseDsl"
 
 UseCaseDescription:
-    'casoUso' name=STRING
+    'useCase' name=STRING
 
-    'actorPrimario:' primaryActor=STRING
+    'primaryActor:' primaryActor=STRING
 
-    'interesadosObjetivos:'
+    'stakeholdersAndGoals:'
         stakeholders+=BulletItem*
 
-    'precondiciones:'
+    'preconditions:'
         preconditions+=BulletItem*
 
-    'postcondiciones:'
+    'postconditions:'
         postconditions+=BulletItem*
 
-    'escenarioPrincipal:'
+    'mainFlow:'
         mainSteps+=NumberedStep*
 
-    'extensiones:'
+    'extensions:'
         extensions+=ExtensionStep*
 
-    'requisitosEspeciales:'
+    'specialRequirements:'
         specialRequirements+=BulletItem*
 
-    'variacionesTecnologiaDatos:'
+    'technologyAndDataVariations:'
         technologyVariations+=BulletItem*
 
-    'frecuenciaOcurrencia:' frequency=STRING
+    'frequencyOfOccurrence:' frequency=STRING
 
-    'temasAbiertos:'
+    'openIssues:'
         openIssues+=BulletItem*
 ;
 

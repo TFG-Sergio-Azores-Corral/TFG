@@ -1,28 +1,28 @@
-casoUso "Make purchase"
+useCase "Make purchase"
 
-actorPrimario: "TODO"
+primaryActor: "Registered Customer"
 
-interesadosObjetivos:
+stakeholdersAndGoals:
 - "TODO"
 
-precondiciones:
+preconditions:
 - "TODO"
 
-postcondiciones:
+postconditions:
 - "TODO"
 
-escenarioPrincipal:
+mainFlow:
 1. "TODO"
 
-extensiones:
+extensions:
 
-requisitosEspeciales:
+specialRequirements:
 - "TODO"
 
-variacionesTecnologiaDatos:
+technologyAndDataVariations:
 - "TODO"
 
-frecuenciaOcurrencia: "TODO"
+frequencyOfOccurrence: "TODO"
 
-temasAbiertos:
+openIssues:
 - "TODO"

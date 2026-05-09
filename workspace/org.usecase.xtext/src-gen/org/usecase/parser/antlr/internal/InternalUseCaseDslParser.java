@@ -21,7 +21,7 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalUseCaseDslParser extends AbstractInternalAntlrParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_INT", "RULE_ID", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'casoUso'", "'actorPrimario:'", "'interesadosObjetivos:'", "'precondiciones:'", "'postcondiciones:'", "'escenarioPrincipal:'", "'extensiones:'", "'requisitosEspeciales:'", "'variacionesTecnologiaDatos:'", "'frecuenciaOcurrencia:'", "'temasAbiertos:'", "'-'", "'.'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_INT", "RULE_ID", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'useCase'", "'primaryActor:'", "'stakeholdersAndGoals:'", "'preconditions:'", "'postconditions:'", "'mainFlow:'", "'extensions:'", "'specialRequirements:'", "'technologyAndDataVariations:'", "'frequencyOfOccurrence:'", "'openIssues:'", "'-'", "'.'"
     };
     public static final int RULE_STRING=4;
     public static final int RULE_SL_COMMENT=8;
@@ -121,7 +121,7 @@ public class InternalUseCaseDslParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleUseCaseDescription"
-    // InternalUseCaseDsl.g:71:1: ruleUseCaseDescription returns [EObject current=null] : (otherlv_0= 'casoUso' ( (lv_name_1_0= RULE_STRING ) ) otherlv_2= 'actorPrimario:' ( (lv_primaryActor_3_0= RULE_STRING ) ) otherlv_4= 'interesadosObjetivos:' ( (lv_stakeholders_5_0= ruleBulletItem ) )* otherlv_6= 'precondiciones:' ( (lv_preconditions_7_0= ruleBulletItem ) )* otherlv_8= 'postcondiciones:' ( (lv_postconditions_9_0= ruleBulletItem ) )* otherlv_10= 'escenarioPrincipal:' ( (lv_mainSteps_11_0= ruleNumberedStep ) )* otherlv_12= 'extensiones:' ( (lv_extensions_13_0= ruleExtensionStep ) )* otherlv_14= 'requisitosEspeciales:' ( (lv_specialRequirements_15_0= ruleBulletItem ) )* otherlv_16= 'variacionesTecnologiaDatos:' ( (lv_technologyVariations_17_0= ruleBulletItem ) )* otherlv_18= 'frecuenciaOcurrencia:' ( (lv_frequency_19_0= RULE_STRING ) ) otherlv_20= 'temasAbiertos:' ( (lv_openIssues_21_0= ruleBulletItem ) )* ) ;
+    // InternalUseCaseDsl.g:71:1: ruleUseCaseDescription returns [EObject current=null] : (otherlv_0= 'useCase' ( (lv_name_1_0= RULE_STRING ) ) otherlv_2= 'primaryActor:' ( (lv_primaryActor_3_0= RULE_STRING ) ) otherlv_4= 'stakeholdersAndGoals:' ( (lv_stakeholders_5_0= ruleBulletItem ) )* otherlv_6= 'preconditions:' ( (lv_preconditions_7_0= ruleBulletItem ) )* otherlv_8= 'postconditions:' ( (lv_postconditions_9_0= ruleBulletItem ) )* otherlv_10= 'mainFlow:' ( (lv_mainSteps_11_0= ruleNumberedStep ) )* otherlv_12= 'extensions:' ( (lv_extensions_13_0= ruleExtensionStep ) )* otherlv_14= 'specialRequirements:' ( (lv_specialRequirements_15_0= ruleBulletItem ) )* otherlv_16= 'technologyAndDataVariations:' ( (lv_technologyVariations_17_0= ruleBulletItem ) )* otherlv_18= 'frequencyOfOccurrence:' ( (lv_frequency_19_0= RULE_STRING ) ) otherlv_20= 'openIssues:' ( (lv_openIssues_21_0= ruleBulletItem ) )* ) ;
     public final EObject ruleUseCaseDescription() throws RecognitionException {
         EObject current = null;
 
@@ -160,15 +160,15 @@ public class InternalUseCaseDslParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalUseCaseDsl.g:77:2: ( (otherlv_0= 'casoUso' ( (lv_name_1_0= RULE_STRING ) ) otherlv_2= 'actorPrimario:' ( (lv_primaryActor_3_0= RULE_STRING ) ) otherlv_4= 'interesadosObjetivos:' ( (lv_stakeholders_5_0= ruleBulletItem ) )* otherlv_6= 'precondiciones:' ( (lv_preconditions_7_0= ruleBulletItem ) )* otherlv_8= 'postcondiciones:' ( (lv_postconditions_9_0= ruleBulletItem ) )* otherlv_10= 'escenarioPrincipal:' ( (lv_mainSteps_11_0= ruleNumberedStep ) )* otherlv_12= 'extensiones:' ( (lv_extensions_13_0= ruleExtensionStep ) )* otherlv_14= 'requisitosEspeciales:' ( (lv_specialRequirements_15_0= ruleBulletItem ) )* otherlv_16= 'variacionesTecnologiaDatos:' ( (lv_technologyVariations_17_0= ruleBulletItem ) )* otherlv_18= 'frecuenciaOcurrencia:' ( (lv_frequency_19_0= RULE_STRING ) ) otherlv_20= 'temasAbiertos:' ( (lv_openIssues_21_0= ruleBulletItem ) )* ) )
-            // InternalUseCaseDsl.g:78:2: (otherlv_0= 'casoUso' ( (lv_name_1_0= RULE_STRING ) ) otherlv_2= 'actorPrimario:' ( (lv_primaryActor_3_0= RULE_STRING ) ) otherlv_4= 'interesadosObjetivos:' ( (lv_stakeholders_5_0= ruleBulletItem ) )* otherlv_6= 'precondiciones:' ( (lv_preconditions_7_0= ruleBulletItem ) )* otherlv_8= 'postcondiciones:' ( (lv_postconditions_9_0= ruleBulletItem ) )* otherlv_10= 'escenarioPrincipal:' ( (lv_mainSteps_11_0= ruleNumberedStep ) )* otherlv_12= 'extensiones:' ( (lv_extensions_13_0= ruleExtensionStep ) )* otherlv_14= 'requisitosEspeciales:' ( (lv_specialRequirements_15_0= ruleBulletItem ) )* otherlv_16= 'variacionesTecnologiaDatos:' ( (lv_technologyVariations_17_0= ruleBulletItem ) )* otherlv_18= 'frecuenciaOcurrencia:' ( (lv_frequency_19_0= RULE_STRING ) ) otherlv_20= 'temasAbiertos:' ( (lv_openIssues_21_0= ruleBulletItem ) )* )
+            // InternalUseCaseDsl.g:77:2: ( (otherlv_0= 'useCase' ( (lv_name_1_0= RULE_STRING ) ) otherlv_2= 'primaryActor:' ( (lv_primaryActor_3_0= RULE_STRING ) ) otherlv_4= 'stakeholdersAndGoals:' ( (lv_stakeholders_5_0= ruleBulletItem ) )* otherlv_6= 'preconditions:' ( (lv_preconditions_7_0= ruleBulletItem ) )* otherlv_8= 'postconditions:' ( (lv_postconditions_9_0= ruleBulletItem ) )* otherlv_10= 'mainFlow:' ( (lv_mainSteps_11_0= ruleNumberedStep ) )* otherlv_12= 'extensions:' ( (lv_extensions_13_0= ruleExtensionStep ) )* otherlv_14= 'specialRequirements:' ( (lv_specialRequirements_15_0= ruleBulletItem ) )* otherlv_16= 'technologyAndDataVariations:' ( (lv_technologyVariations_17_0= ruleBulletItem ) )* otherlv_18= 'frequencyOfOccurrence:' ( (lv_frequency_19_0= RULE_STRING ) ) otherlv_20= 'openIssues:' ( (lv_openIssues_21_0= ruleBulletItem ) )* ) )
+            // InternalUseCaseDsl.g:78:2: (otherlv_0= 'useCase' ( (lv_name_1_0= RULE_STRING ) ) otherlv_2= 'primaryActor:' ( (lv_primaryActor_3_0= RULE_STRING ) ) otherlv_4= 'stakeholdersAndGoals:' ( (lv_stakeholders_5_0= ruleBulletItem ) )* otherlv_6= 'preconditions:' ( (lv_preconditions_7_0= ruleBulletItem ) )* otherlv_8= 'postconditions:' ( (lv_postconditions_9_0= ruleBulletItem ) )* otherlv_10= 'mainFlow:' ( (lv_mainSteps_11_0= ruleNumberedStep ) )* otherlv_12= 'extensions:' ( (lv_extensions_13_0= ruleExtensionStep ) )* otherlv_14= 'specialRequirements:' ( (lv_specialRequirements_15_0= ruleBulletItem ) )* otherlv_16= 'technologyAndDataVariations:' ( (lv_technologyVariations_17_0= ruleBulletItem ) )* otherlv_18= 'frequencyOfOccurrence:' ( (lv_frequency_19_0= RULE_STRING ) ) otherlv_20= 'openIssues:' ( (lv_openIssues_21_0= ruleBulletItem ) )* )
             {
-            // InternalUseCaseDsl.g:78:2: (otherlv_0= 'casoUso' ( (lv_name_1_0= RULE_STRING ) ) otherlv_2= 'actorPrimario:' ( (lv_primaryActor_3_0= RULE_STRING ) ) otherlv_4= 'interesadosObjetivos:' ( (lv_stakeholders_5_0= ruleBulletItem ) )* otherlv_6= 'precondiciones:' ( (lv_preconditions_7_0= ruleBulletItem ) )* otherlv_8= 'postcondiciones:' ( (lv_postconditions_9_0= ruleBulletItem ) )* otherlv_10= 'escenarioPrincipal:' ( (lv_mainSteps_11_0= ruleNumberedStep ) )* otherlv_12= 'extensiones:' ( (lv_extensions_13_0= ruleExtensionStep ) )* otherlv_14= 'requisitosEspeciales:' ( (lv_specialRequirements_15_0= ruleBulletItem ) )* otherlv_16= 'variacionesTecnologiaDatos:' ( (lv_technologyVariations_17_0= ruleBulletItem ) )* otherlv_18= 'frecuenciaOcurrencia:' ( (lv_frequency_19_0= RULE_STRING ) ) otherlv_20= 'temasAbiertos:' ( (lv_openIssues_21_0= ruleBulletItem ) )* )
-            // InternalUseCaseDsl.g:79:3: otherlv_0= 'casoUso' ( (lv_name_1_0= RULE_STRING ) ) otherlv_2= 'actorPrimario:' ( (lv_primaryActor_3_0= RULE_STRING ) ) otherlv_4= 'interesadosObjetivos:' ( (lv_stakeholders_5_0= ruleBulletItem ) )* otherlv_6= 'precondiciones:' ( (lv_preconditions_7_0= ruleBulletItem ) )* otherlv_8= 'postcondiciones:' ( (lv_postconditions_9_0= ruleBulletItem ) )* otherlv_10= 'escenarioPrincipal:' ( (lv_mainSteps_11_0= ruleNumberedStep ) )* otherlv_12= 'extensiones:' ( (lv_extensions_13_0= ruleExtensionStep ) )* otherlv_14= 'requisitosEspeciales:' ( (lv_specialRequirements_15_0= ruleBulletItem ) )* otherlv_16= 'variacionesTecnologiaDatos:' ( (lv_technologyVariations_17_0= ruleBulletItem ) )* otherlv_18= 'frecuenciaOcurrencia:' ( (lv_frequency_19_0= RULE_STRING ) ) otherlv_20= 'temasAbiertos:' ( (lv_openIssues_21_0= ruleBulletItem ) )*
+            // InternalUseCaseDsl.g:78:2: (otherlv_0= 'useCase' ( (lv_name_1_0= RULE_STRING ) ) otherlv_2= 'primaryActor:' ( (lv_primaryActor_3_0= RULE_STRING ) ) otherlv_4= 'stakeholdersAndGoals:' ( (lv_stakeholders_5_0= ruleBulletItem ) )* otherlv_6= 'preconditions:' ( (lv_preconditions_7_0= ruleBulletItem ) )* otherlv_8= 'postconditions:' ( (lv_postconditions_9_0= ruleBulletItem ) )* otherlv_10= 'mainFlow:' ( (lv_mainSteps_11_0= ruleNumberedStep ) )* otherlv_12= 'extensions:' ( (lv_extensions_13_0= ruleExtensionStep ) )* otherlv_14= 'specialRequirements:' ( (lv_specialRequirements_15_0= ruleBulletItem ) )* otherlv_16= 'technologyAndDataVariations:' ( (lv_technologyVariations_17_0= ruleBulletItem ) )* otherlv_18= 'frequencyOfOccurrence:' ( (lv_frequency_19_0= RULE_STRING ) ) otherlv_20= 'openIssues:' ( (lv_openIssues_21_0= ruleBulletItem ) )* )
+            // InternalUseCaseDsl.g:79:3: otherlv_0= 'useCase' ( (lv_name_1_0= RULE_STRING ) ) otherlv_2= 'primaryActor:' ( (lv_primaryActor_3_0= RULE_STRING ) ) otherlv_4= 'stakeholdersAndGoals:' ( (lv_stakeholders_5_0= ruleBulletItem ) )* otherlv_6= 'preconditions:' ( (lv_preconditions_7_0= ruleBulletItem ) )* otherlv_8= 'postconditions:' ( (lv_postconditions_9_0= ruleBulletItem ) )* otherlv_10= 'mainFlow:' ( (lv_mainSteps_11_0= ruleNumberedStep ) )* otherlv_12= 'extensions:' ( (lv_extensions_13_0= ruleExtensionStep ) )* otherlv_14= 'specialRequirements:' ( (lv_specialRequirements_15_0= ruleBulletItem ) )* otherlv_16= 'technologyAndDataVariations:' ( (lv_technologyVariations_17_0= ruleBulletItem ) )* otherlv_18= 'frequencyOfOccurrence:' ( (lv_frequency_19_0= RULE_STRING ) ) otherlv_20= 'openIssues:' ( (lv_openIssues_21_0= ruleBulletItem ) )*
             {
             otherlv_0=(Token)match(input,11,FOLLOW_3); 
 
-            			newLeafNode(otherlv_0, grammarAccess.getUseCaseDescriptionAccess().getCasoUsoKeyword_0());
+            			newLeafNode(otherlv_0, grammarAccess.getUseCaseDescriptionAccess().getUseCaseKeyword_0());
             		
             // InternalUseCaseDsl.g:83:3: ( (lv_name_1_0= RULE_STRING ) )
             // InternalUseCaseDsl.g:84:4: (lv_name_1_0= RULE_STRING )
@@ -198,7 +198,7 @@ public class InternalUseCaseDslParser extends AbstractInternalAntlrParser {
 
             otherlv_2=(Token)match(input,12,FOLLOW_3); 
 
-            			newLeafNode(otherlv_2, grammarAccess.getUseCaseDescriptionAccess().getActorPrimarioKeyword_2());
+            			newLeafNode(otherlv_2, grammarAccess.getUseCaseDescriptionAccess().getPrimaryActorKeyword_2());
             		
             // InternalUseCaseDsl.g:105:3: ( (lv_primaryActor_3_0= RULE_STRING ) )
             // InternalUseCaseDsl.g:106:4: (lv_primaryActor_3_0= RULE_STRING )
@@ -228,7 +228,7 @@ public class InternalUseCaseDslParser extends AbstractInternalAntlrParser {
 
             otherlv_4=(Token)match(input,13,FOLLOW_6); 
 
-            			newLeafNode(otherlv_4, grammarAccess.getUseCaseDescriptionAccess().getInteresadosObjetivosKeyword_4());
+            			newLeafNode(otherlv_4, grammarAccess.getUseCaseDescriptionAccess().getStakeholdersAndGoalsKeyword_4());
             		
             // InternalUseCaseDsl.g:127:3: ( (lv_stakeholders_5_0= ruleBulletItem ) )*
             loop1:
@@ -281,7 +281,7 @@ public class InternalUseCaseDslParser extends AbstractInternalAntlrParser {
 
             otherlv_6=(Token)match(input,14,FOLLOW_7); 
 
-            			newLeafNode(otherlv_6, grammarAccess.getUseCaseDescriptionAccess().getPrecondicionesKeyword_6());
+            			newLeafNode(otherlv_6, grammarAccess.getUseCaseDescriptionAccess().getPreconditionsKeyword_6());
             		
             // InternalUseCaseDsl.g:150:3: ( (lv_preconditions_7_0= ruleBulletItem ) )*
             loop2:
@@ -334,7 +334,7 @@ public class InternalUseCaseDslParser extends AbstractInternalAntlrParser {
 
             otherlv_8=(Token)match(input,15,FOLLOW_8); 
 
-            			newLeafNode(otherlv_8, grammarAccess.getUseCaseDescriptionAccess().getPostcondicionesKeyword_8());
+            			newLeafNode(otherlv_8, grammarAccess.getUseCaseDescriptionAccess().getPostconditionsKeyword_8());
             		
             // InternalUseCaseDsl.g:173:3: ( (lv_postconditions_9_0= ruleBulletItem ) )*
             loop3:
@@ -387,7 +387,7 @@ public class InternalUseCaseDslParser extends AbstractInternalAntlrParser {
 
             otherlv_10=(Token)match(input,16,FOLLOW_9); 
 
-            			newLeafNode(otherlv_10, grammarAccess.getUseCaseDescriptionAccess().getEscenarioPrincipalKeyword_10());
+            			newLeafNode(otherlv_10, grammarAccess.getUseCaseDescriptionAccess().getMainFlowKeyword_10());
             		
             // InternalUseCaseDsl.g:196:3: ( (lv_mainSteps_11_0= ruleNumberedStep ) )*
             loop4:
@@ -440,7 +440,7 @@ public class InternalUseCaseDslParser extends AbstractInternalAntlrParser {
 
             otherlv_12=(Token)match(input,17,FOLLOW_10); 
 
-            			newLeafNode(otherlv_12, grammarAccess.getUseCaseDescriptionAccess().getExtensionesKeyword_12());
+            			newLeafNode(otherlv_12, grammarAccess.getUseCaseDescriptionAccess().getExtensionsKeyword_12());
             		
             // InternalUseCaseDsl.g:219:3: ( (lv_extensions_13_0= ruleExtensionStep ) )*
             loop5:
@@ -493,7 +493,7 @@ public class InternalUseCaseDslParser extends AbstractInternalAntlrParser {
 
             otherlv_14=(Token)match(input,18,FOLLOW_11); 
 
-            			newLeafNode(otherlv_14, grammarAccess.getUseCaseDescriptionAccess().getRequisitosEspecialesKeyword_14());
+            			newLeafNode(otherlv_14, grammarAccess.getUseCaseDescriptionAccess().getSpecialRequirementsKeyword_14());
             		
             // InternalUseCaseDsl.g:242:3: ( (lv_specialRequirements_15_0= ruleBulletItem ) )*
             loop6:
@@ -546,7 +546,7 @@ public class InternalUseCaseDslParser extends AbstractInternalAntlrParser {
 
             otherlv_16=(Token)match(input,19,FOLLOW_12); 
 
-            			newLeafNode(otherlv_16, grammarAccess.getUseCaseDescriptionAccess().getVariacionesTecnologiaDatosKeyword_16());
+            			newLeafNode(otherlv_16, grammarAccess.getUseCaseDescriptionAccess().getTechnologyAndDataVariationsKeyword_16());
             		
             // InternalUseCaseDsl.g:265:3: ( (lv_technologyVariations_17_0= ruleBulletItem ) )*
             loop7:
@@ -599,7 +599,7 @@ public class InternalUseCaseDslParser extends AbstractInternalAntlrParser {
 
             otherlv_18=(Token)match(input,20,FOLLOW_3); 
 
-            			newLeafNode(otherlv_18, grammarAccess.getUseCaseDescriptionAccess().getFrecuenciaOcurrenciaKeyword_18());
+            			newLeafNode(otherlv_18, grammarAccess.getUseCaseDescriptionAccess().getFrequencyOfOccurrenceKeyword_18());
             		
             // InternalUseCaseDsl.g:288:3: ( (lv_frequency_19_0= RULE_STRING ) )
             // InternalUseCaseDsl.g:289:4: (lv_frequency_19_0= RULE_STRING )
@@ -629,7 +629,7 @@ public class InternalUseCaseDslParser extends AbstractInternalAntlrParser {
 
             otherlv_20=(Token)match(input,21,FOLLOW_14); 
 
-            			newLeafNode(otherlv_20, grammarAccess.getUseCaseDescriptionAccess().getTemasAbiertosKeyword_20());
+            			newLeafNode(otherlv_20, grammarAccess.getUseCaseDescriptionAccess().getOpenIssuesKeyword_20());
             		
             // InternalUseCaseDsl.g:310:3: ( (lv_openIssues_21_0= ruleBulletItem ) )*
             loop8:

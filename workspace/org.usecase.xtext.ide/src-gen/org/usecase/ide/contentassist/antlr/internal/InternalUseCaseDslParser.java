@@ -22,7 +22,7 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalUseCaseDslParser extends AbstractInternalContentAssistParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_INT", "RULE_ID", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'casoUso'", "'actorPrimario:'", "'interesadosObjetivos:'", "'precondiciones:'", "'postcondiciones:'", "'escenarioPrincipal:'", "'extensiones:'", "'requisitosEspeciales:'", "'variacionesTecnologiaDatos:'", "'frecuenciaOcurrencia:'", "'temasAbiertos:'", "'-'", "'.'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_INT", "RULE_ID", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'useCase'", "'primaryActor:'", "'stakeholdersAndGoals:'", "'preconditions:'", "'postconditions:'", "'mainFlow:'", "'extensions:'", "'specialRequirements:'", "'technologyAndDataVariations:'", "'frequencyOfOccurrence:'", "'openIssues:'", "'-'", "'.'"
     };
     public static final int RULE_STRING=4;
     public static final int RULE_SL_COMMENT=8;
@@ -505,21 +505,21 @@ public class InternalUseCaseDslParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__UseCaseDescription__Group__0__Impl"
-    // InternalUseCaseDsl.g:189:1: rule__UseCaseDescription__Group__0__Impl : ( 'casoUso' ) ;
+    // InternalUseCaseDsl.g:189:1: rule__UseCaseDescription__Group__0__Impl : ( 'useCase' ) ;
     public final void rule__UseCaseDescription__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUseCaseDsl.g:193:1: ( ( 'casoUso' ) )
-            // InternalUseCaseDsl.g:194:1: ( 'casoUso' )
+            // InternalUseCaseDsl.g:193:1: ( ( 'useCase' ) )
+            // InternalUseCaseDsl.g:194:1: ( 'useCase' )
             {
-            // InternalUseCaseDsl.g:194:1: ( 'casoUso' )
-            // InternalUseCaseDsl.g:195:2: 'casoUso'
+            // InternalUseCaseDsl.g:194:1: ( 'useCase' )
+            // InternalUseCaseDsl.g:195:2: 'useCase'
             {
-             before(grammarAccess.getUseCaseDescriptionAccess().getCasoUsoKeyword_0()); 
+             before(grammarAccess.getUseCaseDescriptionAccess().getUseCaseKeyword_0()); 
             match(input,11,FOLLOW_2); 
-             after(grammarAccess.getUseCaseDescriptionAccess().getCasoUsoKeyword_0()); 
+             after(grammarAccess.getUseCaseDescriptionAccess().getUseCaseKeyword_0()); 
 
             }
 
@@ -665,21 +665,21 @@ public class InternalUseCaseDslParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__UseCaseDescription__Group__2__Impl"
-    // InternalUseCaseDsl.g:243:1: rule__UseCaseDescription__Group__2__Impl : ( 'actorPrimario:' ) ;
+    // InternalUseCaseDsl.g:243:1: rule__UseCaseDescription__Group__2__Impl : ( 'primaryActor:' ) ;
     public final void rule__UseCaseDescription__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUseCaseDsl.g:247:1: ( ( 'actorPrimario:' ) )
-            // InternalUseCaseDsl.g:248:1: ( 'actorPrimario:' )
+            // InternalUseCaseDsl.g:247:1: ( ( 'primaryActor:' ) )
+            // InternalUseCaseDsl.g:248:1: ( 'primaryActor:' )
             {
-            // InternalUseCaseDsl.g:248:1: ( 'actorPrimario:' )
-            // InternalUseCaseDsl.g:249:2: 'actorPrimario:'
+            // InternalUseCaseDsl.g:248:1: ( 'primaryActor:' )
+            // InternalUseCaseDsl.g:249:2: 'primaryActor:'
             {
-             before(grammarAccess.getUseCaseDescriptionAccess().getActorPrimarioKeyword_2()); 
+             before(grammarAccess.getUseCaseDescriptionAccess().getPrimaryActorKeyword_2()); 
             match(input,12,FOLLOW_2); 
-             after(grammarAccess.getUseCaseDescriptionAccess().getActorPrimarioKeyword_2()); 
+             after(grammarAccess.getUseCaseDescriptionAccess().getPrimaryActorKeyword_2()); 
 
             }
 
@@ -825,21 +825,21 @@ public class InternalUseCaseDslParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__UseCaseDescription__Group__4__Impl"
-    // InternalUseCaseDsl.g:297:1: rule__UseCaseDescription__Group__4__Impl : ( 'interesadosObjetivos:' ) ;
+    // InternalUseCaseDsl.g:297:1: rule__UseCaseDescription__Group__4__Impl : ( 'stakeholdersAndGoals:' ) ;
     public final void rule__UseCaseDescription__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUseCaseDsl.g:301:1: ( ( 'interesadosObjetivos:' ) )
-            // InternalUseCaseDsl.g:302:1: ( 'interesadosObjetivos:' )
+            // InternalUseCaseDsl.g:301:1: ( ( 'stakeholdersAndGoals:' ) )
+            // InternalUseCaseDsl.g:302:1: ( 'stakeholdersAndGoals:' )
             {
-            // InternalUseCaseDsl.g:302:1: ( 'interesadosObjetivos:' )
-            // InternalUseCaseDsl.g:303:2: 'interesadosObjetivos:'
+            // InternalUseCaseDsl.g:302:1: ( 'stakeholdersAndGoals:' )
+            // InternalUseCaseDsl.g:303:2: 'stakeholdersAndGoals:'
             {
-             before(grammarAccess.getUseCaseDescriptionAccess().getInteresadosObjetivosKeyword_4()); 
+             before(grammarAccess.getUseCaseDescriptionAccess().getStakeholdersAndGoalsKeyword_4()); 
             match(input,13,FOLLOW_2); 
-             after(grammarAccess.getUseCaseDescriptionAccess().getInteresadosObjetivosKeyword_4()); 
+             after(grammarAccess.getUseCaseDescriptionAccess().getStakeholdersAndGoalsKeyword_4()); 
 
             }
 
@@ -1003,21 +1003,21 @@ public class InternalUseCaseDslParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__UseCaseDescription__Group__6__Impl"
-    // InternalUseCaseDsl.g:351:1: rule__UseCaseDescription__Group__6__Impl : ( 'precondiciones:' ) ;
+    // InternalUseCaseDsl.g:351:1: rule__UseCaseDescription__Group__6__Impl : ( 'preconditions:' ) ;
     public final void rule__UseCaseDescription__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUseCaseDsl.g:355:1: ( ( 'precondiciones:' ) )
-            // InternalUseCaseDsl.g:356:1: ( 'precondiciones:' )
+            // InternalUseCaseDsl.g:355:1: ( ( 'preconditions:' ) )
+            // InternalUseCaseDsl.g:356:1: ( 'preconditions:' )
             {
-            // InternalUseCaseDsl.g:356:1: ( 'precondiciones:' )
-            // InternalUseCaseDsl.g:357:2: 'precondiciones:'
+            // InternalUseCaseDsl.g:356:1: ( 'preconditions:' )
+            // InternalUseCaseDsl.g:357:2: 'preconditions:'
             {
-             before(grammarAccess.getUseCaseDescriptionAccess().getPrecondicionesKeyword_6()); 
+             before(grammarAccess.getUseCaseDescriptionAccess().getPreconditionsKeyword_6()); 
             match(input,14,FOLLOW_2); 
-             after(grammarAccess.getUseCaseDescriptionAccess().getPrecondicionesKeyword_6()); 
+             after(grammarAccess.getUseCaseDescriptionAccess().getPreconditionsKeyword_6()); 
 
             }
 
@@ -1181,21 +1181,21 @@ public class InternalUseCaseDslParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__UseCaseDescription__Group__8__Impl"
-    // InternalUseCaseDsl.g:405:1: rule__UseCaseDescription__Group__8__Impl : ( 'postcondiciones:' ) ;
+    // InternalUseCaseDsl.g:405:1: rule__UseCaseDescription__Group__8__Impl : ( 'postconditions:' ) ;
     public final void rule__UseCaseDescription__Group__8__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUseCaseDsl.g:409:1: ( ( 'postcondiciones:' ) )
-            // InternalUseCaseDsl.g:410:1: ( 'postcondiciones:' )
+            // InternalUseCaseDsl.g:409:1: ( ( 'postconditions:' ) )
+            // InternalUseCaseDsl.g:410:1: ( 'postconditions:' )
             {
-            // InternalUseCaseDsl.g:410:1: ( 'postcondiciones:' )
-            // InternalUseCaseDsl.g:411:2: 'postcondiciones:'
+            // InternalUseCaseDsl.g:410:1: ( 'postconditions:' )
+            // InternalUseCaseDsl.g:411:2: 'postconditions:'
             {
-             before(grammarAccess.getUseCaseDescriptionAccess().getPostcondicionesKeyword_8()); 
+             before(grammarAccess.getUseCaseDescriptionAccess().getPostconditionsKeyword_8()); 
             match(input,15,FOLLOW_2); 
-             after(grammarAccess.getUseCaseDescriptionAccess().getPostcondicionesKeyword_8()); 
+             after(grammarAccess.getUseCaseDescriptionAccess().getPostconditionsKeyword_8()); 
 
             }
 
@@ -1359,21 +1359,21 @@ public class InternalUseCaseDslParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__UseCaseDescription__Group__10__Impl"
-    // InternalUseCaseDsl.g:459:1: rule__UseCaseDescription__Group__10__Impl : ( 'escenarioPrincipal:' ) ;
+    // InternalUseCaseDsl.g:459:1: rule__UseCaseDescription__Group__10__Impl : ( 'mainFlow:' ) ;
     public final void rule__UseCaseDescription__Group__10__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUseCaseDsl.g:463:1: ( ( 'escenarioPrincipal:' ) )
-            // InternalUseCaseDsl.g:464:1: ( 'escenarioPrincipal:' )
+            // InternalUseCaseDsl.g:463:1: ( ( 'mainFlow:' ) )
+            // InternalUseCaseDsl.g:464:1: ( 'mainFlow:' )
             {
-            // InternalUseCaseDsl.g:464:1: ( 'escenarioPrincipal:' )
-            // InternalUseCaseDsl.g:465:2: 'escenarioPrincipal:'
+            // InternalUseCaseDsl.g:464:1: ( 'mainFlow:' )
+            // InternalUseCaseDsl.g:465:2: 'mainFlow:'
             {
-             before(grammarAccess.getUseCaseDescriptionAccess().getEscenarioPrincipalKeyword_10()); 
+             before(grammarAccess.getUseCaseDescriptionAccess().getMainFlowKeyword_10()); 
             match(input,16,FOLLOW_2); 
-             after(grammarAccess.getUseCaseDescriptionAccess().getEscenarioPrincipalKeyword_10()); 
+             after(grammarAccess.getUseCaseDescriptionAccess().getMainFlowKeyword_10()); 
 
             }
 
@@ -1537,21 +1537,21 @@ public class InternalUseCaseDslParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__UseCaseDescription__Group__12__Impl"
-    // InternalUseCaseDsl.g:513:1: rule__UseCaseDescription__Group__12__Impl : ( 'extensiones:' ) ;
+    // InternalUseCaseDsl.g:513:1: rule__UseCaseDescription__Group__12__Impl : ( 'extensions:' ) ;
     public final void rule__UseCaseDescription__Group__12__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUseCaseDsl.g:517:1: ( ( 'extensiones:' ) )
-            // InternalUseCaseDsl.g:518:1: ( 'extensiones:' )
+            // InternalUseCaseDsl.g:517:1: ( ( 'extensions:' ) )
+            // InternalUseCaseDsl.g:518:1: ( 'extensions:' )
             {
-            // InternalUseCaseDsl.g:518:1: ( 'extensiones:' )
-            // InternalUseCaseDsl.g:519:2: 'extensiones:'
+            // InternalUseCaseDsl.g:518:1: ( 'extensions:' )
+            // InternalUseCaseDsl.g:519:2: 'extensions:'
             {
-             before(grammarAccess.getUseCaseDescriptionAccess().getExtensionesKeyword_12()); 
+             before(grammarAccess.getUseCaseDescriptionAccess().getExtensionsKeyword_12()); 
             match(input,17,FOLLOW_2); 
-             after(grammarAccess.getUseCaseDescriptionAccess().getExtensionesKeyword_12()); 
+             after(grammarAccess.getUseCaseDescriptionAccess().getExtensionsKeyword_12()); 
 
             }
 
@@ -1715,21 +1715,21 @@ public class InternalUseCaseDslParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__UseCaseDescription__Group__14__Impl"
-    // InternalUseCaseDsl.g:567:1: rule__UseCaseDescription__Group__14__Impl : ( 'requisitosEspeciales:' ) ;
+    // InternalUseCaseDsl.g:567:1: rule__UseCaseDescription__Group__14__Impl : ( 'specialRequirements:' ) ;
     public final void rule__UseCaseDescription__Group__14__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUseCaseDsl.g:571:1: ( ( 'requisitosEspeciales:' ) )
-            // InternalUseCaseDsl.g:572:1: ( 'requisitosEspeciales:' )
+            // InternalUseCaseDsl.g:571:1: ( ( 'specialRequirements:' ) )
+            // InternalUseCaseDsl.g:572:1: ( 'specialRequirements:' )
             {
-            // InternalUseCaseDsl.g:572:1: ( 'requisitosEspeciales:' )
-            // InternalUseCaseDsl.g:573:2: 'requisitosEspeciales:'
+            // InternalUseCaseDsl.g:572:1: ( 'specialRequirements:' )
+            // InternalUseCaseDsl.g:573:2: 'specialRequirements:'
             {
-             before(grammarAccess.getUseCaseDescriptionAccess().getRequisitosEspecialesKeyword_14()); 
+             before(grammarAccess.getUseCaseDescriptionAccess().getSpecialRequirementsKeyword_14()); 
             match(input,18,FOLLOW_2); 
-             after(grammarAccess.getUseCaseDescriptionAccess().getRequisitosEspecialesKeyword_14()); 
+             after(grammarAccess.getUseCaseDescriptionAccess().getSpecialRequirementsKeyword_14()); 
 
             }
 
@@ -1893,21 +1893,21 @@ public class InternalUseCaseDslParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__UseCaseDescription__Group__16__Impl"
-    // InternalUseCaseDsl.g:621:1: rule__UseCaseDescription__Group__16__Impl : ( 'variacionesTecnologiaDatos:' ) ;
+    // InternalUseCaseDsl.g:621:1: rule__UseCaseDescription__Group__16__Impl : ( 'technologyAndDataVariations:' ) ;
     public final void rule__UseCaseDescription__Group__16__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUseCaseDsl.g:625:1: ( ( 'variacionesTecnologiaDatos:' ) )
-            // InternalUseCaseDsl.g:626:1: ( 'variacionesTecnologiaDatos:' )
+            // InternalUseCaseDsl.g:625:1: ( ( 'technologyAndDataVariations:' ) )
+            // InternalUseCaseDsl.g:626:1: ( 'technologyAndDataVariations:' )
             {
-            // InternalUseCaseDsl.g:626:1: ( 'variacionesTecnologiaDatos:' )
-            // InternalUseCaseDsl.g:627:2: 'variacionesTecnologiaDatos:'
+            // InternalUseCaseDsl.g:626:1: ( 'technologyAndDataVariations:' )
+            // InternalUseCaseDsl.g:627:2: 'technologyAndDataVariations:'
             {
-             before(grammarAccess.getUseCaseDescriptionAccess().getVariacionesTecnologiaDatosKeyword_16()); 
+             before(grammarAccess.getUseCaseDescriptionAccess().getTechnologyAndDataVariationsKeyword_16()); 
             match(input,19,FOLLOW_2); 
-             after(grammarAccess.getUseCaseDescriptionAccess().getVariacionesTecnologiaDatosKeyword_16()); 
+             after(grammarAccess.getUseCaseDescriptionAccess().getTechnologyAndDataVariationsKeyword_16()); 
 
             }
 
@@ -2071,21 +2071,21 @@ public class InternalUseCaseDslParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__UseCaseDescription__Group__18__Impl"
-    // InternalUseCaseDsl.g:675:1: rule__UseCaseDescription__Group__18__Impl : ( 'frecuenciaOcurrencia:' ) ;
+    // InternalUseCaseDsl.g:675:1: rule__UseCaseDescription__Group__18__Impl : ( 'frequencyOfOccurrence:' ) ;
     public final void rule__UseCaseDescription__Group__18__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUseCaseDsl.g:679:1: ( ( 'frecuenciaOcurrencia:' ) )
-            // InternalUseCaseDsl.g:680:1: ( 'frecuenciaOcurrencia:' )
+            // InternalUseCaseDsl.g:679:1: ( ( 'frequencyOfOccurrence:' ) )
+            // InternalUseCaseDsl.g:680:1: ( 'frequencyOfOccurrence:' )
             {
-            // InternalUseCaseDsl.g:680:1: ( 'frecuenciaOcurrencia:' )
-            // InternalUseCaseDsl.g:681:2: 'frecuenciaOcurrencia:'
+            // InternalUseCaseDsl.g:680:1: ( 'frequencyOfOccurrence:' )
+            // InternalUseCaseDsl.g:681:2: 'frequencyOfOccurrence:'
             {
-             before(grammarAccess.getUseCaseDescriptionAccess().getFrecuenciaOcurrenciaKeyword_18()); 
+             before(grammarAccess.getUseCaseDescriptionAccess().getFrequencyOfOccurrenceKeyword_18()); 
             match(input,20,FOLLOW_2); 
-             after(grammarAccess.getUseCaseDescriptionAccess().getFrecuenciaOcurrenciaKeyword_18()); 
+             after(grammarAccess.getUseCaseDescriptionAccess().getFrequencyOfOccurrenceKeyword_18()); 
 
             }
 
@@ -2231,21 +2231,21 @@ public class InternalUseCaseDslParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__UseCaseDescription__Group__20__Impl"
-    // InternalUseCaseDsl.g:729:1: rule__UseCaseDescription__Group__20__Impl : ( 'temasAbiertos:' ) ;
+    // InternalUseCaseDsl.g:729:1: rule__UseCaseDescription__Group__20__Impl : ( 'openIssues:' ) ;
     public final void rule__UseCaseDescription__Group__20__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUseCaseDsl.g:733:1: ( ( 'temasAbiertos:' ) )
-            // InternalUseCaseDsl.g:734:1: ( 'temasAbiertos:' )
+            // InternalUseCaseDsl.g:733:1: ( ( 'openIssues:' ) )
+            // InternalUseCaseDsl.g:734:1: ( 'openIssues:' )
             {
-            // InternalUseCaseDsl.g:734:1: ( 'temasAbiertos:' )
-            // InternalUseCaseDsl.g:735:2: 'temasAbiertos:'
+            // InternalUseCaseDsl.g:734:1: ( 'openIssues:' )
+            // InternalUseCaseDsl.g:735:2: 'openIssues:'
             {
-             before(grammarAccess.getUseCaseDescriptionAccess().getTemasAbiertosKeyword_20()); 
+             before(grammarAccess.getUseCaseDescriptionAccess().getOpenIssuesKeyword_20()); 
             match(input,21,FOLLOW_2); 
-             after(grammarAccess.getUseCaseDescriptionAccess().getTemasAbiertosKeyword_20()); 
+             after(grammarAccess.getUseCaseDescriptionAccess().getOpenIssuesKeyword_20()); 
 
             }
 

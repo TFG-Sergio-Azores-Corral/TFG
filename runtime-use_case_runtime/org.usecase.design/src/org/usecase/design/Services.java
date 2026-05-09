@@ -18,6 +18,11 @@ import org.eclipse.ui.ide.IDE;
 
 import org.usecase.usecase.UseCase;
 
+import org.usecase.usecase.Actor;
+import org.usecase.usecase.Association;
+import org.usecase.usecase.Model;
+import org.usecase.usecase.Relation;
+
 /**
  * The services class used by VSM.
  */
@@ -59,28 +64,29 @@ public class Services {
 
             String useCaseName = useCase.getName();
             String safeName = useCaseName.replaceAll("[^a-zA-Z0-9_]", "_");
+            String primaryActorName = getPrimaryActorName(useCase);
 
             IFile descFile = folder.getFile(safeName + ".ucdesc");
 
             if (!descFile.exists()) {
                 String content =
-                        "casoUso \"" + useCaseName + "\"\n\n" +
-                        "actorPrimario: \"TODO\"\n\n" +
-                        "interesadosObjetivos:\n" +
+                		"useCase \"" + useCaseName + "\"\n\n" +
+                        "primaryActor: \"" + primaryActorName + "\"\n\n" +
+                        "stakeholdersAndGoals:\n" +
                         "- \"TODO\"\n\n" +
-                        "precondiciones:\n" +
+                        "preconditions:\n" +
                         "- \"TODO\"\n\n" +
-                        "postcondiciones:\n" +
+                        "postconditions:\n" +
                         "- \"TODO\"\n\n" +
-                        "escenarioPrincipal:\n" +
+                        "mainFlow:\n" +
                         "1. \"TODO\"\n\n" +
-                        "extensiones:\n\n" +
-                        "requisitosEspeciales:\n" +
+                        "extensions:\n\n" +
+                        "specialRequirements:\n" +
                         "- \"TODO\"\n\n" +
-                        "variacionesTecnologiaDatos:\n" +
+                        "technologyAndDataVariations:\n" +
                         "- \"TODO\"\n\n" +
-                        "frecuenciaOcurrencia: \"TODO\"\n\n" +
-                        "temasAbiertos:\n" +
+                        "frequencyOfOccurrence: \"TODO\"\n\n" +
+                        "openIssues:\n" +
                         "- \"TODO\"\n";
 
                 descFile.create(
@@ -101,5 +107,26 @@ public class Services {
         }
 
         return self;
+    }
+    
+    private String getPrimaryActorName(UseCase useCase) {
+        EObject container = useCase.eContainer();
+
+        if (!(container instanceof Model)) {
+            return "TODO";
+        }
+
+        Model model = (Model) container;
+
+        for (Relation relation : model.getRelations()) {
+            if (relation instanceof Association && relation.getTarget() == useCase) {
+                if (relation.getSource() instanceof Actor) {
+                    Actor actor = (Actor) relation.getSource();
+                    return actor.getName();
+                }
+            }
+        }
+
+        return "TODO";
     }
 }
