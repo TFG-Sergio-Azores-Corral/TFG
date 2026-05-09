@@ -2,6 +2,9 @@ package org.usecase.design;
 
 import org.eclipse.emf.ecore.EObject;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import java.io.ByteArrayInputStream;
 import java.nio.charset.StandardCharsets;
 
@@ -65,29 +68,56 @@ public class Services {
             String useCaseName = useCase.getName();
             String safeName = useCaseName.replaceAll("[^a-zA-Z0-9_]", "_");
             String primaryActorName = getPrimaryActorName(useCase);
+            List<String> associatedActorNames = getAssociatedActorNames(useCase);
+            
+            StringBuilder stakeholdersBuilder = new StringBuilder();
+
+            if (associatedActorNames.isEmpty()) {
+                stakeholdersBuilder.append("- \"TODO: TODO\"\n");
+            } else {
+                for (String actorName : associatedActorNames) {
+                    stakeholdersBuilder.append("- \"")
+                            .append(actorName)
+                            .append(": TODO\"\n");
+                }
+            }
 
             IFile descFile = folder.getFile(safeName + ".ucdesc");
 
             if (!descFile.exists()) {
-                String content =
-                		"useCase \"" + useCaseName + "\"\n\n" +
-                        "primaryActor: \"" + primaryActorName + "\"\n\n" +
-                        "stakeholdersAndGoals:\n" +
-                        "- \"TODO\"\n\n" +
-                        "preconditions:\n" +
-                        "- \"TODO\"\n\n" +
-                        "postconditions:\n" +
-                        "- \"TODO\"\n\n" +
-                        "mainFlow:\n" +
-                        "1. \"TODO\"\n\n" +
-                        "extensions:\n\n" +
-                        "specialRequirements:\n" +
-                        "- \"TODO\"\n\n" +
-                        "technologyAndDataVariations:\n" +
-                        "- \"TODO\"\n\n" +
-                        "frequencyOfOccurrence: \"TODO\"\n\n" +
-                        "openIssues:\n" +
-                        "- \"TODO\"\n";
+            	String content =
+            	        "useCase \"" + useCaseName + "\"\n\n" +
+
+            	        "primaryActor: \"" + primaryActorName + "\"\n\n" +
+
+						"stakeholdersAndGoals:\n" +
+						stakeholdersBuilder.toString() + "\n" +
+
+            	        "preconditions:\n" +
+            	        "- \"TODO\"\n\n" +
+
+            	        "postconditions:\n" +
+            	        "- \"TODO\"\n\n" +
+
+            	        "mainFlow:\n" +
+            	        "1. \"TODO\"\n" +
+            	        "2. \"TODO\"\n" +
+            	        "3. \"TODO\"\n\n" +
+
+            	        "extensions:\n" +
+            	        "1 a. \"TODO\"\n" +
+            	        "1 a. 1. \"TODO\"\n\n" +
+
+            	        "specialRequirements:\n" +
+            	        "- \"TODO\"\n\n" +
+
+            	        "technologyAndDataVariations:\n" +
+            	        "- \"TODO\"\n\n" +
+
+            	        "frequencyOfOccurrence: \"TODO\"\n\n" +
+
+            	        "openIssues:\n" +
+            	        "- \"TODO\"\n";
 
                 descFile.create(
                         new ByteArrayInputStream(content.getBytes(StandardCharsets.UTF_8)),
@@ -128,5 +158,31 @@ public class Services {
         }
 
         return "TODO";
+    }
+    
+    private List<String> getAssociatedActorNames(UseCase useCase) {
+        List<String> actorNames = new ArrayList<>();
+
+        EObject container = useCase.eContainer();
+
+        if (!(container instanceof Model)) {
+            return actorNames;
+        }
+
+        Model model = (Model) container;
+
+        for (Relation relation : model.getRelations()) {
+            if (relation instanceof Association && relation.getTarget() == useCase) {
+                if (relation.getSource() instanceof Actor) {
+                    Actor actor = (Actor) relation.getSource();
+
+                    if (actor.getName() != null && !actorNames.contains(actor.getName())) {
+                        actorNames.add(actor.getName());
+                    }
+                }
+            }
+        }
+
+        return actorNames;
     }
 }

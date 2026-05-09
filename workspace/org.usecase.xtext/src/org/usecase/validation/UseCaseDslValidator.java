@@ -15,9 +15,13 @@ import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 
 import org.usecase.usecase.Actor;
+import org.usecase.usecase.Association;
 import org.usecase.usecase.Model;
+import org.usecase.usecase.Relation;
 import org.usecase.usecase.UMLElement;
 import org.usecase.usecase.UsecasePackage;
+import org.usecase.usecase.UseCase;
+import org.usecase.usecasedsl.ExtensionStep;
 
 public class UseCaseDslValidator extends AbstractUseCaseDslValidator {
 
@@ -228,5 +232,141 @@ public class UseCaseDslValidator extends AbstractUseCaseDslValidator {
         }
 
         return null;
+    }
+    
+    @Check
+    public void checkUseCaseExistsInDiagramModel(UseCaseDescription desc) {
+        String useCaseName = desc.getName();
+
+        if (useCaseName == null
+                || useCaseName.isBlank()
+                || useCaseName.equals("TODO")) {
+            return;
+        }
+
+        Model model = loadDiagramModel(desc);
+
+        if (model == null) {
+            warning(
+                "The diagram model could not be loaded to validate the use case name.",
+                UsecasedslPackage.Literals.USE_CASE_DESCRIPTION__NAME
+            );
+            return;
+        }
+
+        boolean useCaseExists = false;
+
+        for (UMLElement element : model.getElements()) {
+            if (element instanceof UseCase) {
+                UseCase useCase = (UseCase) element;
+
+                if (useCaseName.equals(useCase.getName())) {
+                    useCaseExists = true;
+                    break;
+                }
+            }
+        }
+
+        if (!useCaseExists) {
+            warning(
+                "The use case does not exist in the use case diagram model.",
+                UsecasedslPackage.Literals.USE_CASE_DESCRIPTION__NAME
+            );
+        }
+    }
+    
+    @Check
+    public void checkPrimaryActorIsAssociatedWithUseCase(UseCaseDescription desc) {
+        String primaryActorName = desc.getPrimaryActor();
+        String useCaseName = desc.getName();
+
+        if (primaryActorName == null
+                || primaryActorName.isBlank()
+                || primaryActorName.equals("TODO")
+                || useCaseName == null
+                || useCaseName.isBlank()
+                || useCaseName.equals("TODO")) {
+            return;
+        }
+
+        Model model = loadDiagramModel(desc);
+
+        if (model == null) {
+            return;
+        }
+
+        boolean associationExists = false;
+
+        for (Relation relation : model.getRelations()) {
+            if (relation instanceof Association) {
+                if (relation.getSource() instanceof Actor
+                        && relation.getTarget() instanceof UseCase) {
+
+                    Actor actor = (Actor) relation.getSource();
+                    UseCase useCase = (UseCase) relation.getTarget();
+
+                    if (primaryActorName.equals(actor.getName())
+                            && useCaseName.equals(useCase.getName())) {
+                        associationExists = true;
+                        break;
+                    }
+                }
+            }
+        }
+
+        if (!associationExists) {
+            warning(
+                "The primary actor is not associated with this use case in the diagram model.",
+                UsecasedslPackage.Literals.USE_CASE_DESCRIPTION__PRIMARY_ACTOR
+            );
+        }
+    }
+    
+    @Check
+    public void checkExtensionReferencesExistingMainStep(UseCaseDescription desc) {
+        if (desc.getExtensions() == null || desc.getExtensions().isEmpty()) {
+            return;
+        }
+
+        for (ExtensionStep extension : desc.getExtensions()) {
+            int referencedStep = extension.getNumber();
+
+            boolean mainStepExists = false;
+
+            for (NumberedStep step : desc.getMainSteps()) {
+                if (step.getNumber() == referencedStep) {
+                    mainStepExists = true;
+                    break;
+                }
+            }
+
+            if (!mainStepExists) {
+                warning(
+                    "This extension refers to a main flow step that does not exist.",
+                    UsecasedslPackage.Literals.USE_CASE_DESCRIPTION__EXTENSIONS
+                );
+            }
+        }
+    }
+    
+    @Check
+    public void checkMainFlowStepsAreSequential(UseCaseDescription desc) {
+        if (desc.getMainSteps() == null || desc.getMainSteps().isEmpty()) {
+            return;
+        }
+
+        int expectedNumber = 1;
+
+        for (NumberedStep step : desc.getMainSteps()) {
+            if (step.getNumber() != expectedNumber) {
+                warning(
+                    "Main flow steps should be sequential and start at 1.",
+                    UsecasedslPackage.Literals.USE_CASE_DESCRIPTION__MAIN_STEPS
+                );
+                return;
+            }
+
+            expectedNumber++;
+        }
     }
 }
