@@ -1,12 +1,12 @@
-useCase "View items"
+useCase "Checkout"
 
-primaryActor: "Registered Customer"
+primaryActor: "<<Service>> Authentication"
 
 stakeholdersAndGoals:
-- "Registered Customer: TODO"
-- "New Customer: TODO"
 - "<<Service>> Authentication: TODO"
 - "Identity provider: TODO"
+- "Credit Payment Service: TODO"
+- "PayPal: TODO"
 
 preconditions:
 - "TODO"

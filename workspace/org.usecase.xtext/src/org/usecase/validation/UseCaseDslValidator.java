@@ -369,4 +369,126 @@ public class UseCaseDslValidator extends AbstractUseCaseDslValidator {
             expectedNumber++;
         }
     }
+    
+    @Check
+    public void checkStakeholdersExistInDiagramModel(UseCaseDescription desc) {
+        Model model = loadDiagramModel(desc);
+
+        if (model == null) {
+            return;
+        }
+
+        for (BulletItem item : desc.getStakeholders()) {
+            String text = item.getText();
+
+            if (text == null || text.isBlank() || text.equals("TODO")) {
+                continue;
+            }
+
+            String stakeholderName = extractStakeholderName(text);
+
+            if (stakeholderName == null || stakeholderName.isBlank() || stakeholderName.equals("TODO")) {
+                continue;
+            }
+
+            boolean actorExists = false;
+
+            for (UMLElement element : model.getElements()) {
+                if (element instanceof Actor) {
+                    Actor actor = (Actor) element;
+
+                    if (stakeholderName.equals(actor.getName())) {
+                        actorExists = true;
+                        break;
+                    }
+                }
+            }
+
+            if (!actorExists) {
+                warning(
+                    "The stakeholder '" + stakeholderName + "' does not exist as an actor in the diagram model.",
+                    item,
+                    UsecasedslPackage.Literals.BULLET_ITEM__TEXT
+                );
+            }
+        }
+    }
+    
+    @Check
+    public void checkStakeholdersAreAssociatedWithUseCase(UseCaseDescription desc) {
+        Model model = loadDiagramModel(desc);
+
+        if (model == null) {
+            return;
+        }
+
+        String useCaseName = desc.getName();
+
+        if (useCaseName == null || useCaseName.isBlank() || useCaseName.equals("TODO")) {
+            return;
+        }
+
+        for (BulletItem item : desc.getStakeholders()) {
+            String text = item.getText();
+
+            if (text == null || text.isBlank() || text.equals("TODO")) {
+                continue;
+            }
+
+            String stakeholderName = extractStakeholderName(text);
+
+            if (stakeholderName == null || stakeholderName.isBlank() || stakeholderName.equals("TODO")) {
+                continue;
+            }
+
+            boolean associationExists = false;
+
+            for (Relation relation : model.getRelations()) {
+                if (relation instanceof Association
+                        && relation.getSource() instanceof Actor
+                        && relation.getTarget() instanceof UseCase) {
+
+                    Actor actor = (Actor) relation.getSource();
+                    UseCase useCase = (UseCase) relation.getTarget();
+
+                    if (stakeholderName.equals(actor.getName())
+                            && useCaseName.equals(useCase.getName())) {
+                        associationExists = true;
+                        break;
+                    }
+                }
+            }
+
+            if (!associationExists) {
+                warning(
+                    "The stakeholder '" + stakeholderName + "' is not associated with this use case in the diagram model.",
+                    item,
+                    UsecasedslPackage.Literals.BULLET_ITEM__TEXT
+                );
+            }
+        }
+    }          
+    
+    private String extractStakeholderName(String stakeholderText) {
+        int colonIndex = stakeholderText.indexOf(":");
+
+        if (colonIndex == -1) {
+            return stakeholderText.trim();
+        }
+
+        return stakeholderText.substring(0, colonIndex).trim();
+    }
+    
+    @Check
+    public void checkFrequencyOfOccurrenceIsDefined(UseCaseDescription desc) {
+        if (desc.getFrequency() == null
+                || desc.getFrequency().isBlank()
+                || desc.getFrequency().equals("TODO")) {
+
+            warning(
+                "The frequency of occurrence should be defined.",
+                UsecasedslPackage.Literals.USE_CASE_DESCRIPTION__FREQUENCY
+            );
+        }
+    }
 }

@@ -6,6 +6,7 @@
     <semanticResources>descriptions/View_items.ucdesc</semanticResources>
     <semanticResources>descriptions/Make_purchase.ucdesc</semanticResources>
     <semanticResources>descriptions/Register_Client.ucdesc</semanticResources>
+    <semanticResources>descriptions/Checkout.ucdesc</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_zaIP0Cq2EfCKtbXYHGbcyA">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_274fUCq2EfCKtbXYHGbcyA" name="new Use case diagram" repPath="#_27rD8Cq2EfCKtbXYHGbcyA" changeId="1778322261733">
