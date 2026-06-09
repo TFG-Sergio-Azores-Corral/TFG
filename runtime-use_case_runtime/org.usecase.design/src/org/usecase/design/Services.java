@@ -18,17 +18,29 @@ import org.eclipse.core.resources.IResource;
 import org.eclipse.core.resources.ResourcesPlugin;
 import org.eclipse.core.runtime.Path;
 import org.eclipse.emf.common.util.URI;
-import org.eclipse.emf.ecore.EObject;
 import org.eclipse.ui.IWorkbenchPage;
 import org.eclipse.ui.PlatformUI;
 import org.eclipse.ui.ide.IDE;
 
 import org.usecase.usecase.UseCase;
 
-import org.usecase.usecase.Actor;
+import org.usecase.usecase.Actor; 
 import org.usecase.usecase.Association;
 import org.usecase.usecase.Model;
 import org.usecase.usecase.Relation;
+
+import java.io.File;
+
+import org.eclipse.core.runtime.IPath;
+import org.eclipse.core.runtime.NullProgressMonitor;
+import org.eclipse.sirius.business.api.session.Session;
+import org.eclipse.sirius.business.api.session.SessionManager;
+import org.eclipse.sirius.diagram.DDiagram;
+import org.eclipse.sirius.diagram.DDiagramElement;
+import org.eclipse.sirius.ui.business.api.dialect.DialectUIManager;
+import org.eclipse.sirius.ui.business.api.dialect.ExportFormat;
+import org.eclipse.sirius.ui.business.api.dialect.ExportFormat.ExportDocumentFormat;
+import org.eclipse.sirius.common.tools.api.resource.ImageFileFormat;
 
 /**
  * The services class used by VSM.
@@ -190,8 +202,10 @@ public class Services {
         return actorNames;
     }
     
-    public EObject exportUseCaseDescriptionsToWord(EObject self) {
+    public EObject exportUseCaseDescriptionsToWord(EObject self, EObject elementView) {
         try {
+        	IFile diagramImageFile = getOrExportDiagramImage(self, elementView);
+        	
             URI uri = self.eResource().getURI();
 
             if (!uri.isPlatformResource()) {
@@ -240,7 +254,13 @@ public class Services {
                 documentText.append("\n\n");
             }
 
-            byte[] docxBytes = createDocx(documentText.toString());
+            byte[] diagramImageBytes = null;
+
+            if (diagramImageFile != null && diagramImageFile.exists()) {
+                diagramImageBytes = diagramImageFile.getContents().readAllBytes();
+            }
+
+            byte[] docxBytes = createDocx(documentText.toString(), diagramImageBytes);
 
             IFile outputFile = project.getFile("use_case_descriptions.docx");
 
@@ -261,13 +281,18 @@ public class Services {
         return self;
     }
     
-    private byte[] createDocx(String text) throws Exception {
+    private byte[] createDocx(String text, byte[] diagramImageBytes) throws Exception {
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
 
         try (ZipOutputStream zip = new ZipOutputStream(byteArrayOutputStream)) {
-            addZipEntry(zip, "[Content_Types].xml", getContentTypesXml());
+            addZipEntry(zip, "[Content_Types].xml", getContentTypesXml(diagramImageBytes != null));
             addZipEntry(zip, "_rels/.rels", getRelsXml());
-            addZipEntry(zip, "word/document.xml", getDocumentXml(text));
+            addZipEntry(zip, "word/_rels/document.xml.rels", getDocumentRelsXml(diagramImageBytes != null));
+            addZipEntry(zip, "word/document.xml", getDocumentXml(text, diagramImageBytes != null));
+
+            if (diagramImageBytes != null) {
+                addZipBinaryEntry(zip, "word/media/use_case_diagram.png", diagramImageBytes);
+            }
         }
 
         return byteArrayOutputStream.toByteArray();
@@ -280,14 +305,42 @@ public class Services {
         zip.closeEntry();
     }
 
-    private String getContentTypesXml() {
+    private String getContentTypesXml(boolean includeDiagramImage) {
+        String imageContentType = includeDiagramImage
+                ? """
+                    <Default Extension="png" ContentType="image/png"/>
+                  """
+                : "";
+
         return """
                 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
                 <Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">
                     <Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/>
                     <Default Extension="xml" ContentType="application/xml"/>
+                """
+                + imageContentType
+                + """
                     <Override PartName="/word/document.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"/>
                 </Types>
+                """;
+    }
+    
+    private String getDocumentRelsXml(boolean includeDiagramImage) {
+        String imageRelationship = includeDiagramImage
+                ? """
+                    <Relationship Id="rIdDiagram"
+                        Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image"
+                        Target="media/use_case_diagram.png"/>
+                  """
+                : "";
+
+        return """
+                <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+                <Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+                """
+                + imageRelationship
+                + """
+                </Relationships>
                 """;
     }
 
@@ -301,11 +354,24 @@ public class Services {
                 </Relationships>
                 """;
     }
+    
+    private void addZipBinaryEntry(ZipOutputStream zip, String entryName, byte[] content) throws Exception {
+        ZipEntry entry = new ZipEntry(entryName);
+        zip.putNextEntry(entry);
+        zip.write(content);
+        zip.closeEntry();
+    }
 
-    private String getDocumentXml(String text) {
+    private String getDocumentXml(String text, boolean includeDiagramImage) {
         StringBuilder body = new StringBuilder();
 
         addTitle(body, "Use Case Specification Document");
+
+        if (includeDiagramImage) {
+            addHeading1(body, "Use Case Diagram");
+            addDiagramImage(body);
+            addEmptyParagraph(body);
+        }
 
         String[] lines = text.split("\\R");
 
@@ -354,7 +420,12 @@ public class Services {
 
         return """
                 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-                <w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
+                <w:document
+                    xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+                    xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+                    xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing"
+                    xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"
+                    xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
                     <w:body>
                 """
                 + body.toString()
@@ -365,6 +436,52 @@ public class Services {
                     </w:body>
                 </w:document>
                 """;
+    }
+    
+    private void addDiagramImage(StringBuilder body) {
+        body.append("""
+                <w:p>
+                    <w:pPr>
+                        <w:jc w:val="center"/>
+                        <w:spacing w:after="240"/>
+                    </w:pPr>
+                    <w:r>
+                        <w:drawing>
+                            <wp:inline distT="0" distB="0" distL="0" distR="0">
+                                <wp:extent cx="5486400" cy="3657600"/>
+                                <wp:effectExtent l="0" t="0" r="0" b="0"/>
+                                <wp:docPr id="1" name="Use Case Diagram"/>
+                                <wp:cNvGraphicFramePr/>
+                                <a:graphic>
+                                    <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                                        <pic:pic>
+                                            <pic:nvPicPr>
+                                                <pic:cNvPr id="0" name="use_case_diagram.png"/>
+                                                <pic:cNvPicPr/>
+                                            </pic:nvPicPr>
+                                            <pic:blipFill>
+                                                <a:blip r:embed="rIdDiagram"/>
+                                                <a:stretch>
+                                                    <a:fillRect/>
+                                                </a:stretch>
+                                            </pic:blipFill>
+                                            <pic:spPr>
+                                                <a:xfrm>
+                                                    <a:off x="0" y="0"/>
+                                                    <a:ext cx="5486400" cy="3657600"/>
+                                                </a:xfrm>
+                                                <a:prstGeom prst="rect">
+                                                    <a:avLst/>
+                                                </a:prstGeom>
+                                            </pic:spPr>
+                                        </pic:pic>
+                                    </a:graphicData>
+                                </a:graphic>
+                            </wp:inline>
+                        </w:drawing>
+                    </w:r>
+                </w:p>
+                """);
     }
     
     private void addTitle(StringBuilder body, String text) {
@@ -535,5 +652,95 @@ public class Services {
                 .replace(">", "&gt;")
                 .replace("\"", "&quot;")
                 .replace("'", "&apos;");
+    }
+    
+    private IFile getOrExportDiagramImage(EObject semanticElement, EObject elementView) {
+        try {
+            URI semanticUri = semanticElement.eResource().getURI();
+
+            if (!semanticUri.isPlatformResource()) {
+                return null;
+            }
+
+            String platformPath = semanticUri.toPlatformString(true);
+
+            IFile modelFile = ResourcesPlugin.getWorkspace()
+                    .getRoot()
+                    .getFile(new Path(platformPath));
+
+            IProject project = modelFile.getProject();
+
+            IFile outputImage = project.getFile("use_case_diagram.png");
+
+          
+            if (outputImage.exists()) {
+                return outputImage;
+            }
+
+
+            if (outputImage.getLocation() != null && outputImage.getLocation().toFile().exists()) {
+                project.refreshLocal(IResource.DEPTH_INFINITE, null);
+
+                if (outputImage.exists()) {
+                    return outputImage;
+                }
+            }
+
+            DDiagram diagram = getParentDiagram(elementView);
+
+            if (diagram == null) {
+                System.err.println("No Sirius diagram could be found.");
+                return null;
+            }
+
+            Session session = SessionManager.INSTANCE.getSession(semanticElement);
+
+            if (session == null) {
+                System.err.println("No Sirius session could be found.");
+                return null;
+            }
+
+            IPath outputLocation = outputImage.getLocation();
+
+            if (outputLocation == null) {
+                return null;
+            }
+
+            ExportFormat exportFormat = new ExportFormat(
+                    ExportDocumentFormat.NONE,
+                    ImageFileFormat.PNG
+            );
+
+            DialectUIManager.INSTANCE.export(
+                    diagram,
+                    session,
+                    outputLocation,
+                    exportFormat,
+                    new NullProgressMonitor()
+            );
+
+            project.refreshLocal(IResource.DEPTH_INFINITE, null);
+
+            if (outputImage.exists()) {
+                return outputImage;
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
+    private DDiagram getParentDiagram(EObject elementView) {
+        if (elementView instanceof DDiagram) {
+            return (DDiagram) elementView;
+        }
+
+        if (elementView instanceof DDiagramElement) {
+            return ((DDiagramElement) elementView).getParentDiagram();
+        }
+
+        return null;
     }
 }

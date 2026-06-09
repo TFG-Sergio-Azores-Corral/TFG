@@ -153,7 +153,7 @@
             <element name="element"/>
             <elementView name="elementView"/>
             <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:self.exportUseCaseDescriptionsToWord()"/>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:self.exportUseCaseDescriptionsToWord(elementView)"/>
             </initialOperation>
           </ownedTools>
         </toolSections>
