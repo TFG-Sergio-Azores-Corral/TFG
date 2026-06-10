@@ -22,7 +22,61 @@ import org.usecase.usecase.UsecasePackage;
 import org.usecase.usecase.UseCase;
 import org.usecase.usecasedsl.ExtensionStep;
 
+import org.eclipse.core.resources.IFile;
+import org.eclipse.core.resources.IProject;
+import org.eclipse.core.resources.ResourcesPlugin;
+
 public class UseCaseDslValidator extends AbstractUseCaseDslValidator {
+	
+	private URI findUseCaseModelUri(UseCaseDescription desc) {
+	    if (desc.eResource() == null || desc.eResource().getURI() == null) {
+	        return null;
+	    }
+
+	    URI descUri = desc.eResource().getURI();
+
+	    if (!descUri.isPlatformResource()) {
+	        return null;
+	    }
+
+	    String projectName = descUri.segment(1);
+
+	    IProject project = ResourcesPlugin.getWorkspace()
+	            .getRoot()
+	            .getProject(projectName);
+
+	    if (project == null || !project.exists()) {
+	        return null;
+	    }
+
+	    final URI[] result = new URI[1];
+
+	    try {
+	        project.accept(resource -> {
+	            if (result[0] != null) {
+	                return false;
+	            }
+
+	            if (resource instanceof IFile) {
+	                IFile file = (IFile) resource;
+
+	                if ("usecase".equals(file.getFileExtension())) {
+	                    result[0] = URI.createPlatformResourceURI(
+	                            file.getFullPath().toString(),
+	                            true
+	                    );
+	                    return false;
+	                }
+	            }
+
+	            return true;
+	        });
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	    }
+
+	    return result[0];
+	}
 
     @Check
     public void checkPrimaryActorIsDefined(UseCaseDescription desc) {
@@ -196,12 +250,11 @@ public class UseCaseDslValidator extends AbstractUseCaseDslValidator {
                 return null;
             }
 
-            String projectName = descUri.segment(1);
+            URI modelUri = findUseCaseModelUri(desc);
 
-            URI modelUri = URI.createPlatformResourceURI(
-                    "/" + projectName + "/My.usecase",
-                    true
-            );
+            if (modelUri == null) {
+                return null;
+            }
 
             ResourceSet resourceSet = new ResourceSetImpl();
 

@@ -38,21 +38,102 @@ import org.eclipse.sirius.diagram.DDiagramElement;
 import org.eclipse.sirius.ui.business.api.dialect.DialectUIManager;
 import org.eclipse.sirius.ui.business.api.dialect.ExportFormat;
 import org.eclipse.sirius.ui.business.api.dialect.ExportFormat.ExportDocumentFormat;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Shell;
+import org.eclipse.swt.widgets.Text;
 import org.eclipse.sirius.common.tools.api.resource.ImageFileFormat;
 
 import org.eclipse.emf.ecore.util.EcoreUtil;
+import org.eclipse.jface.dialogs.TitleAreaDialog;
+
+
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.layout.GridData;
+import org.eclipse.swt.layout.GridLayout;
+import org.eclipse.swt.widgets.Composite;
+import org.eclipse.swt.widgets.Control;
+import org.eclipse.swt.widgets.Label;
 
 /**
  * The services class used by VSM.
  */
 public class Services {
+	
+	private static class UseCaseEditDialog extends TitleAreaDialog {
+
+	    private final UseCase useCase;
+
+	    private Text nameText;
+	    private Text descriptionText;
+
+	    public UseCaseEditDialog(Shell parentShell, UseCase useCase) {
+	        super(parentShell);
+	        this.useCase = useCase;
+	    }
+
+	    @Override
+	    public void create() {
+	        super.create();
+	        setTitle("Edit Use Case");
+	        setMessage("Edit the name and description of the selected use case.");
+	    }
+
+	    @Override
+	    protected Control createDialogArea(Composite parent) {
+	        Composite area = (Composite) super.createDialogArea(parent);
+
+	        Composite container = new Composite(area, SWT.NONE);
+	        container.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true));
+	        container.setLayout(new GridLayout(2, false));
+
+	        Label nameLabel = new Label(container, SWT.NONE);
+	        nameLabel.setText("Name:");
+
+	        nameText = new Text(container, SWT.BORDER);
+	        nameText.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false));
+	        nameText.setText(useCase.getName() != null ? useCase.getName() : "");
+
+	        Label descriptionLabel = new Label(container, SWT.NONE);
+	        descriptionLabel.setText("Description:");
+	        descriptionLabel.setLayoutData(new GridData(SWT.LEFT, SWT.TOP, false, false));
+
+	        descriptionText = new Text(container, SWT.BORDER | SWT.MULTI | SWT.WRAP | SWT.V_SCROLL);
+	        GridData descriptionData = new GridData(SWT.FILL, SWT.FILL, true, true);
+	        descriptionData.heightHint = 120;
+	        descriptionText.setLayoutData(descriptionData);
+	        descriptionText.setText(useCase.getDescription() != null ? useCase.getDescription() : "");
+
+	        return area;
+	    }
+
+	    @Override
+	    protected void okPressed() {
+	        String newName = nameText.getText();
+	        String newDescription = descriptionText.getText();
+
+	        useCase.setName(newName);
+	        useCase.setDescription(newDescription);
+
+	        super.okPressed();
+	    }
+	}
     
-    /**
-    * See http://help.eclipse.org/neon/index.jsp?topic=%2Forg.eclipse.sirius.doc%2Fdoc%2Findex.html&cp=24 for documentation on how to write service methods.
-    */
-    public EObject myService(EObject self, String arg) {
-       // TODO Auto-generated code
-      return self;
+    public EObject openUseCaseEditDialog(EObject self) {
+        if (!(self instanceof UseCase)) {
+            return self;
+        }
+
+        UseCase useCase = (UseCase) self;
+
+        Display display = Display.getDefault();
+
+        display.syncExec(() -> {
+            Shell shell = display.getActiveShell();
+            UseCaseEditDialog dialog = new UseCaseEditDialog(shell, useCase);
+            dialog.open();
+        });
+
+        return self;
     }
     
     public EObject deleteNodeAndConnectedRelations(EObject element) {

@@ -8,9 +8,11 @@
   <elements xsi:type="usecase:Actor" name="Credit Payment Service"/>
   <elements xsi:type="usecase:Actor" name="PayPal"/>
   <elements xsi:type="usecase:UseCase" name="View items"/>
-  <elements xsi:type="usecase:UseCase" name="Make purchase"/>
+  <elements xsi:type="usecase:UseCase" name="Make purchase" description="Prueba de descripci&#xf3;n"/>
   <elements xsi:type="usecase:UseCase" name="Checkout"/>
   <elements xsi:type="usecase:UseCase" name="Register Client"/>
+  <elements xsi:type="usecase:UseCase" name="Prueba cosita" description=""/>
+  <elements xsi:type="usecase:Actor" name="Juanito del bar"/>
   <relations xsi:type="usecase:Association" source="//@elements.0" target="//@elements.7"/>
   <relations xsi:type="usecase:Association" source="//@elements.0" target="//@elements.8"/>
   <relations xsi:type="usecase:Association" source="//@elements.2" target="//@elements.7"/>
@@ -26,4 +28,6 @@
   <relations xsi:type="usecase:Include" source="//@elements.8" target="//@elements.9"/>
   <relations xsi:type="usecase:Generalization" source="//@elements.0" target="//@elements.1"/>
   <relations xsi:type="usecase:Generalization" source="//@elements.2" target="//@elements.1"/>
+  <relations xsi:type="usecase:Association" source="//@elements.12" target="//@elements.11"/>
+  <relations xsi:type="usecase:Association" source="//@elements.1" target="//@elements.11"/>
 </usecase:Model>
