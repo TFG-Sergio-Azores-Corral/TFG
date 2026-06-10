@@ -4,20 +4,20 @@
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Use case diagram" domainClass="usecase::Model">
       <metamodel href="http://www.example.org/usecase#/"/>
       <defaultLayer name="Default">
-        <nodeMappings name="ActorNode" labelDirectEdit="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editName']" semanticCandidatesExpression="aql:self.elements->filter(usecase::Actor)" domainClass="usecase::Actor">
+        <nodeMappings name="ActorNode" deletionDescription="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='deleteNode']" labelDirectEdit="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editName']" semanticCandidatesExpression="aql:self.elements->filter(usecase::Actor)" domainClass="usecase::Actor">
           <style xsi:type="style:WorkspaceImageDescription" labelSize="12" sizeComputationExpression="6" resizeKind="NSEW" arcHeight="13" workspacePath="/org.usecase.design/icons/actor.svg">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           </style>
         </nodeMappings>
-        <nodeMappings name="UseCaseNode" labelDirectEdit="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editName']" semanticCandidatesExpression="aql:self.elements->filter(usecase::UseCase)" domainClass="usecase::UseCase">
+        <nodeMappings name="UseCaseNode" deletionDescription="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='deleteNode']" labelDirectEdit="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editName']" semanticCandidatesExpression="aql:self.elements->filter(usecase::UseCase)" domainClass="usecase::UseCase">
           <style xsi:type="style:EllipseNodeDescription" labelSize="12" sizeComputationExpression="10" labelPosition="node" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
           </style>
         </nodeMappings>
-        <edgeMappings name="AssociationEdge" label="&lt;&lt;association>>" semanticCandidatesExpression="aql:self.relations->filter(usecase::Association)" sourceMapping="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']" targetMapping="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']" targetFinderExpression="aql:self.target" sourceFinderExpression="aql:self.source" domainClass="usecase::Association" useDomainElement="true">
+        <edgeMappings name="AssociationEdge" label="&lt;&lt;association>>" deletionDescription="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='deleteRelation']" semanticCandidatesExpression="aql:self.relations->filter(usecase::Association)" sourceMapping="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']" targetMapping="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']" targetFinderExpression="aql:self.target" sourceFinderExpression="aql:self.source" domainClass="usecase::Association" useDomainElement="true">
           <style sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="&lt;&lt;association>>">
@@ -25,7 +25,7 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <edgeMappings name="IncluseEdge" label="&lt;&lt;include>>" semanticCandidatesExpression="aql:self.relations->filter(usecase::Include)" sourceMapping="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']" targetMapping="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']" targetFinderExpression="aql:self.target" sourceFinderExpression="aql:self.source" domainClass="usecase::Include" useDomainElement="true">
+        <edgeMappings name="IncluseEdge" label="&lt;&lt;include>>" deletionDescription="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='deleteRelation']" semanticCandidatesExpression="aql:self.relations->filter(usecase::Include)" sourceMapping="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']" targetMapping="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']" targetFinderExpression="aql:self.target" sourceFinderExpression="aql:self.source" domainClass="usecase::Include" useDomainElement="true">
           <style sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="&lt;&lt;include>>">
@@ -33,7 +33,7 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <edgeMappings name="ExtendEdge" label="&lt;&lt;extend>>" semanticCandidatesExpression="aql:self.relations->filter(usecase::Extend)" sourceMapping="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']" targetMapping="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']" targetFinderExpression="aql:self.target" sourceFinderExpression="aql:self.source" domainClass="usecase::Extend" useDomainElement="true">
+        <edgeMappings name="ExtendEdge" label="&lt;&lt;extend>>" deletionDescription="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='deleteRelation']" semanticCandidatesExpression="aql:self.relations->filter(usecase::Extend)" sourceMapping="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']" targetMapping="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']" targetFinderExpression="aql:self.target" sourceFinderExpression="aql:self.source" domainClass="usecase::Extend" useDomainElement="true">
           <style sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="&lt;&lt;extend>>">
@@ -41,7 +41,7 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <edgeMappings name="GeneralizationEdge" label="&lt;&lt;generalization>>" semanticCandidatesExpression="aql:self.relations->filter(usecase::Generalization)" sourceMapping="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode'] //@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']" targetMapping="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode'] //@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']" targetFinderExpression="aql:self.target" sourceFinderExpression="aql:self.source" domainClass="usecase::Generalization" useDomainElement="true">
+        <edgeMappings name="GeneralizationEdge" label="&lt;&lt;generalization>>" deletionDescription="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='deleteRelation']" semanticCandidatesExpression="aql:self.relations->filter(usecase::Generalization)" sourceMapping="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode'] //@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']" targetMapping="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode'] //@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']" targetFinderExpression="aql:self.target" sourceFinderExpression="aql:self.source" domainClass="usecase::Generalization" useDomainElement="true">
           <style sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="&lt;&lt;generalization>>">
@@ -154,6 +154,24 @@
             <elementView name="elementView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:self.exportUseCaseDescriptionsToWord(elementView)"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="deleteRelation" label="Delete relation">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool_1:RemoveElement"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="deleteNode" label="Delete Node">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:element.deleteNodeAndConnectedRelations()"/>
             </initialOperation>
           </ownedTools>
         </toolSections>

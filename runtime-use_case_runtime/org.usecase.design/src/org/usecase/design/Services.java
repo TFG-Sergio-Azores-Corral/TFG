@@ -29,8 +29,6 @@ import org.usecase.usecase.Association;
 import org.usecase.usecase.Model;
 import org.usecase.usecase.Relation;
 
-import java.io.File;
-
 import org.eclipse.core.runtime.IPath;
 import org.eclipse.core.runtime.NullProgressMonitor;
 import org.eclipse.sirius.business.api.session.Session;
@@ -41,6 +39,8 @@ import org.eclipse.sirius.ui.business.api.dialect.DialectUIManager;
 import org.eclipse.sirius.ui.business.api.dialect.ExportFormat;
 import org.eclipse.sirius.ui.business.api.dialect.ExportFormat.ExportDocumentFormat;
 import org.eclipse.sirius.common.tools.api.resource.ImageFileFormat;
+
+import org.eclipse.emf.ecore.util.EcoreUtil;
 
 /**
  * The services class used by VSM.
@@ -53,6 +53,37 @@ public class Services {
     public EObject myService(EObject self, String arg) {
        // TODO Auto-generated code
       return self;
+    }
+    
+    public EObject deleteNodeAndConnectedRelations(EObject element) {
+        if (element == null) {
+            return null;
+        }
+
+        EObject container = element.eContainer();
+
+        if (container instanceof Model) {
+            Model model = (Model) container;
+
+            List<Relation> relationsToDelete = new ArrayList<>();
+
+            for (Relation relation : model.getRelations()) {
+                if (relation.getSource() == element || relation.getTarget() == element) {
+                    relationsToDelete.add(relation);
+                }
+            }
+
+            for (Relation relation : relationsToDelete) {
+                EcoreUtil.delete(relation, true);
+            }
+
+            EcoreUtil.delete(element, true);
+
+            return model;
+        }
+
+        EcoreUtil.delete(element, true);
+        return container;
     }
     
     public EObject openOrCreateUseCaseDescription(EObject self) {

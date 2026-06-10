@@ -1,35 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ASCII"?>
 <usecase:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:usecase="http://www.example.org/usecase">
-  <elements xsi:type="usecase:Actor" name="Web Customer"/>
   <elements xsi:type="usecase:Actor" name="Registered Customer"/>
+  <elements xsi:type="usecase:Actor" name="Web Customer"/>
   <elements xsi:type="usecase:Actor" name="New Customer"/>
-  <elements xsi:type="usecase:UseCase" name="View items"/>
-  <elements xsi:type="usecase:UseCase" name="Make purchase"/>
-  <elements xsi:type="usecase:UseCase" name="Checkout"/>
-  <elements xsi:type="usecase:UseCase" name="Register Client"/>
   <elements xsi:type="usecase:Actor" name="&lt;&lt;Service>> Authentication"/>
   <elements xsi:type="usecase:Actor" name="Identity provider"/>
   <elements xsi:type="usecase:Actor" name="Credit Payment Service"/>
   <elements xsi:type="usecase:Actor" name="PayPal"/>
-  <relations xsi:type="usecase:Association"/>
-  <relations xsi:type="usecase:Include"/>
-  <relations xsi:type="usecase:Association"/>
-  <relations xsi:type="usecase:Include"/>
-  <relations xsi:type="usecase:Extend"/>
-  <relations xsi:type="usecase:Generalization"/>
-  <relations xsi:type="usecase:Generalization" source="//@elements.2" target="//@elements.0"/>
-  <relations xsi:type="usecase:Generalization" source="//@elements.1" target="//@elements.0"/>
-  <relations xsi:type="usecase:Include" source="//@elements.4" target="//@elements.3"/>
-  <relations xsi:type="usecase:Include" source="//@elements.4" target="//@elements.5"/>
-  <relations xsi:type="usecase:Association" source="//@elements.1" target="//@elements.3"/>
-  <relations xsi:type="usecase:Association" source="//@elements.1" target="//@elements.4"/>
-  <relations xsi:type="usecase:Association" source="//@elements.2" target="//@elements.3"/>
-  <relations xsi:type="usecase:Association" source="//@elements.2" target="//@elements.6"/>
-  <relations xsi:type="usecase:Association" source="//@elements.7" target="//@elements.3"/>
-  <relations xsi:type="usecase:Association" source="//@elements.7" target="//@elements.5"/>
-  <relations xsi:type="usecase:Association" source="//@elements.7" target="//@elements.6"/>
-  <relations xsi:type="usecase:Association" source="//@elements.8" target="//@elements.3"/>
-  <relations xsi:type="usecase:Association" source="//@elements.8" target="//@elements.5"/>
-  <relations xsi:type="usecase:Association" source="//@elements.9" target="//@elements.5"/>
-  <relations xsi:type="usecase:Association" source="//@elements.10" target="//@elements.5"/>
+  <elements xsi:type="usecase:UseCase" name="View items"/>
+  <elements xsi:type="usecase:UseCase" name="Make purchase"/>
+  <elements xsi:type="usecase:UseCase" name="Checkout"/>
+  <elements xsi:type="usecase:UseCase" name="Register Client"/>
+  <relations xsi:type="usecase:Association" source="//@elements.0" target="//@elements.7"/>
+  <relations xsi:type="usecase:Association" source="//@elements.0" target="//@elements.8"/>
+  <relations xsi:type="usecase:Association" source="//@elements.2" target="//@elements.7"/>
+  <relations xsi:type="usecase:Association" source="//@elements.2" target="//@elements.10"/>
+  <relations xsi:type="usecase:Association" source="//@elements.3" target="//@elements.7"/>
+  <relations xsi:type="usecase:Association" source="//@elements.3" target="//@elements.9"/>
+  <relations xsi:type="usecase:Association" source="//@elements.3" target="//@elements.10"/>
+  <relations xsi:type="usecase:Association" source="//@elements.4" target="//@elements.7"/>
+  <relations xsi:type="usecase:Association" source="//@elements.4" target="//@elements.9"/>
+  <relations xsi:type="usecase:Association" source="//@elements.5" target="//@elements.9"/>
+  <relations xsi:type="usecase:Association" source="//@elements.6" target="//@elements.9"/>
+  <relations xsi:type="usecase:Include" source="//@elements.8" target="//@elements.7"/>
+  <relations xsi:type="usecase:Include" source="//@elements.8" target="//@elements.9"/>
+  <relations xsi:type="usecase:Generalization" source="//@elements.0" target="//@elements.1"/>
+  <relations xsi:type="usecase:Generalization" source="//@elements.2" target="//@elements.1"/>
 </usecase:Model>

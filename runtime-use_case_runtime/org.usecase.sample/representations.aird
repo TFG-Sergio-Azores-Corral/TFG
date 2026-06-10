@@ -9,7 +9,10 @@
     <semanticResources>descriptions/Checkout.ucdesc</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_zaIP0Cq2EfCKtbXYHGbcyA">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_274fUCq2EfCKtbXYHGbcyA" name="new Use case diagram" repPath="#_27rD8Cq2EfCKtbXYHGbcyA" changeId="1778322261733">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_274fUCq2EfCKtbXYHGbcyA" name="new Use case diagram" repPath="#_27rD8Cq2EfCKtbXYHGbcyA" changeId="1781125886216">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_vnIl8mUQEfGg2elwfTMVPw" name="new Use case diagram2" repPath="#_vnIl8GUQEfGg2elwfTMVPw" changeId="1781126245512">
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']"/>
         <target xmi:type="usecase:Model" href="My.usecase#/"/>
       </ownedRepresentationDescriptors>
@@ -380,22 +383,34 @@
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_923ZpkCdEfCkQ_HGWCveJw" id="(0.5166666666666667,0.0)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_923Zp0CdEfCkQ_HGWCveJw" id="(1.0,0.65)"/>
         </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_HOHeIGTsEfGg2elwfTMVPw" type="4001" element="_HOAweGTsEfGg2elwfTMVPw" source="_baJt2ECdEfCkQ_HGWCveJw" target="_sdQCcECdEfCkQ_HGWCveJw">
+          <children xmi:type="notation:Node" xmi:id="_HOJ6YGTsEfGg2elwfTMVPw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HOJ6YWTsEfGg2elwfTMVPw" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_HOJ6YmTsEfGg2elwfTMVPw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HOJ6Y2TsEfGg2elwfTMVPw" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_HOKhcGTsEfGg2elwfTMVPw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HOKhcWTsEfGg2elwfTMVPw" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_HOHeIWTsEfGg2elwfTMVPw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_HOHeImTsEfGg2elwfTMVPw" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_HOHeI2TsEfGg2elwfTMVPw" points="[0, 0, -170, -65]$[170, 65, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_HOLIgGTsEfGg2elwfTMVPw" id="(1.0,0.49)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_HOLIgWTsEfGg2elwfTMVPw" id="(0.0,0.75)"/>
+        </edges>
       </data>
     </ownedAnnotationEntries>
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_28N2gCq2EfCKtbXYHGbcyA" source="DANNOTATION_CUSTOMIZATION_KEY">
       <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_28OdkCq2EfCKtbXYHGbcyA"/>
     </ownedAnnotationEntries>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_TSTc8ECdEfCkQ_HGWCveJw" name="Web Customer" incomingEdges="_ZTlC4ECdEfCkQ_HGWCveJw _ZyArUECdEfCkQ_HGWCveJw" width="6" height="6" resizeKind="NSEW">
-      <target xmi:type="usecase:Actor" href="My.usecase#//@elements.0"/>
-      <semanticElements xmi:type="usecase:Actor" href="My.usecase#//@elements.0"/>
       <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_TSTc8UCdEfCkQ_HGWCveJw" labelSize="12" workspacePath="/org.usecase.design/icons/actor.svg">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_UrrDoECdEfCkQ_HGWCveJw" name="Registered Customer" outgoingEdges="_ZyArUECdEfCkQ_HGWCveJw _nfYaQECdEfCkQ_HGWCveJw _oRFkBECdEfCkQ_HGWCveJw" width="6" height="6" resizeKind="NSEW">
-      <target xmi:type="usecase:Actor" href="My.usecase#//@elements.1"/>
-      <semanticElements xmi:type="usecase:Actor" href="My.usecase#//@elements.1"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -405,8 +420,6 @@
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_VGXbkECdEfCkQ_HGWCveJw" name="New Customer" outgoingEdges="_ZTlC4ECdEfCkQ_HGWCveJw _pbAZdECdEfCkQ_HGWCveJw _qS31mECdEfCkQ_HGWCveJw" width="6" height="6" resizeKind="NSEW">
-      <target xmi:type="usecase:Actor" href="My.usecase#//@elements.2"/>
-      <semanticElements xmi:type="usecase:Actor" href="My.usecase#//@elements.2"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -415,9 +428,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_sdNmMECdEfCkQ_HGWCveJw" name="&lt;&lt;Service>> Authentication" outgoingEdges="_yd2TAECdEfCkQ_HGWCveJw _0hPuJECdEfCkQ_HGWCveJw _1CNGFECdEfCkQ_HGWCveJw" width="6" height="6" resizeKind="NSEW">
-      <target xmi:type="usecase:Actor" href="My.usecase#//@elements.7"/>
-      <semanticElements xmi:type="usecase:Actor" href="My.usecase#//@elements.7"/>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_sdNmMECdEfCkQ_HGWCveJw" name="&lt;&lt;Service>> Authentication" outgoingEdges="_yd2TAECdEfCkQ_HGWCveJw _0hPuJECdEfCkQ_HGWCveJw _1CNGFECdEfCkQ_HGWCveJw" incomingEdges="_HOAweGTsEfGg2elwfTMVPw" width="6" height="6" resizeKind="NSEW">
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -427,8 +438,6 @@
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_szBeIECdEfCkQ_HGWCveJw" name="Identity provider" outgoingEdges="_5S8iiECdEfCkQ_HGWCveJw _7BXzSECdEfCkQ_HGWCveJw" width="6" height="6" resizeKind="NSEW">
-      <target xmi:type="usecase:Actor" href="My.usecase#//@elements.8"/>
-      <semanticElements xmi:type="usecase:Actor" href="My.usecase#//@elements.8"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -438,8 +447,6 @@
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_tMlNoECdEfCkQ_HGWCveJw" name="Credit Payment Service" outgoingEdges="_8tL05ECdEfCkQ_HGWCveJw" width="6" height="6" resizeKind="NSEW">
-      <target xmi:type="usecase:Actor" href="My.usecase#//@elements.9"/>
-      <semanticElements xmi:type="usecase:Actor" href="My.usecase#//@elements.9"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -449,8 +456,6 @@
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_tj7WoECdEfCkQ_HGWCveJw" name="PayPal" outgoingEdges="_920WckCdEfCkQ_HGWCveJw" width="6" height="6" resizeKind="NSEW">
-      <target xmi:type="usecase:Actor" href="My.usecase#//@elements.10"/>
-      <semanticElements xmi:type="usecase:Actor" href="My.usecase#//@elements.10"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -460,8 +465,6 @@
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_ZTlC4ECdEfCkQ_HGWCveJw" name="&lt;&lt;generalization>>" sourceNode="_VGXbkECdEfCkQ_HGWCveJw" targetNode="_TSTc8ECdEfCkQ_HGWCveJw">
-      <target xmi:type="usecase:Generalization" href="My.usecase#//@relations.6"/>
-      <semanticElements xmi:type="usecase:Generalization" href="My.usecase#//@relations.6"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_ZTlC4UCdEfCkQ_HGWCveJw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='GeneralizationEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_ZTlC4kCdEfCkQ_HGWCveJw" labelSize="12" showIcon="false"/>
@@ -469,17 +472,13 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='GeneralizationEdge']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_ZyArUECdEfCkQ_HGWCveJw" name="&lt;&lt;generalization>>" sourceNode="_UrrDoECdEfCkQ_HGWCveJw" targetNode="_TSTc8ECdEfCkQ_HGWCveJw">
-      <target xmi:type="usecase:Generalization" href="My.usecase#//@relations.7"/>
-      <semanticElements xmi:type="usecase:Generalization" href="My.usecase#//@relations.7"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_ZyArUUCdEfCkQ_HGWCveJw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='GeneralizationEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_ZyArUkCdEfCkQ_HGWCveJw" labelSize="12" showIcon="false"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='GeneralizationEdge']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_baH4oECdEfCkQ_HGWCveJw" name="View items" incomingEdges="_lmV1AECdEfCkQ_HGWCveJw _nfYaQECdEfCkQ_HGWCveJw _pbAZdECdEfCkQ_HGWCveJw _yd2TAECdEfCkQ_HGWCveJw _5S8iiECdEfCkQ_HGWCveJw" width="10" height="10" resizeKind="NSEW">
-      <target xmi:type="usecase:UseCase" href="My.usecase#//@elements.3"/>
-      <semanticElements xmi:type="usecase:UseCase" href="My.usecase#//@elements.3"/>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_baH4oECdEfCkQ_HGWCveJw" name="View items" outgoingEdges="_HOAweGTsEfGg2elwfTMVPw" incomingEdges="_lmV1AECdEfCkQ_HGWCveJw _nfYaQECdEfCkQ_HGWCveJw _pbAZdECdEfCkQ_HGWCveJw _yd2TAECdEfCkQ_HGWCveJw _5S8iiECdEfCkQ_HGWCveJw" width="10" height="10" resizeKind="NSEW">
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -489,8 +488,6 @@
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_eVNJsECdEfCkQ_HGWCveJw" name="Make purchase" outgoingEdges="_lmV1AECdEfCkQ_HGWCveJw _msvcYECdEfCkQ_HGWCveJw" incomingEdges="_oRFkBECdEfCkQ_HGWCveJw" width="10" height="10" resizeKind="NSEW">
-      <target xmi:type="usecase:UseCase" href="My.usecase#//@elements.4"/>
-      <semanticElements xmi:type="usecase:UseCase" href="My.usecase#//@elements.4"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -500,8 +497,6 @@
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_e9AwkECdEfCkQ_HGWCveJw" name="Checkout" incomingEdges="_msvcYECdEfCkQ_HGWCveJw _0hPuJECdEfCkQ_HGWCveJw _7BXzSECdEfCkQ_HGWCveJw _8tL05ECdEfCkQ_HGWCveJw _920WckCdEfCkQ_HGWCveJw" width="10" height="10" resizeKind="NSEW">
-      <target xmi:type="usecase:UseCase" href="My.usecase#//@elements.5"/>
-      <semanticElements xmi:type="usecase:UseCase" href="My.usecase#//@elements.5"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -511,8 +506,6 @@
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_iL2EEECdEfCkQ_HGWCveJw" name="Register Client" incomingEdges="_qS31mECdEfCkQ_HGWCveJw _1CNGFECdEfCkQ_HGWCveJw" width="10" height="10" resizeKind="NSEW">
-      <target xmi:type="usecase:UseCase" href="My.usecase#//@elements.6"/>
-      <semanticElements xmi:type="usecase:UseCase" href="My.usecase#//@elements.6"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -522,8 +515,6 @@
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_lmV1AECdEfCkQ_HGWCveJw" name="&lt;&lt;include>>" sourceNode="_eVNJsECdEfCkQ_HGWCveJw" targetNode="_baH4oECdEfCkQ_HGWCveJw">
-      <target xmi:type="usecase:Include" href="My.usecase#//@relations.8"/>
-      <semanticElements xmi:type="usecase:Include" href="My.usecase#//@relations.8"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_lmV1AUCdEfCkQ_HGWCveJw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='IncluseEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_lmV1AkCdEfCkQ_HGWCveJw" labelSize="12" showIcon="false"/>
@@ -531,8 +522,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='IncluseEdge']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_msvcYECdEfCkQ_HGWCveJw" name="&lt;&lt;include>>" sourceNode="_eVNJsECdEfCkQ_HGWCveJw" targetNode="_e9AwkECdEfCkQ_HGWCveJw">
-      <target xmi:type="usecase:Include" href="My.usecase#//@relations.9"/>
-      <semanticElements xmi:type="usecase:Include" href="My.usecase#//@relations.9"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_msvcYUCdEfCkQ_HGWCveJw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='IncluseEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_msvcYkCdEfCkQ_HGWCveJw" labelSize="12" showIcon="false"/>
@@ -540,8 +529,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='IncluseEdge']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_nfYaQECdEfCkQ_HGWCveJw" name="&lt;&lt;association>>" sourceNode="_UrrDoECdEfCkQ_HGWCveJw" targetNode="_baH4oECdEfCkQ_HGWCveJw">
-      <target xmi:type="usecase:Association" href="My.usecase#//@relations.10"/>
-      <semanticElements xmi:type="usecase:Association" href="My.usecase#//@relations.10"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_nfYaQUCdEfCkQ_HGWCveJw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_nfYaQkCdEfCkQ_HGWCveJw" labelSize="12" showIcon="false"/>
@@ -549,8 +536,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_oRFkBECdEfCkQ_HGWCveJw" name="&lt;&lt;association>>" sourceNode="_UrrDoECdEfCkQ_HGWCveJw" targetNode="_eVNJsECdEfCkQ_HGWCveJw">
-      <target xmi:type="usecase:Association" href="My.usecase#//@relations.11"/>
-      <semanticElements xmi:type="usecase:Association" href="My.usecase#//@relations.11"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_oRGLEECdEfCkQ_HGWCveJw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_oRGLEUCdEfCkQ_HGWCveJw" labelSize="12" showIcon="false"/>
@@ -558,8 +543,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_pbAZdECdEfCkQ_HGWCveJw" name="&lt;&lt;association>>" sourceNode="_VGXbkECdEfCkQ_HGWCveJw" targetNode="_baH4oECdEfCkQ_HGWCveJw">
-      <target xmi:type="usecase:Association" href="My.usecase#//@relations.12"/>
-      <semanticElements xmi:type="usecase:Association" href="My.usecase#//@relations.12"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_pbAZdUCdEfCkQ_HGWCveJw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_pbAZdkCdEfCkQ_HGWCveJw" labelSize="12" showIcon="false"/>
@@ -567,8 +550,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_qS31mECdEfCkQ_HGWCveJw" name="&lt;&lt;association>>" sourceNode="_VGXbkECdEfCkQ_HGWCveJw" targetNode="_iL2EEECdEfCkQ_HGWCveJw">
-      <target xmi:type="usecase:Association" href="My.usecase#//@relations.13"/>
-      <semanticElements xmi:type="usecase:Association" href="My.usecase#//@relations.13"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_qS31mUCdEfCkQ_HGWCveJw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_qS31mkCdEfCkQ_HGWCveJw" labelSize="12" showIcon="false"/>
@@ -576,8 +557,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_yd2TAECdEfCkQ_HGWCveJw" name="&lt;&lt;association>>" sourceNode="_sdNmMECdEfCkQ_HGWCveJw" targetNode="_baH4oECdEfCkQ_HGWCveJw">
-      <target xmi:type="usecase:Association" href="My.usecase#//@relations.14"/>
-      <semanticElements xmi:type="usecase:Association" href="My.usecase#//@relations.14"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_yd2TAUCdEfCkQ_HGWCveJw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_yd2TAkCdEfCkQ_HGWCveJw" labelSize="12" showIcon="false"/>
@@ -585,8 +564,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_0hPuJECdEfCkQ_HGWCveJw" name="&lt;&lt;association>>" sourceNode="_sdNmMECdEfCkQ_HGWCveJw" targetNode="_e9AwkECdEfCkQ_HGWCveJw">
-      <target xmi:type="usecase:Association" href="My.usecase#//@relations.15"/>
-      <semanticElements xmi:type="usecase:Association" href="My.usecase#//@relations.15"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_0hPuJUCdEfCkQ_HGWCveJw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_0hPuJkCdEfCkQ_HGWCveJw" labelSize="12" showIcon="false"/>
@@ -594,8 +571,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_1CNGFECdEfCkQ_HGWCveJw" name="&lt;&lt;association>>" sourceNode="_sdNmMECdEfCkQ_HGWCveJw" targetNode="_iL2EEECdEfCkQ_HGWCveJw">
-      <target xmi:type="usecase:Association" href="My.usecase#//@relations.16"/>
-      <semanticElements xmi:type="usecase:Association" href="My.usecase#//@relations.16"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_1CNGFUCdEfCkQ_HGWCveJw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_1CNGFkCdEfCkQ_HGWCveJw" labelSize="12" showIcon="false"/>
@@ -603,8 +578,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_5S8iiECdEfCkQ_HGWCveJw" name="&lt;&lt;association>>" sourceNode="_szBeIECdEfCkQ_HGWCveJw" targetNode="_baH4oECdEfCkQ_HGWCveJw">
-      <target xmi:type="usecase:Association" href="My.usecase#//@relations.17"/>
-      <semanticElements xmi:type="usecase:Association" href="My.usecase#//@relations.17"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_5S8iiUCdEfCkQ_HGWCveJw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_5S8iikCdEfCkQ_HGWCveJw" labelSize="12" showIcon="false"/>
@@ -612,8 +585,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_7BXzSECdEfCkQ_HGWCveJw" name="&lt;&lt;association>>" sourceNode="_szBeIECdEfCkQ_HGWCveJw" targetNode="_e9AwkECdEfCkQ_HGWCveJw">
-      <target xmi:type="usecase:Association" href="My.usecase#//@relations.18"/>
-      <semanticElements xmi:type="usecase:Association" href="My.usecase#//@relations.18"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_7BXzSUCdEfCkQ_HGWCveJw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_7BXzSkCdEfCkQ_HGWCveJw" labelSize="12" showIcon="false"/>
@@ -621,8 +592,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_8tL05ECdEfCkQ_HGWCveJw" name="&lt;&lt;association>>" sourceNode="_tMlNoECdEfCkQ_HGWCveJw" targetNode="_e9AwkECdEfCkQ_HGWCveJw">
-      <target xmi:type="usecase:Association" href="My.usecase#//@relations.19"/>
-      <semanticElements xmi:type="usecase:Association" href="My.usecase#//@relations.19"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_8tL05UCdEfCkQ_HGWCveJw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_8tL05kCdEfCkQ_HGWCveJw" labelSize="12" showIcon="false"/>
@@ -630,16 +599,651 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_920WckCdEfCkQ_HGWCveJw" name="&lt;&lt;association>>" sourceNode="_tj7WoECdEfCkQ_HGWCveJw" targetNode="_e9AwkECdEfCkQ_HGWCveJw">
-      <target xmi:type="usecase:Association" href="My.usecase#//@relations.20"/>
-      <semanticElements xmi:type="usecase:Association" href="My.usecase#//@relations.20"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_920Wc0CdEfCkQ_HGWCveJw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_920WdECdEfCkQ_HGWCveJw" labelSize="12" showIcon="false"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']"/>
     </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_HOAweGTsEfGg2elwfTMVPw" name="&lt;&lt;generalization>>" sourceNode="_baH4oECdEfCkQ_HGWCveJw" targetNode="_sdNmMECdEfCkQ_HGWCveJw">
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_HOBXgGTsEfGg2elwfTMVPw" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='GeneralizationEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_HOBXgWTsEfGg2elwfTMVPw" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='GeneralizationEdge']"/>
+    </ownedDiagramElements>
     <description xmi:type="description_1:DiagramDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']"/>
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_27yYsCq2EfCKtbXYHGbcyA"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_vnIl8GUQEfGg2elwfTMVPw">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_vnIl9GUQEfGg2elwfTMVPw" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_vnIl9WUQEfGg2elwfTMVPw" type="Sirius" element="_vnIl8GUQEfGg2elwfTMVPw" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_PghZYGUREfGg2elwfTMVPw" type="2001" element="_PgeWEGUREfGg2elwfTMVPw">
+          <children xmi:type="notation:Node" xmi:id="_PghZY2UREfGg2elwfTMVPw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_PghZZGUREfGg2elwfTMVPw" x="61" y="19"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pg0UYWUREfGg2elwfTMVPw" type="3005" element="_PgeWEWUREfGg2elwfTMVPw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_Pg0UYmUREfGg2elwfTMVPw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg0UY2UREfGg2elwfTMVPw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_PghZYWUREfGg2elwfTMVPw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PghZYmUREfGg2elwfTMVPw" x="205" y="75" width="60" height="60"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_Pglq0GUREfGg2elwfTMVPw" type="2001" element="_PgeWE2UREfGg2elwfTMVPw">
+          <children xmi:type="notation:Node" xmi:id="_Pglq02UREfGg2elwfTMVPw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Pglq1GUREfGg2elwfTMVPw" x="61" y="19"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pg0UZGUREfGg2elwfTMVPw" type="3005" element="_PgeWFGUREfGg2elwfTMVPw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_Pg0UZWUREfGg2elwfTMVPw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg0UZmUREfGg2elwfTMVPw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_Pglq0WUREfGg2elwfTMVPw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pglq0mUREfGg2elwfTMVPw" x="105" y="310" width="60" height="60"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_PgoHEGUREfGg2elwfTMVPw" type="2001" element="_PgeWFmUREfGg2elwfTMVPw">
+          <children xmi:type="notation:Node" xmi:id="_PgoHE2UREfGg2elwfTMVPw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_PgoHFGUREfGg2elwfTMVPw" x="61" y="19"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pg07YGUREfGg2elwfTMVPw" type="3005" element="_PgeWF2UREfGg2elwfTMVPw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_Pg07YWUREfGg2elwfTMVPw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg07YmUREfGg2elwfTMVPw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_PgoHEWUREfGg2elwfTMVPw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PgoHEmUREfGg2elwfTMVPw" x="220" y="506" width="60" height="60"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_PgqjUGUREfGg2elwfTMVPw" type="2001" element="_PgeWGWUREfGg2elwfTMVPw">
+          <children xmi:type="notation:Node" xmi:id="_PgqjU2UREfGg2elwfTMVPw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_PgqjVGUREfGg2elwfTMVPw" x="61" y="19"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pg07Y2UREfGg2elwfTMVPw" type="3005" element="_PgeWGmUREfGg2elwfTMVPw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_Pg07ZGUREfGg2elwfTMVPw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg07ZWUREfGg2elwfTMVPw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_PgqjUWUREfGg2elwfTMVPw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PgqjUmUREfGg2elwfTMVPw" x="1115" y="80" width="60" height="60"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_Pgs_kGUREfGg2elwfTMVPw" type="2001" element="_PgeWHGUREfGg2elwfTMVPw">
+          <children xmi:type="notation:Node" xmi:id="_Pgs_k2UREfGg2elwfTMVPw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Pgs_lGUREfGg2elwfTMVPw" x="61" y="19"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pg07ZmUREfGg2elwfTMVPw" type="3005" element="_PgeWHWUREfGg2elwfTMVPw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_Pg07Z2UREfGg2elwfTMVPw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg07aGUREfGg2elwfTMVPw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_Pgs_kWUREfGg2elwfTMVPw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pgs_kmUREfGg2elwfTMVPw" x="1154" y="230" width="60" height="60"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_Pgvb0GUREfGg2elwfTMVPw" type="2001" element="_PgeWH2UREfGg2elwfTMVPw">
+          <children xmi:type="notation:Node" xmi:id="_Pgvb02UREfGg2elwfTMVPw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Pgvb1GUREfGg2elwfTMVPw" x="61" y="19"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pg07aWUREfGg2elwfTMVPw" type="3005" element="_PgeWIGUREfGg2elwfTMVPw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_Pg07amUREfGg2elwfTMVPw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg07a2UREfGg2elwfTMVPw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_Pgvb0WUREfGg2elwfTMVPw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pgvb0mUREfGg2elwfTMVPw" x="1174" y="375" width="60" height="60"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_Pgx4EGUREfGg2elwfTMVPw" type="2001" element="_PgeWImUREfGg2elwfTMVPw">
+          <children xmi:type="notation:Node" xmi:id="_Pgx4E2UREfGg2elwfTMVPw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Pgx4FGUREfGg2elwfTMVPw" x="-2" y="-22"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pg07bGUREfGg2elwfTMVPw" type="3005" element="_PgeWI2UREfGg2elwfTMVPw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_Pg07bWUREfGg2elwfTMVPw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg07bmUREfGg2elwfTMVPw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_Pgx4EWUREfGg2elwfTMVPw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pgx4EmUREfGg2elwfTMVPw" x="1195" y="506" width="60" height="60"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_PgztQGUREfGg2elwfTMVPw" type="2001" element="_PgeWJWUREfGg2elwfTMVPw">
+          <children xmi:type="notation:Node" xmi:id="_Pg0UUGUREfGg2elwfTMVPw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Pg0UUWUREfGg2elwfTMVPw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pg07b2UREfGg2elwfTMVPw" type="3016" element="_PgeWJmUREfGg2elwfTMVPw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_Pg07cGUREfGg2elwfTMVPw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg07cWUREfGg2elwfTMVPw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_PgztQWUREfGg2elwfTMVPw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PgztQmUREfGg2elwfTMVPw" x="700" y="15" width="100" height="100"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_Pg0UUmUREfGg2elwfTMVPw" type="2001" element="_Pge9IGUREfGg2elwfTMVPw">
+          <children xmi:type="notation:Node" xmi:id="_Pg0UVWUREfGg2elwfTMVPw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Pg0UVmUREfGg2elwfTMVPw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pg07cmUREfGg2elwfTMVPw" type="3016" element="_Pge9IWUREfGg2elwfTMVPw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_Pg07c2UREfGg2elwfTMVPw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg07dGUREfGg2elwfTMVPw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_Pg0UU2UREfGg2elwfTMVPw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg0UVGUREfGg2elwfTMVPw" x="675" y="230" width="100" height="100"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_Pg0UV2UREfGg2elwfTMVPw" type="2001" element="_Pge9I2UREfGg2elwfTMVPw">
+          <children xmi:type="notation:Node" xmi:id="_Pg0UWmUREfGg2elwfTMVPw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Pg0UW2UREfGg2elwfTMVPw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pg07dWUREfGg2elwfTMVPw" type="3016" element="_Pge9JGUREfGg2elwfTMVPw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_Pg07dmUREfGg2elwfTMVPw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg07d2UREfGg2elwfTMVPw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_Pg0UWGUREfGg2elwfTMVPw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg0UWWUREfGg2elwfTMVPw" x="670" y="407" width="100" height="100"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_Pg0UXGUREfGg2elwfTMVPw" type="2001" element="_Pge9JmUREfGg2elwfTMVPw">
+          <children xmi:type="notation:Node" xmi:id="_Pg0UX2UREfGg2elwfTMVPw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Pg0UYGUREfGg2elwfTMVPw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pg07eGUREfGg2elwfTMVPw" type="3016" element="_Pge9J2UREfGg2elwfTMVPw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_Pg07eWUREfGg2elwfTMVPw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg07emUREfGg2elwfTMVPw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_Pg0UXWUREfGg2elwfTMVPw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg0UXmUREfGg2elwfTMVPw" x="670" y="545" width="100" height="100"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_vnIl9mUQEfGg2elwfTMVPw"/>
+        <edges xmi:type="notation:Edge" xmi:id="_Pg07e2UREfGg2elwfTMVPw" type="4001" element="_Pge9KWUREfGg2elwfTMVPw" source="_PghZYGUREfGg2elwfTMVPw" target="_PgztQGUREfGg2elwfTMVPw">
+          <children xmi:type="notation:Node" xmi:id="_Pg07f2UREfGg2elwfTMVPw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg07gGUREfGg2elwfTMVPw" x="-6" y="-3"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pg07gWUREfGg2elwfTMVPw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg07gmUREfGg2elwfTMVPw" x="7" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pg07g2UREfGg2elwfTMVPw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg07hGUREfGg2elwfTMVPw" x="3" y="-9"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_Pg07fGUREfGg2elwfTMVPw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_Pg07fWUREfGg2elwfTMVPw" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Pg07fmUREfGg2elwfTMVPw" points="[30, -3, -485, 37]$[465, -37, -50, 3]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Pg1icGUREfGg2elwfTMVPw" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Pg1icWUREfGg2elwfTMVPw" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_Pg1icmUREfGg2elwfTMVPw" type="4001" element="_Pge9LmUREfGg2elwfTMVPw" source="_PghZYGUREfGg2elwfTMVPw" target="_Pg0UUmUREfGg2elwfTMVPw">
+          <children xmi:type="notation:Node" xmi:id="_Pg1idmUREfGg2elwfTMVPw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg1id2UREfGg2elwfTMVPw" x="-4" y="-8"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pg1ieGUREfGg2elwfTMVPw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg1ieWUREfGg2elwfTMVPw" x="-12" y="-3"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pg1iemUREfGg2elwfTMVPw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg1ie2UREfGg2elwfTMVPw" x="-18" y="-3"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_Pg1ic2UREfGg2elwfTMVPw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_Pg1idGUREfGg2elwfTMVPw" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Pg1idWUREfGg2elwfTMVPw" points="[30, 10, -460, -165]$[440, 157, -50, -18]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Pg1ifGUREfGg2elwfTMVPw" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Pg1ifWUREfGg2elwfTMVPw" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_Pg1ifmUREfGg2elwfTMVPw" type="4001" element="_Pge9M2UREfGg2elwfTMVPw" source="_PgoHEGUREfGg2elwfTMVPw" target="_PgztQGUREfGg2elwfTMVPw">
+          <children xmi:type="notation:Node" xmi:id="_Pg1igmUREfGg2elwfTMVPw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg1ig2UREfGg2elwfTMVPw" x="10" y="-5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pg1ihGUREfGg2elwfTMVPw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg1ihWUREfGg2elwfTMVPw" x="6" y="-3"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pg1ihmUREfGg2elwfTMVPw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg1ih2UREfGg2elwfTMVPw" x="-3" y="-1"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_Pg1if2UREfGg2elwfTMVPw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_Pg1igGUREfGg2elwfTMVPw" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Pg1igWUREfGg2elwfTMVPw" points="[30, -29, -470, 442]$[450, -424, -50, 47]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Pg1iiGUREfGg2elwfTMVPw" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Pg1iiWUREfGg2elwfTMVPw" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_Pg1iimUREfGg2elwfTMVPw" type="4001" element="_Pge9OGUREfGg2elwfTMVPw" source="_PgoHEGUREfGg2elwfTMVPw" target="_Pg0UXGUREfGg2elwfTMVPw">
+          <children xmi:type="notation:Node" xmi:id="_Pg1ijmUREfGg2elwfTMVPw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg1ij2UREfGg2elwfTMVPw" x="-45" y="-7"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pg1ikGUREfGg2elwfTMVPw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg1ikWUREfGg2elwfTMVPw" x="-8" y="-5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pg1ikmUREfGg2elwfTMVPw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg1ik2UREfGg2elwfTMVPw" x="-12" y="-4"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_Pg1ii2UREfGg2elwfTMVPw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_Pg1ijGUREfGg2elwfTMVPw" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Pg1ijWUREfGg2elwfTMVPw" points="[30, 3, -440, -56]$[420, 52, -50, -7]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Pg1ilGUREfGg2elwfTMVPw" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Pg1ilWUREfGg2elwfTMVPw" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_Pg1ilmUREfGg2elwfTMVPw" type="4001" element="_Pge9PWUREfGg2elwfTMVPw" source="_PgqjUGUREfGg2elwfTMVPw" target="_PgztQGUREfGg2elwfTMVPw">
+          <children xmi:type="notation:Node" xmi:id="_Pg1immUREfGg2elwfTMVPw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg1im2UREfGg2elwfTMVPw" x="15"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pg1inGUREfGg2elwfTMVPw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg1inWUREfGg2elwfTMVPw" x="3" y="1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pg1inmUREfGg2elwfTMVPw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg1in2UREfGg2elwfTMVPw" x="2"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_Pg1il2UREfGg2elwfTMVPw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_Pg1imGUREfGg2elwfTMVPw" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Pg1imWUREfGg2elwfTMVPw" points="[-30, -4, 365, 41]$[-345, -40, 50, 5]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Pg1ioGUREfGg2elwfTMVPw" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Pg1ioWUREfGg2elwfTMVPw" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_Pg1iomUREfGg2elwfTMVPw" type="4001" element="_Pge9QmUREfGg2elwfTMVPw" source="_PgqjUGUREfGg2elwfTMVPw" target="_Pg0UV2UREfGg2elwfTMVPw">
+          <children xmi:type="notation:Node" xmi:id="_Pg1ipmUREfGg2elwfTMVPw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg1ip2UREfGg2elwfTMVPw" x="34" y="2"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pg1iqGUREfGg2elwfTMVPw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg1iqWUREfGg2elwfTMVPw" x="12" y="2"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pg1iqmUREfGg2elwfTMVPw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg1iq2UREfGg2elwfTMVPw" x="-1" y="1"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_Pg1io2UREfGg2elwfTMVPw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_Pg1ipGUREfGg2elwfTMVPw" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Pg1ipWUREfGg2elwfTMVPw" points="[-30, 24, 395, -323]$[-375, 306, 50, -41]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Pg1irGUREfGg2elwfTMVPw" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Pg1irWUREfGg2elwfTMVPw" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_Pg1irmUREfGg2elwfTMVPw" type="4001" element="_PgfkMGUREfGg2elwfTMVPw" source="_PgqjUGUREfGg2elwfTMVPw" target="_Pg0UXGUREfGg2elwfTMVPw">
+          <children xmi:type="notation:Node" xmi:id="_Pg2JgGUREfGg2elwfTMVPw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg2JgWUREfGg2elwfTMVPw" x="4" y="6"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pg2JgmUREfGg2elwfTMVPw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg2Jg2UREfGg2elwfTMVPw" x="-11" y="-2"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pg2JhGUREfGg2elwfTMVPw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg2JhWUREfGg2elwfTMVPw" x="-17" y="-1"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_Pg1ir2UREfGg2elwfTMVPw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_Pg1isGUREfGg2elwfTMVPw" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Pg1isWUREfGg2elwfTMVPw" points="[-27, 30, 398, -455]$[-382, 435, 43, -50]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Pg2JhmUREfGg2elwfTMVPw" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Pg2Jh2UREfGg2elwfTMVPw" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_Pg2JiGUREfGg2elwfTMVPw" type="4001" element="_PgfkNWUREfGg2elwfTMVPw" source="_Pgs_kGUREfGg2elwfTMVPw" target="_PgztQGUREfGg2elwfTMVPw">
+          <children xmi:type="notation:Node" xmi:id="_Pg2JjGUREfGg2elwfTMVPw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg2JjWUREfGg2elwfTMVPw" x="8" y="3"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pg2JjmUREfGg2elwfTMVPw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg2Jj2UREfGg2elwfTMVPw" x="-19" y="-3"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pg2JkGUREfGg2elwfTMVPw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg2JkWUREfGg2elwfTMVPw" x="-23" y="-2"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_Pg2JiWUREfGg2elwfTMVPw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_Pg2JimUREfGg2elwfTMVPw" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Pg2Ji2UREfGg2elwfTMVPw" points="[-30, -14, 404, 181]$[-384, -173, 50, 22]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Pg2JkmUREfGg2elwfTMVPw" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Pg2Jk2UREfGg2elwfTMVPw" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_Pg2JlGUREfGg2elwfTMVPw" type="4001" element="_PgfkOmUREfGg2elwfTMVPw" source="_Pgs_kGUREfGg2elwfTMVPw" target="_Pg0UV2UREfGg2elwfTMVPw">
+          <children xmi:type="notation:Node" xmi:id="_Pg2JmGUREfGg2elwfTMVPw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg2JmWUREfGg2elwfTMVPw" x="-7" y="11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pg2JmmUREfGg2elwfTMVPw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg2Jm2UREfGg2elwfTMVPw" x="-17" y="9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pg2JnGUREfGg2elwfTMVPw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg2JnWUREfGg2elwfTMVPw" x="-25" y="7"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_Pg2JlWUREfGg2elwfTMVPw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_Pg2JlmUREfGg2elwfTMVPw" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Pg2Jl2UREfGg2elwfTMVPw" points="[-30, 12, 434, -185]$[-414, 175, 50, -22]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Pg2JnmUREfGg2elwfTMVPw" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Pg2Jn2UREfGg2elwfTMVPw" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_Pg2JoGUREfGg2elwfTMVPw" type="4001" element="_PgfkP2UREfGg2elwfTMVPw" source="_Pgvb0GUREfGg2elwfTMVPw" target="_Pg0UV2UREfGg2elwfTMVPw">
+          <children xmi:type="notation:Node" xmi:id="_Pg2JpGUREfGg2elwfTMVPw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg2JpWUREfGg2elwfTMVPw" x="-18" y="8"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pg2JpmUREfGg2elwfTMVPw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg2Jp2UREfGg2elwfTMVPw" x="-15" y="2"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pg2JqGUREfGg2elwfTMVPw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg2JqWUREfGg2elwfTMVPw" x="-17" y="-1"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_Pg2JoWUREfGg2elwfTMVPw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_Pg2JomUREfGg2elwfTMVPw" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Pg2Jo2UREfGg2elwfTMVPw" points="[-30, 3, 454, -49]$[-434, 46, 50, -6]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Pg2JqmUREfGg2elwfTMVPw" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Pg2Jq2UREfGg2elwfTMVPw" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_Pg2JrGUREfGg2elwfTMVPw" type="4001" element="_PgfkRGUREfGg2elwfTMVPw" source="_Pgx4EGUREfGg2elwfTMVPw" target="_Pg0UV2UREfGg2elwfTMVPw">
+          <children xmi:type="notation:Node" xmi:id="_Pg2JsGUREfGg2elwfTMVPw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg2JsWUREfGg2elwfTMVPw" x="-2" y="11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pg2JsmUREfGg2elwfTMVPw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg2Js2UREfGg2elwfTMVPw" x="-1" y="-3"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pg2JtGUREfGg2elwfTMVPw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg2JtWUREfGg2elwfTMVPw" x="3" y="-1"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_Pg2JrWUREfGg2elwfTMVPw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_Pg2JrmUREfGg2elwfTMVPw" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Pg2Jr2UREfGg2elwfTMVPw" points="[-30, -5, 475, 74]$[-455, -72, 50, 7]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Pg2JtmUREfGg2elwfTMVPw" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Pg2Jt2UREfGg2elwfTMVPw" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_Pg2JuGUREfGg2elwfTMVPw" type="4001" element="_PgfkSWUREfGg2elwfTMVPw" source="_Pg0UUmUREfGg2elwfTMVPw" target="_PgztQGUREfGg2elwfTMVPw">
+          <children xmi:type="notation:Node" xmi:id="_Pg2JvGUREfGg2elwfTMVPw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg2JvWUREfGg2elwfTMVPw" x="-26" y="-3"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pg2JvmUREfGg2elwfTMVPw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg2Jv2UREfGg2elwfTMVPw" x="11" y="-3"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pg2JwGUREfGg2elwfTMVPw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg2JwWUREfGg2elwfTMVPw" x="12" y="-3"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_Pg2JuWUREfGg2elwfTMVPw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_Pg2JumUREfGg2elwfTMVPw" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Pg2Ju2UREfGg2elwfTMVPw" points="[5, -50, -20, 165]$[19, -165, -6, 50]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Pg2wkGUREfGg2elwfTMVPw" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Pg2wkWUREfGg2elwfTMVPw" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_Pg2wkmUREfGg2elwfTMVPw" type="4001" element="_PgfkTmUREfGg2elwfTMVPw" source="_Pg0UUmUREfGg2elwfTMVPw" target="_Pg0UV2UREfGg2elwfTMVPw">
+          <children xmi:type="notation:Node" xmi:id="_Pg2wlmUREfGg2elwfTMVPw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg2wl2UREfGg2elwfTMVPw" x="-21" y="2"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pg2wmGUREfGg2elwfTMVPw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg2wmWUREfGg2elwfTMVPw" x="2" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pg2wmmUREfGg2elwfTMVPw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg2wm2UREfGg2elwfTMVPw" x="1" y="3"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_Pg2wk2UREfGg2elwfTMVPw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_Pg2wlGUREfGg2elwfTMVPw" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Pg2wlWUREfGg2elwfTMVPw" points="[-2, 50, 3, -127]$[-4, 127, 1, -50]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Pg2wnGUREfGg2elwfTMVPw" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Pg2wnWUREfGg2elwfTMVPw" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_Pg2wnmUREfGg2elwfTMVPw" type="4001" element="_PgfkU2UREfGg2elwfTMVPw" source="_PghZYGUREfGg2elwfTMVPw" target="_Pglq0GUREfGg2elwfTMVPw">
+          <children xmi:type="notation:Node" xmi:id="_Pg2womUREfGg2elwfTMVPw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg2wo2UREfGg2elwfTMVPw" x="-54" y="1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pg2wpGUREfGg2elwfTMVPw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg2wpWUREfGg2elwfTMVPw" x="33" y="2"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pg2wpmUREfGg2elwfTMVPw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg2wp2UREfGg2elwfTMVPw" x="23" y="2"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_Pg2wn2UREfGg2elwfTMVPw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_Pg2woGUREfGg2elwfTMVPw" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Pg2woWUREfGg2elwfTMVPw" points="[-13, 30, 87, -205]$[-88, 205, 12, -30]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Pg2wqGUREfGg2elwfTMVPw" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Pg2wqWUREfGg2elwfTMVPw" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_Pg2wqmUREfGg2elwfTMVPw" type="4001" element="_PgfkWGUREfGg2elwfTMVPw" source="_PgoHEGUREfGg2elwfTMVPw" target="_Pglq0GUREfGg2elwfTMVPw">
+          <children xmi:type="notation:Node" xmi:id="_Pg2wrmUREfGg2elwfTMVPw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg2wr2UREfGg2elwfTMVPw" x="13"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pg2wsGUREfGg2elwfTMVPw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg2wsWUREfGg2elwfTMVPw" x="2" y="-1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Pg2wsmUREfGg2elwfTMVPw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pg2ws2UREfGg2elwfTMVPw" x="7" y="-2"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_Pg2wq2UREfGg2elwfTMVPw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_Pg2wrGUREfGg2elwfTMVPw" fontName="Segoe UI" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Pg2wrWUREfGg2elwfTMVPw" points="[-18, -30, 97, 166]$[-98, -166, 17, 30]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Pg2wtGUREfGg2elwfTMVPw" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Pg2wtWUREfGg2elwfTMVPw" id="(0.5,0.5)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_vnLpWWUQEfGg2elwfTMVPw" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_vnLpWmUQEfGg2elwfTMVPw"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_PgeWEGUREfGg2elwfTMVPw" name="Registered Customer" outgoingEdges="_Pge9KWUREfGg2elwfTMVPw _Pge9LmUREfGg2elwfTMVPw _PgfkU2UREfGg2elwfTMVPw" width="6" height="6" resizeKind="NSEW">
+      <target xmi:type="usecase:Actor" href="My.usecase#//@elements.0"/>
+      <semanticElements xmi:type="usecase:Actor" href="My.usecase#//@elements.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_PgeWEWUREfGg2elwfTMVPw" labelSize="12" workspacePath="/org.usecase.design/icons/actor.svg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_PgeWE2UREfGg2elwfTMVPw" name="Web Customer" incomingEdges="_PgfkU2UREfGg2elwfTMVPw _PgfkWGUREfGg2elwfTMVPw" width="6" height="6" resizeKind="NSEW">
+      <target xmi:type="usecase:Actor" href="My.usecase#//@elements.1"/>
+      <semanticElements xmi:type="usecase:Actor" href="My.usecase#//@elements.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_PgeWFGUREfGg2elwfTMVPw" labelSize="12" workspacePath="/org.usecase.design/icons/actor.svg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_PgeWFmUREfGg2elwfTMVPw" name="New Customer" outgoingEdges="_Pge9M2UREfGg2elwfTMVPw _Pge9OGUREfGg2elwfTMVPw _PgfkWGUREfGg2elwfTMVPw" width="6" height="6" resizeKind="NSEW">
+      <target xmi:type="usecase:Actor" href="My.usecase#//@elements.2"/>
+      <semanticElements xmi:type="usecase:Actor" href="My.usecase#//@elements.2"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_PgeWF2UREfGg2elwfTMVPw" labelSize="12" workspacePath="/org.usecase.design/icons/actor.svg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_PgeWGWUREfGg2elwfTMVPw" name="&lt;&lt;Service>> Authentication" outgoingEdges="_Pge9PWUREfGg2elwfTMVPw _Pge9QmUREfGg2elwfTMVPw _PgfkMGUREfGg2elwfTMVPw" width="6" height="6" resizeKind="NSEW">
+      <target xmi:type="usecase:Actor" href="My.usecase#//@elements.3"/>
+      <semanticElements xmi:type="usecase:Actor" href="My.usecase#//@elements.3"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_PgeWGmUREfGg2elwfTMVPw" labelSize="12" workspacePath="/org.usecase.design/icons/actor.svg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_PgeWHGUREfGg2elwfTMVPw" name="Identity provider" outgoingEdges="_PgfkNWUREfGg2elwfTMVPw _PgfkOmUREfGg2elwfTMVPw" width="6" height="6" resizeKind="NSEW">
+      <target xmi:type="usecase:Actor" href="My.usecase#//@elements.4"/>
+      <semanticElements xmi:type="usecase:Actor" href="My.usecase#//@elements.4"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_PgeWHWUREfGg2elwfTMVPw" labelSize="12" workspacePath="/org.usecase.design/icons/actor.svg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_PgeWH2UREfGg2elwfTMVPw" name="Credit Payment Service" outgoingEdges="_PgfkP2UREfGg2elwfTMVPw" width="6" height="6" resizeKind="NSEW">
+      <target xmi:type="usecase:Actor" href="My.usecase#//@elements.5"/>
+      <semanticElements xmi:type="usecase:Actor" href="My.usecase#//@elements.5"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_PgeWIGUREfGg2elwfTMVPw" labelSize="12" workspacePath="/org.usecase.design/icons/actor.svg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_PgeWImUREfGg2elwfTMVPw" name="PayPal" outgoingEdges="_PgfkRGUREfGg2elwfTMVPw" width="6" height="6" resizeKind="NSEW">
+      <target xmi:type="usecase:Actor" href="My.usecase#//@elements.6"/>
+      <semanticElements xmi:type="usecase:Actor" href="My.usecase#//@elements.6"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_PgeWI2UREfGg2elwfTMVPw" labelSize="12" workspacePath="/org.usecase.design/icons/actor.svg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_PgeWJWUREfGg2elwfTMVPw" name="View items" incomingEdges="_Pge9KWUREfGg2elwfTMVPw _Pge9M2UREfGg2elwfTMVPw _Pge9PWUREfGg2elwfTMVPw _PgfkNWUREfGg2elwfTMVPw _PgfkSWUREfGg2elwfTMVPw" width="10" height="10" resizeKind="NSEW">
+      <target xmi:type="usecase:UseCase" href="My.usecase#//@elements.7"/>
+      <semanticElements xmi:type="usecase:UseCase" href="My.usecase#//@elements.7"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Ellipse" uid="_PgeWJmUREfGg2elwfTMVPw" labelSize="12" labelPosition="node">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_Pge9IGUREfGg2elwfTMVPw" name="Make purchase" outgoingEdges="_PgfkSWUREfGg2elwfTMVPw _PgfkTmUREfGg2elwfTMVPw" incomingEdges="_Pge9LmUREfGg2elwfTMVPw" width="10" height="10" resizeKind="NSEW">
+      <target xmi:type="usecase:UseCase" href="My.usecase#//@elements.8"/>
+      <semanticElements xmi:type="usecase:UseCase" href="My.usecase#//@elements.8"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Ellipse" uid="_Pge9IWUREfGg2elwfTMVPw" labelSize="12" labelPosition="node">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_Pge9I2UREfGg2elwfTMVPw" name="Checkout" incomingEdges="_Pge9QmUREfGg2elwfTMVPw _PgfkOmUREfGg2elwfTMVPw _PgfkP2UREfGg2elwfTMVPw _PgfkRGUREfGg2elwfTMVPw _PgfkTmUREfGg2elwfTMVPw" width="10" height="10" resizeKind="NSEW">
+      <target xmi:type="usecase:UseCase" href="My.usecase#//@elements.9"/>
+      <semanticElements xmi:type="usecase:UseCase" href="My.usecase#//@elements.9"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Ellipse" uid="_Pge9JGUREfGg2elwfTMVPw" labelSize="12" labelPosition="node">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_Pge9JmUREfGg2elwfTMVPw" name="Register Client" incomingEdges="_Pge9OGUREfGg2elwfTMVPw _PgfkMGUREfGg2elwfTMVPw" width="10" height="10" resizeKind="NSEW">
+      <target xmi:type="usecase:UseCase" href="My.usecase#//@elements.10"/>
+      <semanticElements xmi:type="usecase:UseCase" href="My.usecase#//@elements.10"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Ellipse" uid="_Pge9J2UREfGg2elwfTMVPw" labelSize="12" labelPosition="node">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Pge9KWUREfGg2elwfTMVPw" name="&lt;&lt;association>>" sourceNode="_PgeWEGUREfGg2elwfTMVPw" targetNode="_PgeWJWUREfGg2elwfTMVPw">
+      <target xmi:type="usecase:Association" href="My.usecase#//@relations.0"/>
+      <semanticElements xmi:type="usecase:Association" href="My.usecase#//@relations.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Pge9KmUREfGg2elwfTMVPw" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_Pge9K2UREfGg2elwfTMVPw" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Pge9LmUREfGg2elwfTMVPw" name="&lt;&lt;association>>" sourceNode="_PgeWEGUREfGg2elwfTMVPw" targetNode="_Pge9IGUREfGg2elwfTMVPw">
+      <target xmi:type="usecase:Association" href="My.usecase#//@relations.1"/>
+      <semanticElements xmi:type="usecase:Association" href="My.usecase#//@relations.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Pge9L2UREfGg2elwfTMVPw" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_Pge9MGUREfGg2elwfTMVPw" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Pge9M2UREfGg2elwfTMVPw" name="&lt;&lt;association>>" sourceNode="_PgeWFmUREfGg2elwfTMVPw" targetNode="_PgeWJWUREfGg2elwfTMVPw">
+      <target xmi:type="usecase:Association" href="My.usecase#//@relations.2"/>
+      <semanticElements xmi:type="usecase:Association" href="My.usecase#//@relations.2"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Pge9NGUREfGg2elwfTMVPw" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_Pge9NWUREfGg2elwfTMVPw" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Pge9OGUREfGg2elwfTMVPw" name="&lt;&lt;association>>" sourceNode="_PgeWFmUREfGg2elwfTMVPw" targetNode="_Pge9JmUREfGg2elwfTMVPw">
+      <target xmi:type="usecase:Association" href="My.usecase#//@relations.3"/>
+      <semanticElements xmi:type="usecase:Association" href="My.usecase#//@relations.3"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Pge9OWUREfGg2elwfTMVPw" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_Pge9OmUREfGg2elwfTMVPw" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Pge9PWUREfGg2elwfTMVPw" name="&lt;&lt;association>>" sourceNode="_PgeWGWUREfGg2elwfTMVPw" targetNode="_PgeWJWUREfGg2elwfTMVPw">
+      <target xmi:type="usecase:Association" href="My.usecase#//@relations.4"/>
+      <semanticElements xmi:type="usecase:Association" href="My.usecase#//@relations.4"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Pge9PmUREfGg2elwfTMVPw" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_Pge9P2UREfGg2elwfTMVPw" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Pge9QmUREfGg2elwfTMVPw" name="&lt;&lt;association>>" sourceNode="_PgeWGWUREfGg2elwfTMVPw" targetNode="_Pge9I2UREfGg2elwfTMVPw">
+      <target xmi:type="usecase:Association" href="My.usecase#//@relations.5"/>
+      <semanticElements xmi:type="usecase:Association" href="My.usecase#//@relations.5"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Pge9Q2UREfGg2elwfTMVPw" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_Pge9RGUREfGg2elwfTMVPw" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_PgfkMGUREfGg2elwfTMVPw" name="&lt;&lt;association>>" sourceNode="_PgeWGWUREfGg2elwfTMVPw" targetNode="_Pge9JmUREfGg2elwfTMVPw">
+      <target xmi:type="usecase:Association" href="My.usecase#//@relations.6"/>
+      <semanticElements xmi:type="usecase:Association" href="My.usecase#//@relations.6"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_PgfkMWUREfGg2elwfTMVPw" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_PgfkMmUREfGg2elwfTMVPw" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_PgfkNWUREfGg2elwfTMVPw" name="&lt;&lt;association>>" sourceNode="_PgeWHGUREfGg2elwfTMVPw" targetNode="_PgeWJWUREfGg2elwfTMVPw">
+      <target xmi:type="usecase:Association" href="My.usecase#//@relations.7"/>
+      <semanticElements xmi:type="usecase:Association" href="My.usecase#//@relations.7"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_PgfkNmUREfGg2elwfTMVPw" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_PgfkN2UREfGg2elwfTMVPw" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_PgfkOmUREfGg2elwfTMVPw" name="&lt;&lt;association>>" sourceNode="_PgeWHGUREfGg2elwfTMVPw" targetNode="_Pge9I2UREfGg2elwfTMVPw">
+      <target xmi:type="usecase:Association" href="My.usecase#//@relations.8"/>
+      <semanticElements xmi:type="usecase:Association" href="My.usecase#//@relations.8"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_PgfkO2UREfGg2elwfTMVPw" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_PgfkPGUREfGg2elwfTMVPw" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_PgfkP2UREfGg2elwfTMVPw" name="&lt;&lt;association>>" sourceNode="_PgeWH2UREfGg2elwfTMVPw" targetNode="_Pge9I2UREfGg2elwfTMVPw">
+      <target xmi:type="usecase:Association" href="My.usecase#//@relations.9"/>
+      <semanticElements xmi:type="usecase:Association" href="My.usecase#//@relations.9"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_PgfkQGUREfGg2elwfTMVPw" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_PgfkQWUREfGg2elwfTMVPw" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_PgfkRGUREfGg2elwfTMVPw" name="&lt;&lt;association>>" sourceNode="_PgeWImUREfGg2elwfTMVPw" targetNode="_Pge9I2UREfGg2elwfTMVPw">
+      <target xmi:type="usecase:Association" href="My.usecase#//@relations.10"/>
+      <semanticElements xmi:type="usecase:Association" href="My.usecase#//@relations.10"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_PgfkRWUREfGg2elwfTMVPw" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_PgfkRmUREfGg2elwfTMVPw" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_PgfkSWUREfGg2elwfTMVPw" name="&lt;&lt;include>>" sourceNode="_Pge9IGUREfGg2elwfTMVPw" targetNode="_PgeWJWUREfGg2elwfTMVPw">
+      <target xmi:type="usecase:Include" href="My.usecase#//@relations.11"/>
+      <semanticElements xmi:type="usecase:Include" href="My.usecase#//@relations.11"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_PgfkSmUREfGg2elwfTMVPw" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='IncluseEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_PgfkS2UREfGg2elwfTMVPw" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='IncluseEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_PgfkTmUREfGg2elwfTMVPw" name="&lt;&lt;include>>" sourceNode="_Pge9IGUREfGg2elwfTMVPw" targetNode="_Pge9I2UREfGg2elwfTMVPw">
+      <target xmi:type="usecase:Include" href="My.usecase#//@relations.12"/>
+      <semanticElements xmi:type="usecase:Include" href="My.usecase#//@relations.12"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_PgfkT2UREfGg2elwfTMVPw" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='IncluseEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_PgfkUGUREfGg2elwfTMVPw" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='IncluseEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_PgfkU2UREfGg2elwfTMVPw" name="&lt;&lt;generalization>>" sourceNode="_PgeWEGUREfGg2elwfTMVPw" targetNode="_PgeWE2UREfGg2elwfTMVPw">
+      <target xmi:type="usecase:Generalization" href="My.usecase#//@relations.13"/>
+      <semanticElements xmi:type="usecase:Generalization" href="My.usecase#//@relations.13"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_PgfkVGUREfGg2elwfTMVPw" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='GeneralizationEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_PgfkVWUREfGg2elwfTMVPw" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='GeneralizationEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_PgfkWGUREfGg2elwfTMVPw" name="&lt;&lt;generalization>>" sourceNode="_PgeWFmUREfGg2elwfTMVPw" targetNode="_PgeWE2UREfGg2elwfTMVPw">
+      <target xmi:type="usecase:Generalization" href="My.usecase#//@relations.14"/>
+      <semanticElements xmi:type="usecase:Generalization" href="My.usecase#//@relations.14"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_PggLQGUREfGg2elwfTMVPw" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='GeneralizationEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_PggLQWUREfGg2elwfTMVPw" labelSize="12" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='GeneralizationEdge']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_vnIl8WUQEfGg2elwfTMVPw"/>
     <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer"/>
     <target xmi:type="usecase:Model" href="My.usecase#/"/>
   </diagram:DSemanticDiagram>
