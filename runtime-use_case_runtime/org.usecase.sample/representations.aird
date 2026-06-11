@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:usecase="http://www.example.org/usecase" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
   <viewpoint:DAnalysis uid="_9ugxECqzEfCKtbXYHGbcyA" selectedViews="_zaIP0Cq2EfCKtbXYHGbcyA" version="15.2.0.202303281325">
+    <semanticResources>My.usecase</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_zaIP0Cq2EfCKtbXYHGbcyA">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_vnIl8mUQEfGg2elwfTMVPw" name="new Use case diagram2" repPath="#_vnIl8GUQEfGg2elwfTMVPw" changeId="1781132434037">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_vnIl8mUQEfGg2elwfTMVPw" name="new Use case diagram2" repPath="#_vnIl8GUQEfGg2elwfTMVPw" changeId="1781168826349">
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/org.usecase.design/description/usecase.odesign#//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']"/>
         <target xmi:type="usecase:Model" href="My.usecase#/"/>
       </ownedRepresentationDescriptors>

@@ -1,8 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="usecase" version="12.0.0.2017041100">
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" xmlns:validation="http://www.eclipse.org/sirius/description/validation/1.1.0" name="usecase" version="12.0.0.2017041100">
   <ownedViewpoints name="diagram" modelFileExtension="usecase">
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Use case diagram" domainClass="usecase::Model">
       <metamodel href="http://www.example.org/usecase#/"/>
+      <validationSet>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="Unique Association" level="ERROR" message="Duplicated Association between the same Actor and Use Case." targetClass="usecase::Association">
+          <audits auditExpression="aql:self.isUniqueRelation()"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="Unique Include" level="ERROR" message="Message: Duplicated Include relationship between the same Use Cases." targetClass="usecase::Include">
+          <audits auditExpression="aql:self.isUniqueRelation()"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="Unique Extend" level="ERROR" message="Message: Duplicated Extend relationship between the same Use Cases." targetClass="usecase::Extend">
+          <audits auditExpression="aql:self.isUniqueRelation()"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="Unique Generalization" level="ERROR" message="Message: Duplicated Generalization relationship between the same elements." targetClass="usecase::Generalization">
+          <audits auditExpression="aql:self.isUniqueRelation()"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="Self include" level="ERROR" message="A Use Case cannot include itself." targetClass="usecase::Include">
+          <audits auditExpression="aql:self.hasDifferentSourceAndTarget()"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="Self extend" level="ERROR" message="A Use Case cannot extend itself." targetClass="usecase::Extend">
+          <audits auditExpression="aql:self.hasDifferentSourceAndTarget()"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="Self generalization" level="ERROR" message="An element cannot generalize itself." targetClass="usecase::Generalization">
+          <audits auditExpression="aql:self.hasDifferentSourceAndTarget()"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="Loop generalization" level="ERROR" message="Generalization relationships cannot form cycles." targetClass="usecase::Generalization">
+          <audits auditExpression="aql:self.hasNoGeneralizationCycle()"/>
+        </ownedRules>
+      </validationSet>
       <defaultLayer name="Default">
         <nodeMappings name="ActorNode" deletionDescription="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='deleteNode']" labelDirectEdit="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editName']" semanticCandidatesExpression="aql:self.elements->filter(usecase::Actor)" domainClass="usecase::Actor">
           <style xsi:type="style:WorkspaceImageDescription" labelSize="12" sizeComputationExpression="6" resizeKind="NSEW" arcHeight="13" workspacePath="/org.usecase.design/icons/actor.svg">
@@ -155,10 +181,12 @@
             <sourceViewVariable name="sourceView"/>
             <targetViewVariable name="targetView"/>
             <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:source.eContainer()">
-                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="usecase::Generalization" referenceName="relations" variableName="newExtend">
-                  <subModelOperations xsi:type="tool_1:SetValue" featureName="source" valueExpression="var:source"/>
-                  <subModelOperations xsi:type="tool_1:SetValue" featureName="target" valueExpression="var:target"/>
+              <firstModelOperations xsi:type="tool_1:If" conditionExpression="aql:source.canCreateGeneralization(target)">
+                <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:source.eContainer()">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="usecase::Generalization" referenceName="relations" variableName="newExtend">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="source" valueExpression="var:source"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="target" valueExpression="var:target"/>
+                  </subModelOperations>
                 </subModelOperations>
               </firstModelOperations>
             </initialOperation>

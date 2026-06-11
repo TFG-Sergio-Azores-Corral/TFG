@@ -4,7 +4,9 @@ import org.eclipse.emf.ecore.EObject;
 
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 import java.io.ByteArrayInputStream;
@@ -26,6 +28,7 @@ import org.usecase.usecase.UseCase;
 
 import org.usecase.usecase.Actor; 
 import org.usecase.usecase.Association;
+import org.usecase.usecase.Generalization;
 import org.usecase.usecase.Model;
 import org.usecase.usecase.Relation;
 
@@ -38,6 +41,7 @@ import org.eclipse.sirius.diagram.DDiagramElement;
 import org.eclipse.sirius.ui.business.api.dialect.DialectUIManager;
 import org.eclipse.sirius.ui.business.api.dialect.ExportFormat;
 import org.eclipse.sirius.ui.business.api.dialect.ExportFormat.ExportDocumentFormat;
+import org.eclipse.sirius.viewpoint.DSemanticDecorator;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Text;
@@ -116,6 +120,152 @@ public class Services {
 
 	        super.okPressed();
 	    }
+	}
+	
+	public boolean isUniqueRelation(EObject self) {
+	    if (!(self instanceof Relation)) {
+	        return true;
+	    }
+
+	    Relation relation = (Relation) self;
+
+	    EObject source = relation.getSource();
+	    EObject target = relation.getTarget();
+
+	    if (source == null || target == null) {
+	        return true;
+	    }
+
+	    if (!(relation.eContainer() instanceof Model)) {
+	        return true;
+	    }
+
+	    Model model = (Model) relation.eContainer();
+
+	    int count = 0;
+
+	    for (Relation otherRelation : model.getRelations()) {
+	        if (otherRelation.eClass() != relation.eClass()) {
+	            continue;
+	        }
+
+	        EObject otherSource = otherRelation.getSource();
+	        EObject otherTarget = otherRelation.getTarget();
+
+	        if (otherSource == null || otherTarget == null) {
+	            continue;
+	        }
+
+	        boolean duplicated;
+
+	        if (relation instanceof Association) {
+	            duplicated =
+	                    (source == otherSource && target == otherTarget)
+	                    || (source == otherTarget && target == otherSource);
+	        } else {
+	            duplicated =
+	                    source == otherSource
+	                    && target == otherTarget;
+	        }
+
+	        if (duplicated) {
+	            count++;
+	        }
+	    }
+
+	    return count <= 1;
+	}
+	
+	public boolean hasDifferentSourceAndTarget(EObject self) {
+	    if (!(self instanceof Relation)) {
+	        return true;
+	    }
+
+	    Relation relation = (Relation) self;
+
+	    EObject source = relation.getSource();
+	    EObject target = relation.getTarget();
+
+	    if (source == null || target == null) {
+	        return true;
+	    }
+
+	    return source != target;
+	}
+	
+	public boolean canCreateGeneralization(EObject source, EObject target) {
+
+	    if (source == null || target == null) {
+	        return false;
+	    }
+
+	    boolean actorGeneralization =
+	            source instanceof Actor
+	            && target instanceof Actor;
+
+	    boolean useCaseGeneralization =
+	            source instanceof UseCase
+	            && target instanceof UseCase;
+
+	    boolean result = actorGeneralization || useCaseGeneralization;
+
+	    return result;
+	}
+	
+	public boolean hasNoGeneralizationCycle(EObject self) {
+	    if (!(self instanceof Generalization)) {
+	        return true;
+	    }
+
+	    Generalization generalization = (Generalization) self;
+
+	    EObject source = generalization.getSource();
+	    EObject target = generalization.getTarget();
+
+	    if (source == null || target == null) {
+	        return true;
+	    }
+
+	    if (!(generalization.eContainer() instanceof Model)) {
+	        return true;
+	    }
+
+	    Model model = (Model) generalization.eContainer();
+
+	    return !hasPathToSource(model, target, source, new HashSet<EObject>());
+	}
+	
+	private boolean hasPathToSource(Model model, EObject current, EObject source, Set<EObject> visited) {
+	    if (current == null) {
+	        return false;
+	    }
+
+	    if (current == source) {
+	        return true;
+	    }
+
+	    if (visited.contains(current)) {
+	        return false;
+	    }
+
+	    visited.add(current);
+
+	    for (Relation relation : model.getRelations()) {
+	        if (relation instanceof Generalization) {
+	            Generalization generalization = (Generalization) relation;
+
+	            EObject relationSource = generalization.getSource();
+	            EObject relationTarget = generalization.getTarget();
+
+	            if (relationSource == current) {
+	                if (hasPathToSource(model, relationTarget, source, visited)) {
+	                    return true;
+	                }
+	            }
+	        }
+	    }
+
+	    return false;
 	}
     
     public EObject openUseCaseEditDialog(EObject self) {
