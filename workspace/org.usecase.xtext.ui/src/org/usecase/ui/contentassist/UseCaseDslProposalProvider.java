@@ -84,11 +84,8 @@ public class UseCaseDslProposalProvider extends AbstractUseCaseDslProposalProvid
             Assignment assignment,
             ContentAssistContext context,
             ICompletionProposalAcceptor acceptor) {
-    	
-    	System.out.println("CONTENT ASSIST PRIMARY ACTOR");
 
         if (!(model instanceof UseCaseDescription)) {
-        	System.out.println("pos me voy");
             super.completeUseCaseDescription_PrimaryActor(model, assignment, context, acceptor);
             return;
         }

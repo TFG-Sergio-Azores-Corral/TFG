@@ -193,10 +193,8 @@ public class UseCaseDslValidator extends AbstractUseCaseDslValidator {
     
     @Check
     public void checkPrimaryActorExistsInDiagramModel(UseCaseDescription desc) {
-    	System.out.println("VALIDATING PRIMARY ACTOR");
 
 	    String primaryActorName = desc.getPrimaryActor();
-	    System.out.println("Primary actor: " + primaryActorName);
 
 
         if (primaryActorName == null
@@ -206,8 +204,6 @@ public class UseCaseDslValidator extends AbstractUseCaseDslValidator {
         }
         
         Model model = loadDiagramModel(desc);
-        System.out.println("Loaded model: " + model);
-
 
         if (model == null) {
             warning(
