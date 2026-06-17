@@ -1,55 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="usecase" version="12.0.0.2017041100">
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" xmlns:validation="http://www.eclipse.org/sirius/description/validation/1.1.0" name="usecase" version="12.0.0.2017041100">
   <ownedViewpoints name="diagram" modelFileExtension="usecase">
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Use case diagram" domainClass="usecase::Model">
       <metamodel href="http://www.example.org/usecase#/"/>
+      <validationSet>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="Unique Association" level="ERROR" message="Duplicated Association between the same Actor and Use Case." targetClass="usecase::Association">
+          <audits auditExpression="aql:self.isUniqueRelation()"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="Unique Include" level="ERROR" message="Message: Duplicated Include relationship between the same Use Cases." targetClass="usecase::Include">
+          <audits auditExpression="aql:self.isUniqueRelation()"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="Unique Extend" level="ERROR" message="Message: Duplicated Extend relationship between the same Use Cases." targetClass="usecase::Extend">
+          <audits auditExpression="aql:self.isUniqueRelation()"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="Unique Generalization" level="ERROR" message="Message: Duplicated Generalization relationship between the same elements." targetClass="usecase::Generalization">
+          <audits auditExpression="aql:self.isUniqueRelation()"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="Self include" level="ERROR" message="A Use Case cannot include itself." targetClass="usecase::Include">
+          <audits auditExpression="aql:self.hasDifferentSourceAndTarget()"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="Self extend" level="ERROR" message="A Use Case cannot extend itself." targetClass="usecase::Extend">
+          <audits auditExpression="aql:self.hasDifferentSourceAndTarget()"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="Self generalization" level="ERROR" message="An element cannot generalize itself." targetClass="usecase::Generalization">
+          <audits auditExpression="aql:self.hasDifferentSourceAndTarget()"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="Loop generalization" level="ERROR" message="Generalization relationships cannot form cycles." targetClass="usecase::Generalization">
+          <audits auditExpression="aql:self.hasNoGeneralizationCycle()"/>
+        </ownedRules>
+      </validationSet>
       <defaultLayer name="Default">
-        <nodeMappings name="ActorNode" labelDirectEdit="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editName']" semanticCandidatesExpression="aql:self.elements->filter(usecase::Actor)" domainClass="usecase::Actor">
+        <nodeMappings name="ActorNode" deletionDescription="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='deleteNode']" labelDirectEdit="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editName']" semanticCandidatesExpression="aql:self.elements->filter(usecase::Actor)" domainClass="usecase::Actor">
           <style xsi:type="style:WorkspaceImageDescription" labelSize="12" sizeComputationExpression="6" resizeKind="NSEW" arcHeight="13" workspacePath="/org.usecase.design/icons/actor.svg">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           </style>
         </nodeMappings>
-        <nodeMappings name="UseCaseNode" labelDirectEdit="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editName']" semanticCandidatesExpression="aql:self.elements->filter(usecase::UseCase)" domainClass="usecase::UseCase">
+        <nodeMappings name="UseCaseNode" deletionDescription="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='deleteNode']" labelDirectEdit="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='editName']" semanticCandidatesExpression="aql:self.elements->filter(usecase::UseCase)" doubleClickDescription="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='Edit%20Use%20Case']" domainClass="usecase::UseCase">
           <style xsi:type="style:EllipseNodeDescription" labelSize="12" sizeComputationExpression="10" labelPosition="node" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
           </style>
         </nodeMappings>
-        <edgeMappings name="AssociationEdge" label="&lt;&lt;association>>" semanticCandidatesExpression="aql:self.relations->filter(usecase::Association)" sourceMapping="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']" targetMapping="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']" targetFinderExpression="aql:self.target" sourceFinderExpression="aql:self.source" domainClass="usecase::Association" useDomainElement="true">
-          <style sizeComputationExpression="2">
+        <edgeMappings name="AssociationEdge" deletionDescription="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='deleteRelation']" semanticCandidatesExpression="aql:self.relations->filter(usecase::Association)" sourceMapping="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']" targetMapping="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']" targetFinderExpression="aql:self.target" sourceFinderExpression="aql:self.source" domainClass="usecase::Association" useDomainElement="true">
+          <style targetArrow="NoDecoration" sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-            <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="&lt;&lt;association>>">
+          </style>
+        </edgeMappings>
+        <edgeMappings name="IncludeEdge" label="&lt;&lt;includes>>" deletionDescription="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='deleteRelation']" semanticCandidatesExpression="aql:self.relations->filter(usecase::Include)" sourceMapping="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']" targetMapping="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']" targetFinderExpression="aql:self.target" sourceFinderExpression="aql:self.source" domainClass="usecase::Include" useDomainElement="true">
+          <style lineStyle="dash" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12" labelExpression="&lt;&lt;include>>">
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <edgeMappings name="IncluseEdge" label="&lt;&lt;include>>" semanticCandidatesExpression="aql:self.relations->filter(usecase::Include)" sourceMapping="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']" targetMapping="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']" targetFinderExpression="aql:self.target" sourceFinderExpression="aql:self.source" domainClass="usecase::Include" useDomainElement="true">
-          <style sizeComputationExpression="2">
+        <edgeMappings name="ExtendEdge" label="&lt;&lt;extends>>" deletionDescription="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='deleteRelation']" semanticCandidatesExpression="aql:self.relations->filter(usecase::Extend)" sourceMapping="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']" targetMapping="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']" targetFinderExpression="aql:self.target" sourceFinderExpression="aql:self.source" domainClass="usecase::Extend" useDomainElement="true">
+          <style lineStyle="dash" targetArrow="InputClosedArrow" sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-            <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="&lt;&lt;include>>">
+            <centerLabelStyleDescription labelSize="12" labelExpression="&lt;&lt;extend>>">
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <edgeMappings name="ExtendEdge" label="&lt;&lt;extend>>" semanticCandidatesExpression="aql:self.relations->filter(usecase::Extend)" sourceMapping="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']" targetMapping="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']" targetFinderExpression="aql:self.target" sourceFinderExpression="aql:self.source" domainClass="usecase::Extend" useDomainElement="true">
-          <style sizeComputationExpression="2">
+        <edgeMappings name="GeneralizationEdge" deletionDescription="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='deleteRelation']" semanticCandidatesExpression="aql:self.relations->filter(usecase::Generalization)" sourceMapping="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode'] //@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']" targetMapping="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode'] //@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']" targetFinderExpression="aql:self.target" sourceFinderExpression="aql:self.source" domainClass="usecase::Generalization" useDomainElement="true">
+          <style targetArrow="InputClosedArrow" sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-            <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="&lt;&lt;extend>>">
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <edgeMappings name="GeneralizationEdge" label="&lt;&lt;generalization>>" semanticCandidatesExpression="aql:self.relations->filter(usecase::Generalization)" sourceMapping="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode'] //@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']" targetMapping="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode'] //@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']" targetFinderExpression="aql:self.target" sourceFinderExpression="aql:self.source" domainClass="usecase::Generalization" useDomainElement="true">
-          <style sizeComputationExpression="2">
-            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-            <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="&lt;&lt;generalization>>">
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            </centerLabelStyleDescription>
-          </style>
-        </edgeMappings>
-        <toolSections name="use case tools">
+        <toolSections name="use case tools" label="Add actors and use cases">
           <ownedTools xsi:type="tool:NodeCreationDescription" name="CreateActor" label="Create Actor" nodeMappings="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='ActorNode']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
@@ -78,6 +98,41 @@
               <firstModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="var:0"/>
             </initialOperation>
           </ownedTools>
+          <ownedTools xsi:type="tool_1:PopupMenu" name="useCaseDescriptionPopup" label="Use Case Description" forceRefresh="true">
+            <menuItemDescription xsi:type="tool_1:OperationAction" name="openUseCaseDescription" label="Open/Create Use Case Description" precondition="aql:self.oclIsKindOf(usecase::UseCase)">
+              <view name="views"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:self.openOrCreateUseCaseDescription()"/>
+              </initialOperation>
+            </menuItemDescription>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="deleteRelation" label="Delete relation">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool_1:RemoveElement"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="deleteNode" label="Delete Node">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:element.deleteNodeAndConnectedRelations()"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DoubleClickDescription" name="Edit Use Case" mappings="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@nodeMappings[name='UseCaseNode']">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:element.openUseCaseEditDialog()"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+        <toolSections name="Add relations">
           <ownedTools xsi:type="tool:EdgeCreationDescription" name="CreateAssociation" label="Create Association" edgeMappings="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='AssociationEdge']">
             <sourceVariable name="source"/>
             <targetVariable name="target"/>
@@ -92,7 +147,7 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:EdgeCreationDescription" name="CreateInclude" label="Create Include" edgeMappings="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='IncluseEdge']">
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="CreateInclude" label="Create Include" edgeMappings="//@ownedViewpoints[name='diagram']/@ownedRepresentations[name='Use%20case%20diagram']/@defaultLayer/@edgeMappings[name='IncludeEdge']">
             <sourceVariable name="source"/>
             <targetVariable name="target"/>
             <sourceViewVariable name="sourceView"/>
@@ -126,12 +181,30 @@
             <sourceViewVariable name="sourceView"/>
             <targetViewVariable name="targetView"/>
             <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:source.eContainer()">
-                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="usecase::Generalization" referenceName="relations" variableName="newExtend">
-                  <subModelOperations xsi:type="tool_1:SetValue" featureName="source" valueExpression="var:source"/>
-                  <subModelOperations xsi:type="tool_1:SetValue" featureName="target" valueExpression="var:target"/>
+              <firstModelOperations xsi:type="tool_1:If" conditionExpression="aql:source.canCreateGeneralization(target)">
+                <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:source.eContainer()">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="usecase::Generalization" referenceName="relations" variableName="newExtend">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="source" valueExpression="var:source"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="target" valueExpression="var:target"/>
+                  </subModelOperations>
                 </subModelOperations>
               </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+        <toolSections name="Definition">
+          <ownedTools xsi:type="tool_1:ToolDescription" name="openDescription" label="Open description" precondition="aql:self.oclIsKindOf(usecase::UseCase)">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:self.openOrCreateUseCaseDescription()"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool_1:ToolDescription" name="exportDescriptionsToWord" label="Export Use Case Descriptions to Word">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:self.exportUseCaseDescriptionsToWord(elementView)"/>
             </initialOperation>
           </ownedTools>
         </toolSections>
