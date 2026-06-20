@@ -143,6 +143,8 @@ El flujo principal de uso de la herramienta es el siguiente:
 
 <img src="Imagenes memoria/sirius_xtext_integration.png" width="750"/>
 
+[Pequeña demo herramienta](Imagenes memoria/ejemplosencillo.mp4)
+
 ## Contexto académico
 
 Este proyecto está especialmente orientado a un contexto académico. La herramienta busca ayudar a estudiantes o usuarios con perfil técnico a practicar con diagramas de casos de uso, entender sus relaciones y completar sus especificaciones textuales de forma estructurada.
