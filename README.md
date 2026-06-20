@@ -1,4 +1,3 @@
-````markdown
 # Use Case Modeling, Specification and Validation Environment
 
 Este repositorio contiene el proyecto desarrollado para el Trabajo de Fin de Grado **"Use Case Modeling, Specification and Validation Environment"**.
@@ -126,9 +125,7 @@ Una vez importados los proyectos en Eclipse, la herramienta puede ejecutarse med
 
 También se puede generar un update site a partir de los proyectos de feature y repository para instalar la herramienta en otra instancia de Eclipse mediante la opción:
 
-```text
 Help > Install New Software
-````
 
 ## Uso básico
 
@@ -160,5 +157,3 @@ Universidad Autónoma de Madrid
 
 **Juan de Lara Jaramillo**
 
-```
-```
